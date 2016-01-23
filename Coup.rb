@@ -1,0 +1,61 @@
+##
+# Auteur WAJDI GUEDOUAR
+# Version 0.1
+# Date : Lundi 23 Janvier 2016
+# Description : fichier contenant la class Coup du jeu Picross, un Coup est une action réalisé par le joueur qui cible une case pour changer son état
+
+load "Case.rb"
+
+class Coup
+	#case modifiée par le coup
+	@case
+	#nouvel état de la case
+	@action
+	
+	attr_reader :case, :action
+	
+	private_class_method :new
+
+
+	# == Description
+	# 
+	# méthode de création d'un coup, empile le coup créé dans la pile passée en paramètre et réalise l'action sur la case en modifiant son état courant
+	#
+	# == Paramètres
+	#
+	# * +uneCase+ : case modifiée par le coup
+	# * +uneAction+ : nouvel état de la case une fois le coup joué
+	# * +unePileDeCoup+ : pile où le coup sera enregistré
+	#
+	# == Exemple
+	#
+	# unCoup = Coup.nouveau(uneCase,0,unePileDeCoup)
+	# unCoup = Coup.nouveau(uneCase,1,unePileDeCoup)
+	#
+	def Coup.nouveau(uneCase,uneAction,unePileDeCoup)
+		new(uneCase,uneAction,unePileDeCoup)
+	end
+	
+	def initialize(uneCase,uneAction,unePileDeCoup)
+		if(uneCase.class!=Case || uneAction.class!=Integer || unePileDeCoup.class!=PileCoup)
+			puts "l'un des objets n'a pas la class attendue"
+		else
+			@case,@action,@pileCoup = uneCase,uneAction,unePileDeCoup
+			unePileDeCoup.empiler(self)
+			uneCase.etatCourant=(uneAction)
+		end
+	end
+	
+	# == Description
+	# 
+	# méthode annulant l'action réalisée par le coup
+	#
+	# == Exemple
+	#
+	# unCoup.annuler()
+	#
+	def annuler()
+		(@action==0)? @case.etatCourant=(1):@case.etatCourant=(0)
+		return self
+	end
+end

@@ -8,11 +8,11 @@ class Case
 
 	#variable d'instance representant l'etat de la case : vide=0 (blanche) ou pleine=1 (noire)
 	@etatCourant
-	#variable d'instance représentant l'état final attendu de la case : vide=0 ou pleine=1
+	#variable d'instance représentant l'état final attendu de la case : vide=0 (blanche) ou pleine=1 (noire)
 	@etatFinal
 	
-	attr_accessor :etat,
-	attr_reader :reponse
+	attr_accessor :etatCourant
+	attr_reader :etatFinal
 	
 	private_class_method :new
 	
@@ -22,19 +22,19 @@ class Case
 	#
 	# == Paramètres
 	#
-	# * +unEtat+ : état final de la case lorsque le Picross sera résolu
+	# * +unEtatFinal+ : état final de la case lorsque le Picross sera résolu
 	#
 	# == Exemple
 	#
 	# uneCaseNoire = Case.creer(1)
 	# uneCaseBlanche = Case.creer(0)
 	#
-	def Case.creer(unEtat)
-		new(unEtat)
+	def Case.creer(unEtatFinal)
+		new(unEtatFinal)
 	end
-	def initialize(unEtat)
+	def initialize(unEtatFinal)
 		@etatCourant=0
-		@etatFinal=unEtat
+		@etatFinal=unEtatFinal
 	end
 
 	# == Description
@@ -47,6 +47,7 @@ class Case
 	#
 	def reveleToi
 		self.etatCourant=(@etatFinal)
+		return self
 	end
 	
 	# == Description
@@ -58,7 +59,7 @@ class Case
 	# uneCase.estValide?
 	#
 	def estValide?
-		(@etatCourant==@etatFinal)? true : false
+		return (@etatCourant==@etatFinal)
 	end
 	
 	def to_s()

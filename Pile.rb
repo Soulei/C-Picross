@@ -5,7 +5,6 @@
 # Description : fichier contenant les classes Pile, PileCoup et PileCase du jeu Picross
 
 load "Coup.rb"
-load "Case.rb"
 
 class Pile
 
@@ -42,17 +41,6 @@ class Pile
 		return @pile.last
 	end
 	
-	# == Description
-	# 
-	# méthode retournant et retirant le sommet de la pile
-	#
-	# == Exemple
-	#
-	# unObjet=unePile.depiler()
-	#
-	def depiler()
-		return @pile.pop
-	end
 	
 	# == Description
 	# 
@@ -111,6 +99,26 @@ class PileCoup < Pile
 	
 	# == Description
 	# 
+	# méthode retirant et retournant le Coup au sommet de la pile, annuler l'action du coup en même temps
+	#
+	# == Exemple
+	#
+	# unObjet=unePile.depiler()
+	#
+	def depiler()
+		unless self.estVide?
+			#annule l'action du coup
+			self.sommet.annuler
+			#renvoie le coup
+			return @pile.pop
+		end
+		puts "plus de coup à annuler !"
+		return self
+	end
+	
+	
+	# == Description
+	# 
 	# méthode permettant d'ajouter un coup dans la pile
 	#
 	# == Paramètre
@@ -148,6 +156,22 @@ class PileCase < Pile
 	
 	def initialize()
 		super()
+	end
+	
+	# == Description
+	# 
+	# méthode retournant et retirant la case au sommet de la pile
+	#
+	# == Exemple
+	#
+	# unObjet=unePile.depiler()
+	#
+	def depiler()
+		unless self.estVide?
+			return @pile.pop
+		end
+		puts "la pile de case est vide !"
+		return self
 	end
 	
 	# == Description
