@@ -37,7 +37,7 @@ class Coup
 	end
 	
 	def initialize(uneCase,uneAction,unePileDeCoup)
-		if(uneCase.class!=Case || uneAction.class!=Integer || unePileDeCoup.class!=PileCoup)
+		if(uneCase.class!=Case || uneAction.class!=Fixnum || unePileDeCoup.class!=PileCoup)
 			puts "l'un des objets n'a pas la class attendue"
 		else
 			@case,@action,@pileCoup = uneCase,uneAction,unePileDeCoup

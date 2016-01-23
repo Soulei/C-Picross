@@ -63,7 +63,7 @@ class Pile
 	# unBooleen=unePile.estVide?()
 	#
 	def estVide?()
-		return @pile.empty
+		return @pile.empty?
 	end
 	
 	# == Description
