@@ -2,7 +2,7 @@
 # Auteur WAJDI GUEDOUAR
 # Version 0.1
 # Date : Lundi 11 Janvier 2016
-# Description : fihcier contenant la classe Case du le jeu du Picross
+# Description : fichier contenant la classe Case du jeu du Picross
 
 class Case 
 
