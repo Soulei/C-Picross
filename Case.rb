@@ -63,6 +63,6 @@ class Case
 	end
 	
 	def to_s()
-		"#{@etatCourant}"
+		"#{@etatCourant} "
 	end
 end
