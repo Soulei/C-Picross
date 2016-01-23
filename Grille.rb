@@ -60,6 +60,28 @@ class Grille
 		return taille
 	end
 	
+	# == Description
+	# 
+	# méthode permettant de modifier l'état courant de la case au coordonnée (abscisse;ordonnee)
+	#
+	# == Paramètres
+	#
+	# * +abscisse+ : abscisse de la case à modifier
+	# * +ordonnee+ : ordonnée de la case à modifier
+	#
+	# == Exemple
+	#
+	# uneGrille.modifierXY(5,5)
+	#
+	def modifierXY(abscisse,ordonnee)
+		if(abscisse.class==Fixnum && ordonnee.class==Fixnum)
+			@matrice[abscisse][ordonnee].changeEtat
+		else
+			puts "les paramètres ne sont pas des indices de la matrice de type entier"
+		end
+		return self
+	end
+	
 	#méthode à améliorer dès que possible !!
 	def to_s
 		m=0
@@ -73,5 +95,9 @@ class Grille
 			n=0
 			m+=1
 		end
+	end
+	
+	def <=>(uneGrille)
+		#A FAIRE !
 	end
 end

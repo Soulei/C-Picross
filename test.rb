@@ -45,6 +45,10 @@ class Verif
 		uneGrille=Grille.creer(10)
 		puts uneGrille.dimension
 		puts uneGrille
+		uneGrille.modifierXY(5,5)
+		puts uneGrille
+		uneGrille.modifierXY(5,5)
+		puts uneGrille
 		
 	end
 end

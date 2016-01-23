@@ -52,6 +52,19 @@ class Case
 	
 	# == Description
 	# 
+	# méthode permettant de changer l'état courant de la case, la faisant passer à Noire si Blanc et inversement
+	#
+	# == Exemple
+	#
+	# uneCase.changeEtat
+	#
+	def changeEtat
+		(@etatCourant==0)? self.etatCourant=(1) : self.etatCourant=(0)
+		return self
+	end
+	
+	# == Description
+	# 
 	# méthode permettant de savoir si l'état de la case est valide ou non (égale à l'état finale attendu)
 	#
 	# == Exemple
@@ -60,6 +73,24 @@ class Case
 	#
 	def estValide?
 		return (@etatCourant==@etatFinal)
+	end
+	
+	# == Description
+	# 
+	# méthode de comparaison d'une case
+	#
+	# == Paramètres
+	#
+	# * +uneCase+ : case à comparer
+	#
+	# == Exemple
+	#
+	# uneCase > uneAutreCase
+	# uneCase == uneAutreCase
+	# uneCase <= uneAutreCase
+	#
+	def <=>(uneCase)
+		return self.etatCourant==uneCase.etatCourant
 	end
 	
 	def to_s()
