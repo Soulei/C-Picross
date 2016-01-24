@@ -44,8 +44,7 @@ class Verif
 		
 		uneGrille=Grille.creer(10)
 		puts uneGrille.dimension
-		puts "horizontal",uneGrille.horizontal
-		puts "vertical",uneGrille.vertical
+		puts uneGrille
 		
 		
 		#(uneGrille.largeur).times{ |i|

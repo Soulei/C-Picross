@@ -42,7 +42,7 @@ class Grille
 			#creation de la matrice contenant les cases
 			@matrice=Array.new(largeur){ |i|
 				Array.new(largeur){ |j|
-					Case.creer(1)
+					Case.creer(rand(2))
 				}
 			}
 			#creation d'une matrice contenant les blocs de cases noires verticales par indice
@@ -183,9 +183,5 @@ class Grille
 			n=0
 			m+=1
 		end
-	end
-	
-	def <=>(uneGrille)
-		#A FAIRE !
 	end
 end
