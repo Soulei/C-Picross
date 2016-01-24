@@ -21,8 +21,10 @@ class VueJeu < Vue
 	@btAide
 	@nbAide
 	
-	# tableau de la matrice à afficher
+	# tableau d'affichage
 	@table
+	# tableau de la matrice à afficher
+	@mat
 	# grille de picross à résoudre
 	@grille
 	
@@ -55,16 +57,16 @@ class VueJeu < Vue
 		@window.show_all
 	end
 	
-	#Crée le menu en haut de la fenêtre de jeu
+	# Crée le menu en haut de la fenêtre de jeu
 	def creerMenu
 	
 		mb = Gtk::MenuBar.new
 		
-		#Niveau 1
+		# Niveau 1
 		fichier = Gtk::MenuItem.new("Fichier")
 		@miRageQuit = Gtk::MenuItem.new("Quitter")
 		
-		#Niveau 2 (Fichier)
+		# Niveau 2 (Fichier)
 		menuFichier = Gtk::Menu.new
 		@miQuitter = Gtk::MenuItem.new("Quitter")
 		
@@ -78,7 +80,7 @@ class VueJeu < Vue
 		return mb
 	end
 	
-	#Crée la tête de la fenêtre (Timer - VBoxAide)
+	# Crée la tête de la fenêtre (Timer - VBoxAide)
 	def creerEntete
 	
 		hbox = Gtk::HBox.new(false, 50)
@@ -91,7 +93,7 @@ class VueJeu < Vue
 		
 	end
 	
-	#Crée une VBox contenant les boutons Joker et Indice
+	# Crée une VBox contenant les boutons Joker et Indice
 	def creerVBoxAide
 	
 		vbox = Gtk::VBox.new(false, 3)
@@ -105,21 +107,22 @@ class VueJeu < Vue
 		return vbox
 	end
 	
-	#Crée le plateau de jeu à partir de la grille
+	# Crée le plateau de jeu à partir de la grille
 	def creerPlateau
 	
 		tailleGrille = @grille.largeur
 		espacementCases = 2
 		
-		@table = Gtk::Table.new(tailleGrille+1, tailleGrille+1, true)#On rajoute 1 pour insérer les infos des colonnes
+		@table = Gtk::Table.new(tailleGrille+1, tailleGrille+1, true) # On rajoute 1 pour insérer les infos des colonnes
+		@mat = Array.new(tailleGrille) {Array.new(tailleGrille)}
 		
-		#Infos des colonnes
+		# Infos des colonnes
 		0.upto(tailleGrille-1){|x|
 		
 			#@table.attach(@grille.horizontal[x], x+1, x+2, 0, 1)
 		}
 		
-		#Infos des lignes
+		# Infos des lignes
 		0.upto(tailleGrille-1){|y|
 		
 			#@table.attach(@grille.verticale[y], 0, 1, y+1, y+2)
@@ -132,10 +135,11 @@ class VueJeu < Vue
 			
 				caseTemp = CaseVue.new("blanc", tailleGrille, x, y)
 				@table.attach(caseTemp, x+1, x+2, y+1, y+2)
+				@mat[x][y] = caseTemp
 			}
 		}
 		
-		#Définition de l'espacement des cases toutes les 5 cases
+		# Définition de l'espacement des cases toutes les 5 cases
 		5.step(tailleGrille, 5){|i|
 		
 			@table.set_row_spacing(i, espacementCases)
@@ -159,7 +163,7 @@ class VueJeu < Vue
 		# Mise à jour de toutes les cases du plateau à partir du modèle
 		0.upto(tailleGrille-1){|x|
 			0.upto(tailleGrille-1){|y|
-				
+				actualiserCase(x,y)
 			}
 		}
 		
@@ -179,10 +183,10 @@ class VueJeu < Vue
 
 	end
 	
-	#Actualise la case située aux coordonnées (x,y)
+	# Actualise la case située aux coordonnées (x,y)
 	def actualiserCase(x,y)
 		
-		#Doit devenir....
+		# Doit devenir....
 		if @grille.matrice[x][y].etatCourant == 0 and not getCaseVue(x,y).etat.eql?("blanc")
 		
 			getCaseVue(x,y).changerEtat("blanc")
@@ -196,7 +200,7 @@ class VueJeu < Vue
 	
 	def getCaseVue(unX, unY)
 	
-		return @table[unX+1][unY+1]
+		return @mat[unX][unY]
 	end
 	
 end
