@@ -106,7 +106,7 @@ class VueJeu < Vue
 		tailleGrille = @grille.largeur
 		espacementCases = 2
 		
-		@table = Gtk::Table.new(tailleGrille+1, tailleGrille+1, false)#On rajoute 1 pour insérer les infos des colonnes
+		@table = Gtk::Table.new(tailleGrille+1, tailleGrille+1, true)#On rajoute 1 pour insérer les infos des colonnes
 		
 		#Infos des colonnes
 		0.upto(tailleGrille-1){|x|
