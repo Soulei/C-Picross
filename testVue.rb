@@ -11,8 +11,6 @@ class VerifVue
 	def testerVue
 		
 		uneGrille=Grille.creer(10)
-		puts uneGrille.dimension
-		puts uneGrille.pileCoup.taille
 		
 		Gtk.init
 		
