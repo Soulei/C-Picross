@@ -1,5 +1,10 @@
-require 'gtk2'
+##
+# Auteur YANN GUENVER
+# Version 0.1
+# Date : Samedi 23 Janvier 2016
+# Description : fichier contenant la classe Vue du jeu du Picross
 
+require 'gtk2'
 
 
 # Classe abstraite définissant les attributs et comportements généraux de nos vues concrètes
