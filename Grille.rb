@@ -11,12 +11,14 @@ class Grille
 	@matrice
 	#largeur de la matrice
 	@largeur
+	#pile des coups joué dans la grille
+	@pileCoup
 	#tableau contenant les indices verticaux des blocs noirs
 	@vertical
 	#tableau contenant les indices horizontaux des blocs noirs
 	@horizontal
 	
-	attr_reader :matrice, :largeur, :vertical, :horizontal
+	attr_reader :matrice, :largeur, :vertical, :horizontal, :pileCoup
 	private_class_method :new
 	
 	# == Description
@@ -39,6 +41,7 @@ class Grille
 	def initialize(largeur)
 		if(largeur%5==0 && largeur>=5)
 			@largeur=largeur
+			@pileCoup=PileCoup.creer
 			#creation de la matrice contenant les cases
 			@matrice=Array.new(largeur){ |i|
 				Array.new(largeur){ |j|
@@ -144,7 +147,7 @@ class Grille
 	#
 	def modifierXY(abscisse,ordonnee)
 		if(abscisse.class==Fixnum && ordonnee.class==Fixnum)
-			@matrice[abscisse][ordonnee].changeEtat
+			Coup.nouveau(@matrice[abscisse][ordonnee],@pileCoup)
 		else
 			puts "les paramètres ne sont pas des indices de la matrice de type entier"
 		end

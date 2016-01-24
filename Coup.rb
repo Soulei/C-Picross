@@ -9,8 +9,6 @@ load "Case.rb"
 class Coup
 	#case modifiée par le coup
 	@case
-	#nouvel état de la case
-	@action
 	
 	attr_reader :case, :action
 	
@@ -32,17 +30,17 @@ class Coup
 	# unCoup = Coup.nouveau(uneCase,0,unePileDeCoup)
 	# unCoup = Coup.nouveau(uneCase,1,unePileDeCoup)
 	#
-	def Coup.nouveau(uneCase,uneAction,unePileDeCoup)
-		new(uneCase,uneAction,unePileDeCoup)
+	def Coup.nouveau(uneCase,unePileDeCoup)
+		new(uneCase,unePileDeCoup)
 	end
 	
-	def initialize(uneCase,uneAction,unePileDeCoup)
-		if(uneCase.class!=Case || uneAction.class!=Fixnum || unePileDeCoup.class!=PileCoup)
+	def initialize(uneCase,unePileDeCoup)
+		if(uneCase.class!=Case || unePileDeCoup.class!=PileCoup)
 			puts "l'un des objets n'a pas la class attendue"
 		else
-			@case,@action,@pileCoup = uneCase,uneAction,unePileDeCoup
+			@case,@pileCoup = uneCase,unePileDeCoup
 			unePileDeCoup.empiler(self)
-			uneCase.etatCourant=(uneAction)
+			uneCase.changeEtat
 		end
 	end
 	
@@ -55,7 +53,7 @@ class Coup
 	# unCoup.annuler()
 	#
 	def annuler()
-		(@action==0)? @case.etatCourant=(1):@case.etatCourant=(0)
+		@case.changeEtat
 		return self
 	end
 end

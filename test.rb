@@ -47,14 +47,14 @@ class Verif
 		puts uneGrille
 		
 		
-		#(uneGrille.largeur).times{ |i|
-			#(uneGrille.largeur).times{ |j|
-				#uneGrille.modifierXY(i,j)
-				#puts uneGrille
-				#puts uneGrille.estTerminer?
-			#}
-		#}
-		
+		(uneGrille.largeur).times{ |i|
+			(uneGrille.largeur).times{ |j|
+				uneGrille.modifierXY(i,j)
+				puts uneGrille
+				puts uneGrille.estTerminer?
+			}
+		}
+		puts uneGrille.pileCoup.taille
 		
 	end
 end
