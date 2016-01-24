@@ -9,7 +9,9 @@ class VerifVue
 		
 		puts uneGrille.pileCoup.taille
 		
-		unevue = VueJeu.creer(uneGrille)
+		uneVue = VueJeu.creer(uneGrille)
+		
+		uneVue.signal_connect('destroy') {Gtk.main_quit}
 		Gtk.main
 		
 	end
