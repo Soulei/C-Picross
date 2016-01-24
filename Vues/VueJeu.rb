@@ -1,3 +1,8 @@
+##
+# Auteur YANN GUENVER
+# Version 0.1
+# Date : Dimanche 24 Janvier 2016
+# Description : fichier contenant la classe VueJeu du jeu du Picross
 #encoding: UTF-8
 
 require_relative 'Vue'
