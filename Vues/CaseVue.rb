@@ -1,3 +1,8 @@
+##
+# Auteur YANN GUENVER
+# Version 0.1
+# Date : Dimanche 24 Janvier 2016
+# Description : fichier contenant la classe CaseVue du jeu du Picross
 require 'gtk2'
 
 #Une case vue est un boite d'évènement qui contient une image
