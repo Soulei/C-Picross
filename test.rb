@@ -9,7 +9,7 @@ load "Grille.rb"
 class Verif
 	def tester
 		
-		uneCaseBlanche=Case.creer(0)
+		#uneCaseBlanche=Case.creer(0)
 		#uneCaseNoir=Case.creer(1)
 		
 		#puts "case blanche : " ,uneCaseBlanche.etatFinal
@@ -44,11 +44,18 @@ class Verif
 		
 		uneGrille=Grille.creer(10)
 		puts uneGrille.dimension
-		puts uneGrille
-		uneGrille.modifierXY(5,5)
-		puts uneGrille
-		uneGrille.modifierXY(5,5)
-		puts uneGrille
+		puts "horizontal",uneGrille.horizontal
+		puts "vertical",uneGrille.vertical
+		
+		
+		#(uneGrille.largeur).times{ |i|
+			#(uneGrille.largeur).times{ |j|
+				#uneGrille.modifierXY(i,j)
+				#puts uneGrille
+				#puts uneGrille.estTerminer?
+			#}
+		#}
+		
 		
 	end
 end

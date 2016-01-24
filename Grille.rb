@@ -11,13 +11,17 @@ class Grille
 	@matrice
 	#largeur de la matrice
 	@largeur
+	#tableau contenant les indices verticaux des blocs noirs
+	@vertical
+	#tableau contenant les indices horizontaux des blocs noirs
+	@horizontal
 	
-	attr_reader :matrice
+	attr_reader :matrice, :largeur, :vertical, :horizontal
 	private_class_method :new
 	
 	# == Description
 	# 
-	# méthode de création d'une grille
+	# méthode de création d'une grille, on associe à la grille une taille, des cellules et la dimension des blocs verticaux et horizontaux
 	#
 	# == Paramètres
 	#
@@ -27,6 +31,7 @@ class Grille
 	#
 	# uneGrille = Grille.creer(10)
 	#
+	#IL AUDRAIT AJOUTER UNE REFERENCE VERS UN TABLEAU DE VALEUR PERMETTANT DE CONNAITRE LETAT FINAL DE LA GRILLE POUR METTRE DES VALEURS DANS LES CASES CREEES
 	def Grille.creer(largeur)
 		new(largeur)
 	end
@@ -34,14 +39,78 @@ class Grille
 	def initialize(largeur)
 		if(largeur%5==0 && largeur>=5)
 			@largeur=largeur
+			#creation de la matrice contenant les cases
 			@matrice=Array.new(largeur){ |i|
 				Array.new(largeur){ |j|
 					Case.creer(1)
 				}
 			}
+			#creation d'une matrice contenant les blocs de cases noires verticales par indice
+			@vertical=Array.new(largeur){ |i|
+				Array.new()
+			}
+			#creation d'une matrice contenant les blocs de cases noires horizontales par indice
+			@horizontal=Array.new(largeur){ |i|
+				Array.new()
+			}
+			
+			self.indiceH
+			self.indiceV
 		else
 			puts "la largeur saisie doit être un multiple de 5 supérieur ou égale à 5"
 		end
+	end
+	
+	# == Description
+	# 
+	# méthode calculant la taille des blocs de case noire pour chaque colonne 
+	#
+	# == Exemple
+	#
+	# uneGrille.indiceV
+	#
+	def indiceV
+		cpt=0
+		largeur.times{ |i|
+			largeur.times{ |j|
+				if(@matrice[i][j].etatFinal==1)
+					cpt+=1
+				elsif cpt!=0
+					@vertical[i].push(cpt)
+					cpt=0
+				end
+			}
+			if cpt!=0
+				@vertical[i].push(cpt)
+				cpt=0
+			end
+		}
+	end
+	
+	# == Description
+	# 
+	# méthode calculant la taille des blocs de case noire pour chaque ligne 
+	#
+	# == Exemple
+	#
+	# uneGrille.indiceH
+	#
+	def indiceH
+		cpt=0
+		largeur.times{ |i|
+			largeur.times{ |j|
+				if(@matrice[j][i].etatFinal==1)
+					cpt+=1
+				elsif cpt!=0
+					@horizontal[i].push(cpt)
+					cpt=0
+				end
+			}
+			if cpt!=0
+				@horizontal[i].push(cpt)
+				cpt=0
+			end
+		}
 	end
 	
 	# == Description
@@ -80,6 +149,25 @@ class Grille
 			puts "les paramètres ne sont pas des indices de la matrice de type entier"
 		end
 		return self
+	end
+	
+	# == Description
+	# 
+	# méthode verifiant si l'état courant des cases de la matrice correspond à l'état final. Renvoie true si oui, false si non
+	#
+	# == Exemple
+	#
+	# uneGrille.estTerminer?
+	#
+	def estTerminer?
+		@matrice.each{ |i|
+			i.each{ |j|
+				unless j.estValide?
+					return false
+				end
+			}
+		}
+		return true
 	end
 	
 	#méthode à améliorer dès que possible !!
