@@ -10,7 +10,7 @@ load "Vues/VueJeu.rb"
 class VerifVue
 	def testerVue
 		
-		uneGrille=Grille.creer(10)
+		uneGrille=Grille.creer(15)
 		puts uneGrille
 		
 		Gtk.init
@@ -24,6 +24,9 @@ class VerifVue
 			
 				
 				i.signal_connect("button_press_event") {
+					
+					Gdk::Display.default.pointer_ungrab(Gdk::Event::CURRENT_TIME)
+					
 					i.grille.modifierXY(i.x,i.y)
 					uneVue.miseAJour()
 					if uneGrille.estTerminer? then
