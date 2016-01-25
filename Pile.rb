@@ -1,7 +1,7 @@
 ##
 # Auteur WAJDI GUEDOUAR
 # Version 0.1
-# Date : Lundi 23 Janvier 2016
+# Date : samedi 23 Janvier 2016
 # Description : fichier contenant les classes Pile, PileCoup et PileCase du jeu Picross
 
 load "Coup.rb"

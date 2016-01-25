@@ -1,7 +1,7 @@
 ##
 # Auteur WAJDI GUEDOUAR
 # Version 0.1
-# Date : Lundi 23 Janvier 2016
+# Date : samedi 23 Janvier 2016
 # Description : fichier contenant les tests des classes Coup, Case et Pile
 
 load "Grille.rb"
@@ -47,14 +47,14 @@ class Verif
 		puts uneGrille
 		
 		
-		(uneGrille.largeur).times{ |i|
-			(uneGrille.largeur).times{ |j|
-				uneGrille.modifierXY(i,j)
-				puts uneGrille
-				puts uneGrille.estTerminer?
-			}
-		}
-		puts uneGrille.pileCoup.taille
+		#(uneGrille.largeur).times{ |i|
+		#	(uneGrille.largeur).times{ |j|
+		#		uneGrille.modifierXY(i,j)
+		#		puts uneGrille
+		#		puts uneGrille.estTerminer?
+		#	}
+		#}
+		#puts uneGrille.pileCoup.taille
 		
 	end
 end

@@ -1,7 +1,7 @@
 ##
 # Auteur WAJDI GUEDOUAR
 # Version 0.1
-# Date : Lundi 23 Janvier 2016
+# Date : samedi 23 Janvier 2016
 # Description : fichier contenant la class Coup du jeu Picross, un Coup est une action réalisé par le joueur qui cible une case pour changer son état
 
 load "Case.rb"

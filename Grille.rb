@@ -1,7 +1,7 @@
 ##
 # Auteur WAJDI GUEDOUAR
 # Version 0.1
-# Date : Lundi 23 Janvier 2016
+# Date : Dimanche 24 Janvier 2016
 # Description : fichier contenant la class Grille, modélisant la grille de Picross avec laquelle le joueur pourra intéragir
 #encoding: UTF-8
 

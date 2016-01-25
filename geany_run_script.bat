@@ -1,4 +1,4 @@
-ruby "CaseVue.rb"
+ruby "testVue.rb"
 
 pause
 del "%0"
