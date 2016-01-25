@@ -28,6 +28,8 @@ class VueJeu < Vue
 	# grille de picross à résoudre
 	@grille
 	
+	
+	attr_reader :table
 	private_class_method :new
 	
 	def VueJeu.creer(uneGrille)
@@ -113,19 +115,21 @@ class VueJeu < Vue
 		tailleGrille = @grille.largeur
 		espacementCases = 2
 		
-		@table = Gtk::Table.new(tailleGrille+1, tailleGrille+1, true) # On rajoute 1 pour insérer les infos des colonnes
+		@table = Gtk::Table.new(tailleGrille+3, tailleGrille+3, false) # On rajoute 1 pour insérer les infos des colonnes
 		@mat = Array.new(tailleGrille) {Array.new(tailleGrille)}
 		
 		# Infos des colonnes
 		0.upto(tailleGrille-1){|x|
 		
 			#@table.attach(@grille.horizontal[x], x+1, x+2, 0, 1)
+			@table.attach(infoHorizontal(@grille.horizontal[x]), x+2, x+3, 1, 2)
 		}
 		
 		# Infos des lignes
 		0.upto(tailleGrille-1){|y|
 		
 			#@table.attach(@grille.verticale[y], 0, 1, y+1, y+2)
+			@table.attach(infoVertical(@grille.vertical[y]), 1, 2, y+2, y+3)
 		}
 		
 		#Création de la grille
@@ -133,20 +137,50 @@ class VueJeu < Vue
 		
 			0.upto(tailleGrille-1){|y|
 			
-				caseTemp = CaseVue.new("blanc", tailleGrille, x, y)
-				@table.attach(caseTemp, x+1, x+2, y+1, y+2)
+				caseTemp = CaseVue.new("blanc", tailleGrille, @grille, x, y)
+				@table.attach(caseTemp, y+2, y+3, x+2, x+3)
 				@mat[x][y] = caseTemp
 			}
 		}
 		
+		
+		
 		# Définition de l'espacement des cases toutes les 5 cases
-		5.step(tailleGrille, 5){|i|
+		6.step(tailleGrille, 5){|i|
 		
 			@table.set_row_spacing(i, espacementCases)
 			@table.set_column_spacing(i, espacementCases)
 		}
 		
 		return @table
+	end
+	
+	def infoHorizontal(ind)
+		
+		vBoxTemp = Gtk::VBox.new()
+		unless ind.empty?
+			ind.each{|elem|
+				labelTemp = Gtk::Label.new()
+				labelTemp.set_markup(elem.to_s)
+				vBoxTemp.add(labelTemp)
+			}
+		end
+		
+		return vBoxTemp
+	end
+	
+	def infoVertical(ind)
+		
+		hBoxTemp = Gtk::HBox.new()
+		unless ind.empty?
+			ind.each{|elem|
+				labelTemp = Gtk::Label.new()
+				labelTemp.set_markup(elem.to_s)
+				hBoxTemp.add(labelTemp)
+			}
+		end
+		
+		return hBoxTemp
 	end
 	
 	# Retourne un temps sous le format chronomètre à partir d'un entier
@@ -160,24 +194,12 @@ class VueJeu < Vue
 		
 		tailleGrille = @grille.largeur
 		
-		# Mise à jour de toutes les cases du plateau à partir du modèle
+		# Mise à jour de toutes les cases du plateau 
 		0.upto(tailleGrille-1){|x|
 			0.upto(tailleGrille-1){|y|
 				actualiserCase(x,y)
 			}
 		}
-		
-		# Désactivation du bouton d'aide si plus disponible
-		if @nbAide ==0 then
-		
-			@btAide.sensitive = false 
-			@btAide.label = "Aide"
-			
-		else
-		
-			@btAide.sensitive = true
-			@btAide.label = "Aide"
-		end
 		
 		@window.show_all
 

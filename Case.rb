@@ -94,6 +94,6 @@ class Case
 	end
 	
 	def to_s()
-		"#{@etatCourant} "
+		"#{@etatFinal} "
 	end
 end

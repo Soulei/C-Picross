@@ -11,10 +11,30 @@ class VerifVue
 	def testerVue
 		
 		uneGrille=Grille.creer(10)
+		puts uneGrille
 		
 		Gtk.init
 		
 		uneVue = VueJeu.creer(uneGrille)
+		
+		
+		uneVue.table.each{|i|
+			
+			if (i.class==CaseVue) then
+			
+				
+				i.signal_connect("button_press_event") {
+					i.grille.modifierXY(i.x,i.y)
+					uneVue.miseAJour()
+					if uneGrille.estTerminer? then
+						Gtk.main_quit
+					end
+					puts uneGrille
+					puts uneGrille.estTerminer? 
+				}
+			end
+		}
+		
 		
 		uneVue.window.signal_connect('destroy') {Gtk.main_quit}
 		Gtk.main

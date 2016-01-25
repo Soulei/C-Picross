@@ -15,15 +15,17 @@ class CaseVue < Gtk::EventBox
 	#Permet d'effectuer la sélection de l'image à partir de son nom
 	@tailleGrille
 	
+	@grille
 	@image
 	@etat
 	
-	attr_reader :x, :y, :etat, :taille
+	attr_reader :grille, :x, :y, :etat, :tailleGrille
 	
-	def initialize(unEtat, uneTaille, x, y)
+	def initialize(unEtat, uneTaille, uneGrille, x, y)
 	
 		super()
 		
+		@grille = uneGrille
 		@tailleGrille = uneTaille
 		@etat = unEtat
 		@x = x
@@ -59,4 +61,6 @@ class CaseVue < Gtk::EventBox
 				
 		end
 	end
+	
+	
 end
