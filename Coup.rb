@@ -10,7 +10,7 @@ class Coup
 	#case modifiée par le coup
 	@case
 	
-	attr_reader :case, :action
+	attr_reader :case
 	
 	private_class_method :new
 
@@ -38,7 +38,7 @@ class Coup
 		if(uneCase.class!=Case || unePileDeCoup.class!=PileCoup)
 			puts "l'un des objets n'a pas la class attendue"
 		else
-			@case,@pileCoup = uneCase,unePileDeCoup
+			@case = uneCase
 			unePileDeCoup.empiler(self)
 			uneCase.changeEtat
 		end
