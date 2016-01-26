@@ -4,7 +4,7 @@
 # Date : samedi 23 Janvier 2016
 # Description : fichier contenant les tests des classes Coup, Case et Pile
 
-load "Grille.rb"
+load "Jeu.rb"
 
 class Verif
 	def tester
@@ -42,9 +42,23 @@ class Verif
 		#puts "case blanche apres annulation coup : " ,uneCaseBlanche.etatCourant
 		#puts unePileDeCoup.estVide?
 		
-		uneGrille=Grille.creer(10)
+		unJoueur=Joueur.creer("Wajdi")
+		unJeu=Jeu.new
+		uneGrille=unJeu.grille10x10
 		puts uneGrille.dimension
 		puts uneGrille
+		print "\n " + unJoueur.to_s + "\n"
+		print unJoueur.score
+		puts ""
+		unJoueur.ajoutScore(10,15)
+		print unJoueur.score
+		puts ""
+		unJoueur.ajoutScore(2,15)
+		print unJoueur.score
+		puts ""
+		unJoueur.ajoutScore(19,15)
+		print unJoueur.score
+		puts ""
 		
 		
 		#(uneGrille.largeur).times{ |i|
