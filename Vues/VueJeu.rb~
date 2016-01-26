@@ -5,8 +5,8 @@
 # Description : fichier contenant la classe VueJeu du jeu du Picross
 #encoding: UTF-8
 
-require_relative 'Vue'
-require_relative 'CaseVue'
+require_relative 'Vue.rb'
+require_relative 'CaseVue.rb'
 
 require 'gtk2'
 
