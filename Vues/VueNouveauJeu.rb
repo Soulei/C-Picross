@@ -17,6 +17,8 @@ class VueNouveauJeu < Vue
     @btGrille20
     @btGrille25
     
+    attr_reader :btGrille5
+    
     @btretour    
 
     def VueNouveauJeu.creer()
