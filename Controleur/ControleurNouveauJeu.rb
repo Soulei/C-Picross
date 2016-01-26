@@ -3,13 +3,17 @@
 # Version 0.1
 # Date : Mardi 26 Janvier 2016
 # Description : fichier contenant la classe ControleurNouveauJeu du jeu du Picross
-load "../Vues/VueNouveauJeu.rb"
-load "../Jeu.rb"
+load "Vues/VueNouveauJeu.rb"
+load "Jeu.rb"
 
 require_relative 'Controleur'
+require_relative 'ControleurJeu'
 
 class ControleurNouveauJeu < Controleur
     
+    def ControleurNouveauJeu.creer()
+		new()
+	end
     
     def initialize()
     
@@ -19,16 +23,14 @@ class ControleurNouveauJeu < Controleur
 		
 		@vue.btGrille5.signal_connect('clicked'){
 			@vue.fermerFenetre
-			ControleurJeu.new(Jeu.new.grille5x5)
+			ControleurJeu.creer(Jeu.new.grille5x5)
 		}
 		
 		
-		@vue.window.signal_connect('destroy') {Gtk.main_quit}
 		Gtk.main
+		
 	end
 	
 	
 end
 
-essaie=VerifVue.new
-essaie.testerVue

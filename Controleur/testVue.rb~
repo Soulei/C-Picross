@@ -4,12 +4,12 @@
 # Date : Dimanche 24 Janvier 2016
 # Description : fichier contenant le test de la classe Vue
 
-load "Controleur/ControleurNouveauJeu.rb"
+load "ControleurNouveauJeu.rb"
 
 class VerifVue
 	def testerVue
 		
-		ControleurNouveauJeu.creer
+		ControleurNouveauJeu.new
 		
 	end
 end
