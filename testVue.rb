@@ -4,13 +4,13 @@
 # Date : Dimanche 24 Janvier 2016
 # Description : fichier contenant le test de la classe Vue
 
-load "Grille.rb"
+load "Jeu.rb"
 load "Vues/VueJeu.rb"
 
 class VerifVue
 	def testerVue
-		
-		uneGrille=Grille.creer(15)
+		unJeu=Jeu.new
+		uneGrille=unJeu.grille5x5
 		puts uneGrille
 		
 		Gtk.init
