@@ -149,7 +149,7 @@ class Grille
 		if(abscisse.class==Fixnum && ordonnee.class==Fixnum)
 			Coup.nouveau(@matrice[abscisse][ordonnee],@pileCoup)
 		else
-			puts "les parametres ne sont pas des indices de la matrice de type entier"
+			puts "les paramètres ne sont pas des indices de la matrice de type entier"
 		end
 		return self
 	end
