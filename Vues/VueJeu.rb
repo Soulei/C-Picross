@@ -19,7 +19,6 @@ class VueJeu < Vue
 	@lbTimer
 	
 	@btAide
-	@nbAide
 	
 	# tableau d'affichage
 	@table
@@ -41,15 +40,13 @@ class VueJeu < Vue
 		super("Jeu")
 		@grille = uneGrille
 		
-		# VBox principale
-		vbox = Gtk::VBox.new(false, 5)
-		@window.add(vbox)
+		# HBox principale
+		hbox = Gtk::HBox.new(false, 10)
+		@window.add(hbox)
 
-		vbox.pack_start(creerEntete)
-		vbox.pack_start(creerPlateau)
-		
-		vbox.set_border_width(5)
-
+		hbox.pack_start(creerPlateau)
+		hbox.pack_start(creerVBoxAide)
+		hbox.set_border_width(5)
 
 		miseAJour
 		
@@ -57,29 +54,16 @@ class VueJeu < Vue
 	end
 	
 	
-	# Crée la tête de la fenêtre (Timer - VBoxAide)
-	def creerEntete
-	
-		hbox = Gtk::HBox.new(false, 50)
-		
-		@lbTimer = Gtk::Label.new
-		vboxAide = creerVBoxAide
-		
-		hbox.pack_start(@lbTimer)
-		hbox.pack_start(vboxAide)
-		
-	end
-	
 	# Crée une VBox contenant les boutons Joker et Indice
 	def creerVBoxAide
 	
-		vbox = Gtk::VBox.new(false, 3)
+		vbox = Gtk::VBox.new(true, 5)
 		
-		@btAide = Gtk::Button.new
-		@nbAide = 3
+		@btAide = Gtk::Button.new("Aide")
+		@btIndice = Gtk::Button.new("Indice")
 		
-		vbox.pack_start(@btAide)
-		vbox.pack_start(Gtk::Label.new("Nombre d'aides restantes: "+@nbAide.to_s))
+		vbox.(@btAide)
+		vbox.(@btIndice)
 		
 		return vbox
 	end
@@ -150,7 +134,7 @@ class VueJeu < Vue
 		unless ind.empty?
 			ind.each{|elem|
 				labelTemp = Gtk::Label.new()
-				labelTemp.set_markup(elem.to_s)
+				labelTemp.set_markup(elem.to_s+" ")
 				hBoxTemp.add(labelTemp)
 			}
 		end
@@ -187,7 +171,7 @@ class VueJeu < Vue
 		if @grille.matrice[x][y].etatCourant == 0 and not getCaseVue(x,y).etat.eql?("blanc")
 		
 			getCaseVue(x,y).changerEtat("blanc")
-			
+		
 		elsif @grille.matrice[x][y].etatCourant == 1 and not getCaseVue(x,y).etat.eql?("noir")
 		
 			getCaseVue(x,y).changerEtat("noir")
@@ -199,5 +183,4 @@ class VueJeu < Vue
 	
 		return @mat[unX][unY]
 	end
-	
 end
