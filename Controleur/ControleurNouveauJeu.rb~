@@ -1,0 +1,31 @@
+##
+# Auteur YANN GUENVER
+# Version 0.1
+# Date : Mardi 26 Janvier 2016
+# Description : fichier contenant la classe ControleurNouveauJeu du jeu du Picross
+
+load "../Vues/VueNouveauJeu.rb"
+
+
+class ControleurNouveauJeu
+    
+    
+    
+    def 
+    
+		
+		Gtk.init
+		
+		uneVue = VueNouveauJeu.creer()
+		
+		
+		uneVue.window.signal_connect('destroy') {Gtk.main_quit}
+		Gtk.main
+		
+	end
+
+
+end
+
+essaie=VerifVue.new
+essaie.testerVue
