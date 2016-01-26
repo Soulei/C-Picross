@@ -10,7 +10,7 @@ load "Vues/VueJeu.rb"
 class VerifVue
 	def testerVue
 		unJeu=Jeu.new
-		uneGrille=unJeu.grille5x5
+		uneGrille=unJeu.grille10x10
 		puts uneGrille
 		
 		Gtk.init
