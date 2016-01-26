@@ -30,7 +30,9 @@ class Joueur
 	end
 	def initialize(unPseudo)
 		@pseudo=unPseudo
-		@score=Array.new(5)
+		@score=Array.new(5){ |i|
+			i=0
+		}
 	end
 	
 	# == Description
@@ -47,11 +49,10 @@ class Joueur
 	# unJoueur.ajoutScrore(score,10)
 	#
 	def ajoutScore(unScore,uneTaille)
-		if(@score[(uneTaille/5)-1]==nil || @score[(uneTaille/5)-1]<unScore)
-			@score[(uneTaille/5)-1]=unScore
-			return true
+		indice=(uneTaille/5)-1
+		if(@score[indice] < unScore)
+			@score[indice]=unScore
 		end
-		return false
 	end
 	
 	# == Description
@@ -64,7 +65,7 @@ class Joueur
 	# unJoueur.to_s
 	#
 	def to_s
-		" Joueur #{@pseudo} "
+		"Joueur : #{@pseudo} "
 	end
 	
 	# == Description

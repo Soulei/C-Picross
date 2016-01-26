@@ -5,8 +5,11 @@
 # Description : fichier contenant la classe Jeu et toutes les liées aux interactions avec l'interface graphique
 
 load "Grille.rb"
+load "Joueur.rb"
 
 class Jeu
+	#tableau des joueurs existant, utile pour les tests, potentiellement inutile si joueur stockés dans BDD
+	@@joueur=Array.new
 
 	# == Description
 	# 
