@@ -45,42 +45,17 @@ class VueJeu < Vue
 		vbox = Gtk::VBox.new(false, 5)
 		@window.add(vbox)
 
-		vbox.pack_start(creerMenu)
 		vbox.pack_start(creerEntete)
 		vbox.pack_start(creerPlateau)
 		
 		vbox.set_border_width(5)
 
-		arial18 = Pango::FontDescription.new('Arial 20')
-		@lbTimer.modify_font(arial18)
 
 		miseAJour
 		
 		@window.show_all
 	end
 	
-	# Crée le menu en haut de la fenêtre de jeu
-	def creerMenu
-	
-		mb = Gtk::MenuBar.new
-		
-		# Niveau 1
-		fichier = Gtk::MenuItem.new("Fichier")
-		@miRageQuit = Gtk::MenuItem.new("Quitter")
-		
-		# Niveau 2 (Fichier)
-		menuFichier = Gtk::Menu.new
-		@miQuitter = Gtk::MenuItem.new("Quitter")
-		
-		menuFichier.append(@miQuitter)
-		
-		fichier.set_submenu(menuFichier)
-		
-		mb.append(fichier)
-		mb.append(@miRageQuit)
-		
-		return mb
-	end
 	
 	# Crée la tête de la fenêtre (Timer - VBoxAide)
 	def creerEntete
