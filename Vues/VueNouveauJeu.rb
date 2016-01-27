@@ -11,13 +11,13 @@ require 'gtk2'
 # Classe abstraite définissant les attributs et comportements généraux de nos vues concrètes
 class VueNouveauJeu < Vue
     
-	@btGrille5
+    @btGrille5
     @btGrille10
     @btGrille15
     @btGrille20
     @btGrille25
     
-    attr_reader :btGrille5
+    attr_reader :btGrille5, :btGrille10, :btGrille15, :btGrille20, :btGrille25 
     
     @btretour    
 
@@ -59,7 +59,7 @@ class VueNouveauJeu < Vue
         vBox.pack_start(@btGrille10 = Gtk::Button.new("Grille 10 x 10"))
         vBox.pack_start(@btGrille15 = Gtk::Button.new("Grille 15 x 15"))
         vBox.pack_start(@btGrille20 = Gtk::Button.new("Grille 20 x 20"))
-        vBox.pack_start(@btGrille15 = Gtk::Button.new("Grille 25 x 25"))
+        vBox.pack_start(@btGrille25 = Gtk::Button.new("Grille 25 x 25"))
         vBox.pack_start(labelVide2)
         vBox.pack_start(@btretour = Gtk::Button.new("Retour"))
 

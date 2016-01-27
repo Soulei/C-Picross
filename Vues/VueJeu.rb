@@ -19,6 +19,8 @@ class VueJeu < Vue
 	@lbTimer
 	
 	@btAide
+	@btRetour
+	@btIndice
 	
 	# tableau d'affichage
 	@table
@@ -28,7 +30,7 @@ class VueJeu < Vue
 	@grille
 	
 	
-	attr_reader :table
+	attr_reader :table, :btRetour, :grille
 	private_class_method :new
 	
 	def VueJeu.creer(uneGrille)
@@ -61,9 +63,11 @@ class VueJeu < Vue
 		
 		@btAide = Gtk::Button.new("Aide")
 		@btIndice = Gtk::Button.new("Indice")
+		@btRetour = Gtk::Button.new("Annuler")
 		
-		vbox.(@btAide)
-		vbox.(@btIndice)
+		vbox.add(@btAide)
+		vbox.add(@btIndice)
+		vbox.add(@btRetour)
 		
 		return vbox
 	end

@@ -26,6 +26,25 @@ class ControleurNouveauJeu < Controleur
 			ControleurJeu.creer(Jeu.new.grille5x5)
 		}
 		
+		@vue.btGrille10.signal_connect('clicked'){
+			@vue.fermerFenetre
+			ControleurJeu.creer(Jeu.new.grille10x10)
+		}
+		
+		@vue.btGrille15.signal_connect('clicked'){
+			@vue.fermerFenetre
+			ControleurJeu.creer(Jeu.new.grille15x15)
+		}
+		
+		@vue.btGrille20.signal_connect('clicked'){
+			@vue.fermerFenetre
+			ControleurJeu.creer(Jeu.new.grille20x20)
+		}
+		
+		@vue.btGrille25.signal_connect('clicked'){
+			@vue.fermerFenetre
+			ControleurJeu.creer(Jeu.new.grille25x25)
+		}
 		
 		Gtk.main
 		
