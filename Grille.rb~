@@ -74,11 +74,8 @@ class Grille
 	#
 	def indiceV
 		cpt=0
-		#se place dans chaque colonne
 		largeur.times{ |i|
-			#se place dans chaque ligne
 			largeur.times{ |j|
-				#traite en fonction de l'etatFinal
 				if(@matrice[i][j].etatFinal==1)
 					cpt+=1
 				elsif cpt!=0
@@ -86,7 +83,6 @@ class Grille
 					cpt=0
 				end
 			}
-			#ajoute le dernier bloc si la case noir se troue en bout de colonne
 			if cpt!=0
 				@vertical[i].push(cpt)
 				cpt=0
@@ -104,11 +100,8 @@ class Grille
 	#
 	def indiceH
 		cpt=0
-		#se place dans chaque ligne
 		largeur.times{ |i|
-			#se place dans chaque colonne
 			largeur.times{ |j|
-				#traite en fonction de l'etatFinal
 				if(@matrice[j][i].etatFinal==1)
 					cpt+=1
 				elsif cpt!=0
@@ -116,7 +109,6 @@ class Grille
 					cpt=0
 				end
 			}
-			#ajoute le dernier bloc si la case est en bout de ligne
 			if cpt!=0
 				@horizontal[i].push(cpt)
 				cpt=0
@@ -157,7 +149,7 @@ class Grille
 		if(abscisse.class==Fixnum && ordonnee.class==Fixnum)
 			Coup.nouveau(@matrice[abscisse][ordonnee],@pileCoup)
 		else
-			puts "les parametres ne sont pas des indices de la matrice de type entier"
+			puts "les paramètres ne sont pas des indices de la matrice de type entier"
 		end
 		return self
 	end
