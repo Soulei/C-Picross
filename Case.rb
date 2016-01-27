@@ -33,7 +33,9 @@ class Case
 		new(unEtatFinal)
 	end
 	def initialize(unEtatFinal)
+		#initialisation à blanche
 		@etatCourant=0
+		#recuperation de l'etat final
 		@etatFinal=unEtatFinal
 	end
 

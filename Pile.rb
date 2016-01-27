@@ -1,7 +1,7 @@
 ##
 # Auteur WAJDI GUEDOUAR
 # Version 0.1
-# Date : Lundi 23 Janvier 2016
+# Date : samedi 23 Janvier 2016
 # Description : fichier contenant les classes Pile, PileCoup et PileCase du jeu Picross
 
 load "Coup.rb"
@@ -68,7 +68,7 @@ class Pile
 	
 	# == Description
 	# 
-	# méthode remettant la pile a vide
+	# méthode remettant la pile a vide (et supprime les objets ??)
 	#
 	# == Exemple
 	#
@@ -99,7 +99,7 @@ class PileCoup < Pile
 	
 	# == Description
 	# 
-	# méthode retirant et retournant le Coup au sommet de la pile, annuler l'action du coup en même temps
+	# méthode retirant et retournant le Coup au sommet de la pile, annule l'action du coup en même temps
 	#
 	# == Exemple
 	#

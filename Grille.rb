@@ -1,7 +1,7 @@
 ##
 # Auteur WAJDI GUEDOUAR
 # Version 0.1
-# Date : Lundi 23 Janvier 2016
+# Date : Dimanche 24 Janvier 2016
 # Description : fichier contenant la class Grille, modélisant la grille de Picross avec laquelle le joueur pourra intéragir
 #encoding: UTF-8
 
@@ -74,8 +74,11 @@ class Grille
 	#
 	def indiceV
 		cpt=0
+		#se place dans chaque colonne
 		largeur.times{ |i|
+			#se place dans chaque ligne
 			largeur.times{ |j|
+				#traite en fonction de l'etatFinal
 				if(@matrice[i][j].etatFinal==1)
 					cpt+=1
 				elsif cpt!=0
@@ -83,6 +86,7 @@ class Grille
 					cpt=0
 				end
 			}
+			#ajoute le dernier bloc si la case noir se troue en bout de colonne
 			if cpt!=0
 				@vertical[i].push(cpt)
 				cpt=0
@@ -100,8 +104,11 @@ class Grille
 	#
 	def indiceH
 		cpt=0
+		#se place dans chaque ligne
 		largeur.times{ |i|
+			#se place dans chaque colonne
 			largeur.times{ |j|
+				#traite en fonction de l'etatFinal
 				if(@matrice[j][i].etatFinal==1)
 					cpt+=1
 				elsif cpt!=0
@@ -109,6 +116,7 @@ class Grille
 					cpt=0
 				end
 			}
+			#ajoute le dernier bloc si la case est en bout de ligne
 			if cpt!=0
 				@horizontal[i].push(cpt)
 				cpt=0

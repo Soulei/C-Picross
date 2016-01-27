@@ -1,7 +1,7 @@
 ##
 # Auteur WAJDI GUEDOUAR
 # Version 0.1
-# Date : Lundi 23 Janvier 2016
+# Date : samedi 23 Janvier 2016
 # Description : fichier contenant la class Coup du jeu Picross, un Coup est une action réalisé par le joueur qui cible une case pour changer son état
 
 load "Case.rb"
@@ -35,11 +35,14 @@ class Coup
 	end
 	
 	def initialize(uneCase,unePileDeCoup)
+		#test des class des objets passés en paramètre afin qu'ils soient conformes
 		if(uneCase.class!=Case || unePileDeCoup.class!=PileCoup)
 			puts "l'un des objets n'a pas la class attendue"
 		else
 			@case = uneCase
+			#empile le coup
 			unePileDeCoup.empiler(self)
+			#joue le coup
 			uneCase.changeEtat
 		end
 	end
