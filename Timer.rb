@@ -25,7 +25,7 @@ class Timer
 	def startTimer
 	
 		@thread = Thread.start{
-			while true
+			while (1)
 				sleep 1
 				@temps +=1
 				setLabel
@@ -35,7 +35,6 @@ class Timer
 	end
 	
 	def stopTimer
-	
 		@thread.kill
 	end
 	
@@ -55,7 +54,7 @@ class Timer
 			mm = m < 10 ? "0" + m.to_s : m.to_s
 			ss = s < 10 ? "0" + s.to_s : s.to_s
 			
-		return hh + ":" + mm + ":" + ss
+		return hh + ":" + mm + ":" + ss + "\n"
 	end
 	
 	
@@ -66,7 +65,15 @@ end #fin de la classe chrono
 
 t = Timer.new 
 t.startTimer
-print (t.label)
-sleep 5
+
+print (t)
+
+
+print (t)
+
+print (t)
+
 t.stopTimer
+print (t)
+
 
