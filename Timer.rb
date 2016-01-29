@@ -1,79 +1,91 @@
 #Auteur : Luc FONTAINE
 #Classe Timer.rb
-#Description
+#Description : chronometre
 
 
 class Timer
-	#variable intance, correspond au temps en seconde du chronometre
-	@temps
-	@label
-	@thread
-	
-	attr_reader :temps
-	attr_writer :label
-	
-	
-	# == Description
+
+  @accumulated
+  @elapsed
+  @start
+
+
+  # == Description
 	#
-	# méthode d'initialisation d'un chronomètre
+	# Méthode de lancement du Timer
 	#
-	def initialize()
-		@temps=0;
-	end
-	
-	
-	def startTimer
-	
-		@thread = Thread.start{
-			while (1)
-				sleep 1
-				@temps +=1
-				setLabel
-			end
-		}
-	
-	end
-	
-	def stopTimer
-		@thread.kill
-	end
-	
-	
-	def setLabel
-		@label.set_label(to_s)
-		@label.show
-	end
-	
-	
-	def to_s
-			h = @temps/3600
-			m = (@temps - (h*3600)) / 60
-			s = @temps - (h*3600) - (m*60)
-			
-			hh = h < 10 ? "0" + h.to_s : h.to_s
-			mm = m < 10 ? "0" + m.to_s : m.to_s
-			ss = s < 10 ? "0" + s.to_s : s.to_s
-			
-		return hh + ":" + mm + ":" + ss + "\n"
-	end
-	
-	
-	
-	
+  def start (secStart)
+    @accumulated = secStart unless @accumulated
+    @elapsed = 0
+    @start = Time.now
+  end
 
-end #fin de la classe chrono
+  # == Description
+  #
+  # Méthode qui permet de stopper le Timer
+  #
+  def stop
+    @accumulated += @elapsed
+  end
 
-t = Timer.new 
-t.startTimer
+  # == Description
+  #
+  # méthode d'initialisation d'un chronomètre
+  #
+  def reset
+    stop
+    @accumulated = 0
+    @elapsed = 0
 
-print (t)
+  end
+
+  # == Description
+  #
+  # méthode d'initialisation d'un chronomètre
+  #
+  def toSec
+    sec = (time.to_i % 60)
+  end
+
+  # == Description
+  #
+  # Méthode de comparaison
+  #
+  def toCompare (temps)
+
+  end
+  # == Description
+  #
+  # Méthode qui permet d'ajouter un nombre de seconde de "pénalité"
+  #
+  def penalite (s)
+    @accumulated = @accumulated+s
+  end
+
+  # == Description
+  #
+  # Méthode qui calcule le temps passé et l'affiche
+  #
+  def tick
+    @elapsed = Time.now - @start
+    time = @accumulated + @elapsed
+    h = sprintf('%02i', (time.to_i / 3600))
+    m = sprintf('%02i', ((time.to_i % 3600) / 60))
+    s = sprintf('%02i', (time.to_i % 60))
+    mt = sprintf('%02i', ((time - time.to_i)*100).to_i)
+    ms = sprintf('%04i', ((time - time.to_i)*10000).to_i)
+    ms[0..0]=''
+  #  newtime = "#{h}:#{m}:#{s}.#{mt}.#{ms}"
+  #    newtime = "#{h}:#{m}:#{s}.#{mt}"
+    newtime = "#{h}:#{m}:#{s}"
+  end
+end #Fin de la classe Timer
 
 
-print (t)
 
-print (t)
-
-t.stopTimer
-print (t)
-
-
+######TEST#######
+watch = Timer.new
+watch.start(0)
+while (sleep 0.2) do
+  puts watch.tick
+end
