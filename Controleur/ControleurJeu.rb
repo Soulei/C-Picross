@@ -16,7 +16,7 @@ require_relative 'ControleurSauvegarde'
 
 # Classe ControleurJeu
 # * *Variables*	:
-#    
+#
 # * *Heritage*	: Controleur
 #
 class ControleurJeu < Controleur
@@ -74,7 +74,6 @@ class ControleurJeu < Controleur
 					end
 
 					@vue.hideFleche
-					puts uneGrille
 
 					if uneGrille.estTerminerMultiSoluce? and mode != 0 then
 						case mode
@@ -105,7 +104,7 @@ class ControleurJeu < Controleur
 						when 3 then
 							@jeu.bd.save_score(@vue.timer.elapsed,@joueur,0,3, uneGrille.largeur, extra)
 							changerControleur(ControleurMenu.creer(@jeu,@joueur))
-						
+
 						end
 					end
 				}
@@ -130,7 +129,7 @@ class ControleurJeu < Controleur
 			@vue.grille.pile.depiler
 			@vue.miseAJour
 		}
-		
+
 		# Si on clique sur le bouton hypothèse, on active/désactive le mode hypothèse
 		@vue.btHypothese.signal_connect('clicked'){
 			if @vue.grille.pile.flag then
@@ -171,7 +170,7 @@ class ControleurJeu < Controleur
 
 		# Si on clique sur le bouton sauvegarder, on sauvegarde la partie
 		@vue.btSauvegarde.signal_connect('clicked') {
-			case mode 
+			case mode
 			when 1 then changerControleur(ControleurSauvegarde.creer(@jeu, @joueur, @vue.timer.elapsed , @vue.grille.pile , @vue.grille, @vue.nbSolution, "ma_grille", 1, rang, extra[0])) #Si c'est une Aventure
 			when 2 then changerControleur(ControleurSauvegarde.creer(@jeu, @joueur, @vue.timer.elapsed , @vue.grille.pile , @vue.grille, @vue.nbSolution, "ma_grille", 2, nil, nil)) #Si c'est une partie détente
 			when 3 then	changerControleur(ControleurSauvegarde.creer(@jeu, @joueur, @vue.timer.elapsed , @vue.grille.pile , @vue.grille, @vue.nbSolution, "ma_grille", 3, nil, nil)) #Si c'est une grille éditée

@@ -360,7 +360,7 @@ class BaseDonnee
       db = SQLite3::Database.open "database.db"
       res = db.execute("SELECT nom_grille FROM Grille JOIN Joueur using(id_joueur) WHERE pseudo IS NOT ?", pseudo)
       if res[0] != nil
-        res.each{|x| puts x}
+        return res[0]
       end
       return res[0]
     end
