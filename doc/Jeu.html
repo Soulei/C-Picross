@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Jeu - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-getInstance">::getInstance</a>
+    
+    <li ><a href="#method-i-chargerCharger">#chargerCharger</a>
+    
+    <li ><a href="#method-i-chargerGrille">#chargerGrille</a>
+    
+    <li ><a href="#method-i-chargerPile">#chargerPile</a>
+    
+    <li ><a href="#method-i-grille10x10">#grille10x10</a>
+    
+    <li ><a href="#method-i-grille15x15">#grille15x15</a>
+    
+    <li ><a href="#method-i-grille20x20">#grille20x20</a>
+    
+    <li ><a href="#method-i-grille25x25">#grille25x25</a>
+    
+    <li ><a href="#method-i-grille5x5">#grille5x5</a>
+    
+    <li ><a href="#method-i-grilleEditer">#grilleEditer</a>
+    
+    <li ><a href="#method-i-grilleImage">#grilleImage</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Jeu">
+  <h1 id="class-Jeu" class="class">
+    class Jeu
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-getInstance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getInstance</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode créant une unique instance de <a href="Jeu.html">Jeu</a>
+(singleton)</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>maGrille=Jeu.getInstance</p>
+          
+          
+
+          
+          <div class="method-source-code" id="getInstance-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Jeu</span>.<span class="ruby-identifier">getInstance</span>
+        <span class="ruby-keyword">if</span>(<span class="ruby-identifier">@@jeu</span><span class="ruby-operator">==</span><span class="ruby-keyword">nil</span>)
+                <span class="ruby-identifier">@@jeu</span>=<span class="ruby-constant">Jeu</span>.<span class="ruby-identifier">new</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">@@jeu</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-chargerCharger" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">chargerCharger</span><span
+            class="method-args">(tab)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode permettant de charger une partie à partir d’information provenant
+de la base de donnée</p>
+<ul><li>
+<p>*Paramètre*:</p>
+</li><li>
+<p><code>tab</code> -&gt; tableau contenant les informations chargées depuis
+la base de donnée</p>
+</li><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>maGrille=unJeu.chargerCharger(leTableau)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="chargerCharger-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 181</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">chargerCharger</span>(<span class="ruby-identifier">tab</span>)
+        <span class="ruby-keyword">return</span> <span class="ruby-constant">GrilleCharger</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">tab</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-chargerGrille" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">chargerGrille</span><span
+            class="method-args">(uneMatrice,largeur)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode permettant de créer une grille à partir d’une matrice</p>
+<ul><li>
+<p>*Paramètre*:</p>
+</li><li>
+<p><code>largeur</code> -&gt; largeur de la grille</p>
+</li><li>
+<p><code>uneMatrice</code> -&gt; matrice contenant uniquement les état finaux
+des cases pour création de la grille</p>
+</li><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>uneGrilleEdite = jeu.chargerGrille(15)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="chargerGrille-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 145</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">chargerGrille</span>(<span class="ruby-identifier">uneMatrice</span>,<span class="ruby-identifier">largeur</span>)
+        <span class="ruby-keyword">return</span> <span class="ruby-constant">GrilleImage</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">largeur</span>,<span class="ruby-identifier">uneMatrice</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-chargerPile" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">chargerPile</span><span
+            class="method-args">(unTab)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode permettant de créer une pile à partir d’un tableau de coup</p>
+<ul><li>
+<p>*Paramètre*:</p>
+</li><li>
+<p><code>unTab</code> -&gt; tableau contenant les coups</p>
+</li><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>unePile = jeu.chargerPile(15)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="chargerPile-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 161</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">chargerPile</span>(<span class="ruby-identifier">unTab</span>)
+        <span class="ruby-identifier">unePile</span> = <span class="ruby-constant">Pile</span>.<span class="ruby-identifier">creer</span>()
+        <span class="ruby-identifier">unTab</span>.<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                <span class="ruby-identifier">unePile</span>.<span class="ruby-identifier">empiler</span>(<span class="ruby-identifier">i</span>)
+        }
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">unePile</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-grille10x10" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">grille10x10</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode créant et retournant une matrice de taille 10x10</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>maGrille=unJeu.grille10x10</p>
+          
+          
+
+          
+          <div class="method-source-code" id="grille10x10-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 56</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">grille10x10</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-constant">Grille</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-value">10</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-grille15x15" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">grille15x15</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode créant et retournant une matrice de taille 15x15</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>maGrille=unJeu.grille15x15</p>
+          
+          
+
+          
+          <div class="method-source-code" id="grille15x15-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">grille15x15</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-constant">Grille</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-value">15</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-grille20x20" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">grille20x20</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode créant et retournant une matrice de taille 20x20</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>maGrille=unJeu.grille20x20</p>
+          
+          
+
+          
+          <div class="method-source-code" id="grille20x20-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 80</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">grille20x20</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-constant">Grille</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-value">20</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-grille25x25" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">grille25x25</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode créant et retournant une matrice de taille 25x25</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>maGrille=unJeu.grille25x25</p>
+          
+          
+
+          
+          <div class="method-source-code" id="grille25x25-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 92</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">grille25x25</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-constant">Grille</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-value">25</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-grille5x5" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">grille5x5</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode créant et retournant une matrice de taille 5x5</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>maGrille=unJeu.grille5x5</p>
+          
+          
+
+          
+          <div class="method-source-code" id="grille5x5-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">grille5x5</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-constant">Grille</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-value">5</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-grilleEditer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">grilleEditer</span><span
+            class="method-args">(largeur, base)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode de création d’une grille qui sera éditée par le joueur</p>
+<ul><li>
+<p>*Paramètre*:</p>
+</li><li>
+<p><code>largeur</code> -&gt; largeur de la grille à éditée</p>
+</li><li>
+<p><code>base</code> -&gt; etat de base des cellules de la grille</p>
+</li><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>uneGrilleEdite = jeu.grilleEditer(15)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="grilleEditer-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 128</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">grilleEditer</span>(<span class="ruby-identifier">largeur</span>, <span class="ruby-identifier">base</span>)
+        <span class="ruby-keyword">return</span>  <span class="ruby-constant">GrilleEdit</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">largeur</span>, <span class="ruby-identifier">base</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-grilleImage" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">grilleImage</span><span
+            class="method-args">(largeur,image)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode de création d’une grille générer à partir d’une image</p>
+<ul><li>
+<p>*Paramètre*:</p>
+</li><li>
+<p><code>largeur</code> -&gt; largeur de la grille à créer</p>
+</li><li>
+<p><code>image</code> -&gt; chemin permettant d’acceder à l’image sous forme
+de String</p>
+</li><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>uneGrilleImage = jeu.grilleImage(15,“Mon chemin”)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="grilleImage-source">
+            <pre><span class="ruby-comment"># File Modele/Jeu.rb, line 109</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">grilleImage</span>(<span class="ruby-identifier">largeur</span>,<span class="ruby-identifier">image</span>)
+        <span class="ruby-identifier">imageCreation</span>= <span class="ruby-constant">PicrossImage</span>.<span class="ruby-identifier">lire</span>(<span class="ruby-identifier">image</span>)
+        <span class="ruby-identifier">matrice</span>=<span class="ruby-identifier">imageCreation</span>.<span class="ruby-identifier">toPicross</span>(<span class="ruby-identifier">largeur</span>)
+        <span class="ruby-keyword">return</span> <span class="ruby-constant">GrilleImage</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">largeur</span>,<span class="ruby-identifier">matrice</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

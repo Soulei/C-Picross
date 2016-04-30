@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Joueur - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-creer">::creer</a>
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-3C-3D-3E">#&lt;=&gt;</a>
+    
+    <li ><a href="#method-i-ajoutScore">#ajoutScore</a>
+    
+    <li ><a href="#method-i-to_s">#to_s</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Joueur">
+  <h1 id="class-Joueur" class="class">
+    class Joueur
+  </h1>
+
+  <section class="description">
+    
+<p><a href="Joueur.html">Joueur</a>, un joueur de <a
+href="Picross.html">Picross</a></p>
+<ul><li>
+<p><strong>Variable</strong>  :</p>
+
+<pre>- +pseudo+ -&gt; pseudo du joueur
+- +score+ -&gt; tableau des highScores</pre>
+</li><li>
+<p><strong>Heritage</strong>  : Aucun lien</p>
+</li></ul>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-pseudo" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">pseudo</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-score" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">score</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-creer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creer</span><span
+            class="method-args">(unPseudo)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode de création d’un joueur</p>
+<ul><li>
+<p>*Paramètre*:</p>
+</li><li>
+<p><code>unPseudo</code> -&gt; pseudo du joueur</p>
+</li><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>unJoueur=Joueur.creer(“Wajdi”)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="creer-source">
+            <pre><span class="ruby-comment"># File Modele/Joueur.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Joueur</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">unPseudo</span>)
+        <span class="ruby-identifier">new</span>(<span class="ruby-identifier">unPseudo</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(unPseudo)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Modele/Joueur.rb, line 40</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">unPseudo</span>)
+        <span class="ruby-ivar">@pseudo</span>=<span class="ruby-identifier">unPseudo</span>
+        <span class="ruby-ivar">@score</span>=<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                <span class="ruby-identifier">i</span>=<span class="ruby-value">0</span>
+        }
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-3C-3D-3E" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">&lt;=&gt;</span><span
+            class="method-args">(unJoueur)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode de comparaison d’un joueur</p>
+<ul><li>
+<p>*Paramètre*:</p>
+</li><li>
+<p><code>unJoueur</code> -&gt; joueur à comparer</p>
+</li><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>unJoueur &gt; unAutreJoueur unJoueur == unAutreJoueur unJoueur &lt;=
+unAutreJoueur</p>
+          
+          
+
+          
+          <div class="method-source-code" id="3C-3D-3E-source">
+            <pre><span class="ruby-comment"># File Modele/Joueur.rb, line 94</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">&lt;=&gt;</span>(<span class="ruby-identifier">unJoueur</span>)
+        <span class="ruby-keyword">return</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">pseudo</span><span class="ruby-operator">==</span><span class="ruby-identifier">unJoueur</span>.<span class="ruby-identifier">pseudo</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-ajoutScore" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ajoutScore</span><span
+            class="method-args">(unScore,uneTaille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode permettant d’ajouter un score dans les stats du joueur, ajout
+seulement si le score est passé en paramètre est meilleur que celui contenu
+dans le tableau, renvoie true si le score a bien été ajouté dans le tableau</p>
+<ul><li>
+<p>*Paramètre*:</p>
+</li><li>
+<p><code>unScore</code> -&gt; score à ajouter</p>
+</li><li>
+<p><code>uneTaille</code> -&gt; taille de la matrice où a été réalisé le score</p>
+</li><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>unJoueur.ajoutScrore(score,10)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="ajoutScore-source">
+            <pre><span class="ruby-comment"># File Modele/Joueur.rb, line 60</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ajoutScore</span>(<span class="ruby-identifier">unScore</span>,<span class="ruby-identifier">uneTaille</span>)
+        <span class="ruby-identifier">indice</span>=(<span class="ruby-identifier">uneTaille</span><span class="ruby-operator">/</span><span class="ruby-value">5</span>)<span class="ruby-operator">-</span><span class="ruby-value">1</span>
+        <span class="ruby-keyword">if</span>(<span class="ruby-ivar">@score</span>[<span class="ruby-identifier">indice</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">unScore</span>)
+                <span class="ruby-ivar">@score</span>[<span class="ruby-identifier">indice</span>]=<span class="ruby-identifier">unScore</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-to_s" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">to_s</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode d’affichage d’un joueur</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p><a href="Joueur.html#method-i-to_s">#to_s</a> puts unJoueur</p>
+          
+          
+
+          
+          <div class="method-source-code" id="to_s-source">
+            <pre><span class="ruby-comment"># File Modele/Joueur.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_s</span>
+        <span class="ruby-node">&quot;Joueur : #{@pseudo} &quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

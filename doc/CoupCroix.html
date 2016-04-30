@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class CoupCroix - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Coup.html">Coup</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-c-nouveau">::nouveau</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-CoupCroix">
+  <h1 id="class-CoupCroix" class="class">
+    class CoupCroix
+  </h1>
+
+  <section class="description">
+    
+<p><a href="CoupCroix.html">CoupCroix</a>, objet modélisant un coup joué par
+le joueur pour posé une croix dans une partie de <a
+href="Picross.html">Picross</a></p>
+<ul><li>
+<p><strong>Heritage</strong>  : hérite de la classe <a
+href="Coup.html">Coup</a></p>
+</li></ul>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(uneCase,old,unePileDeCoup,uneGrille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Modele/CoupCroix.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">uneCase</span>,<span class="ruby-identifier">old</span>,<span class="ruby-identifier">unePileDeCoup</span>,<span class="ruby-identifier">uneGrille</span>)
+        <span class="ruby-comment">#test des class des objets passés en paramètre afin qu'ils soient conformes</span>
+        <span class="ruby-keyword">if</span>(<span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">class!</span>=<span class="ruby-constant">Case</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">unePileDeCoup</span>.<span class="ruby-identifier">class!</span>=<span class="ruby-constant">Pile</span>)
+                <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;l'un des objets n'a pas la class attendue&quot;</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-ivar">@grille</span>=<span class="ruby-identifier">uneGrille</span>
+                <span class="ruby-ivar">@case</span> = <span class="ruby-identifier">uneCase</span>
+                <span class="ruby-ivar">@oldEtat</span> = <span class="ruby-identifier">old</span>
+                <span class="ruby-comment">#empile le coup</span>
+                <span class="ruby-identifier">unePileDeCoup</span>.<span class="ruby-identifier">empiler</span>(<span class="ruby-keyword">self</span>)
+                <span class="ruby-comment">#joue le coup en modifiant la case et mettant à croix</span>
+                <span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">setCroix</span>
+                <span class="ruby-ivar">@newEtat</span>=<span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">etatCourant</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-nouveau" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">nouveau</span><span
+            class="method-args">(uneCase,old,unePileDeCoup,uneGrille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode de création d’un <a href="CoupCroix.html">CoupCroix</a>, empile le
+coup créé dans la pile passée en paramètre et réalise l’action sur la case
+en modifiant son état courant</p>
+<ul><li>
+<p>*Paramètre*:</p>
+</li><li>
+<p><code>uneCase</code> -&gt; case modifiée par le coup</p>
+</li><li>
+<p><code>old</code> -&gt; ancien état courant de la case</p>
+</li><li>
+<p><code>unePileDeCoup</code> -&gt; pile où le coup sera enregistré</p>
+</li><li>
+<p><code>uneGrille</code> -&gt; grille où le coup sera joué</p>
+</li><li>
+<p><strong>Retourne</strong> :</p>
+</li></ul>
+
+<p>retourne l’objet <a href="Coup.html">Coup</a> nouvellement créé</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>unCoupCroix = <a
+href="CoupCroix.html#method-c-nouveau">::nouveau</a>(uneCase,uneCase.etatCourant,unePileDeCoup,maGrille)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="nouveau-source">
+            <pre><span class="ruby-comment"># File Modele/CoupCroix.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">CoupCroix</span>.<span class="ruby-identifier">nouveau</span>(<span class="ruby-identifier">uneCase</span>,<span class="ruby-identifier">old</span>,<span class="ruby-identifier">unePileDeCoup</span>,<span class="ruby-identifier">uneGrille</span>)
+        <span class="ruby-identifier">new</span>(<span class="ruby-identifier">uneCase</span>,<span class="ruby-identifier">old</span>,<span class="ruby-identifier">unePileDeCoup</span>,<span class="ruby-identifier">uneGrille</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class GrilleCharger - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Grille.html">Grille</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-creer">::creer</a>
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-GrilleCharger">
+  <h1 id="class-GrilleCharger" class="class">
+    class GrilleCharger
+  </h1>
+
+  <section class="description">
+    
+<p><a href="GrilleImage.html">GrilleImage</a>, une grille de <a
+href="Picross.html">Picross</a> générée à partir d’une matrice</p>
+<ul><li>
+<p><strong>Heritage</strong>  : hérite de la classe <a
+href="Grille.html">Grille</a></p>
+</li></ul>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-creer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creer</span><span
+            class="method-args">(matriceBD)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode de création d’une grille à partir d’information de la base de
+donnée</p>
+<ul><li>
+<p>*Paramètre*:</p>
+</li><li>
+<p><code>matriceBD</code> -&gt; matrice contenant toutes les informations
+provenant de la BDD et permettant la creation d'une grille et d'une pile</p>
+</li><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>uneGrille = <a href="GrilleCharger.html#method-c-creer">::creer</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="creer-source">
+            <pre><span class="ruby-comment"># File Modele/GrilleCharger.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">GrilleCharger</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">matriceBD</span>)
+        <span class="ruby-identifier">new</span>(<span class="ruby-identifier">matriceBD</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(matriceBD)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Modele/GrilleCharger.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">matriceBD</span>)
+        <span class="ruby-identifier">largeur</span>=<span class="ruby-identifier">matriceBD</span>[<span class="ruby-value">0</span>][<span class="ruby-value">0</span>].<span class="ruby-identifier">length</span>
+        <span class="ruby-keyword">if</span>(<span class="ruby-identifier">largeur</span><span class="ruby-operator">%</span><span class="ruby-value">5</span><span class="ruby-operator">==</span><span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">largeur</span><span class="ruby-operator">&gt;=</span><span class="ruby-value">5</span>)
+                <span class="ruby-ivar">@largeur</span>=<span class="ruby-identifier">largeur</span>
+                <span class="ruby-identifier">mat</span>=<span class="ruby-identifier">matriceBD</span>[<span class="ruby-value">0</span>]
+                <span class="ruby-comment">#test</span>
+                <span class="ruby-identifier">puts</span> <span class="ruby-identifier">mat</span>
+                <span class="ruby-comment">#creation de la matrice contenant les cases</span>
+                <span class="ruby-ivar">@matrice</span>=<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">largeur</span>){ <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">largeur</span>)}
+
+                <span class="ruby-identifier">largeur</span>.<span class="ruby-identifier">times</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                        <span class="ruby-identifier">largeur</span>.<span class="ruby-identifier">times</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+                                <span class="ruby-ivar">@matrice</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]=<span class="ruby-constant">Case</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">mat</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>],<span class="ruby-identifier">i</span>,<span class="ruby-identifier">j</span>)
+                        }
+                }
+
+                <span class="ruby-comment">#creation d'une matrice contenant les blocs de cases noires verticales par indice</span>
+                <span class="ruby-ivar">@vertical</span>=<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">largeur</span>){<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>()}
+                <span class="ruby-comment">#creation d'une matrice contenant les blocs de cases noires horizontales par indice</span>
+                <span class="ruby-ivar">@horizontal</span>=<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">largeur</span>){<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>()}
+
+
+                <span class="ruby-ivar">@pile</span>=<span class="ruby-constant">Pile</span>.<span class="ruby-identifier">creer</span>()
+                <span class="ruby-ivar">@pile</span>.<span class="ruby-identifier">pileCharger</span>(<span class="ruby-keyword">self</span>,<span class="ruby-identifier">matriceBD</span>[<span class="ruby-value">1</span>])
+                <span class="ruby-ivar">@retro</span>=<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span> <span class="ruby-comment">#faut creer une pile a partir d'une matrice donc creer une nouvelle classe de pile</span>
+
+                <span class="ruby-keyword">self</span>.<span class="ruby-identifier">indiceH</span>
+                <span class="ruby-keyword">self</span>.<span class="ruby-identifier">indiceV</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;la largeur saisie doit etre un multiple de 5 superieur ou egale a 5&quot;</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

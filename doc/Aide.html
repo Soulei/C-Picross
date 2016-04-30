@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Aide - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-generer">::generer</a>
+    
+    <li ><a href="#method-c-scanner">::scanner</a>
+    
+    <li ><a href="#method-i-aideDeNiveau1">#aideDeNiveau1</a>
+    
+    <li ><a href="#method-i-astuceBlocPleinHorizontal">#astuceBlocPleinHorizontal</a>
+    
+    <li ><a href="#method-i-astuceBlocPleinVertical">#astuceBlocPleinVertical</a>
+    
+    <li ><a href="#method-i-astuceBordHorizontal">#astuceBordHorizontal</a>
+    
+    <li ><a href="#method-i-astuceBordVertical">#astuceBordVertical</a>
+    
+    <li ><a href="#method-i-astuceColonnePleine">#astuceColonnePleine</a>
+    
+    <li ><a href="#method-i-astuceGrosBlocHorizontal">#astuceGrosBlocHorizontal</a>
+    
+    <li ><a href="#method-i-astuceGrosBlocVertical">#astuceGrosBlocVertical</a>
+    
+    <li ><a href="#method-i-astuceLignePleine">#astuceLignePleine</a>
+    
+    <li ><a href="#method-i-astuceSuiteBlocHorizontaux">#astuceSuiteBlocHorizontaux</a>
+    
+    <li ><a href="#method-i-astuceSuiteBlocVerticaux">#astuceSuiteBlocVerticaux</a>
+    
+    <li ><a href="#method-i-choisirAuHasard">#choisirAuHasard</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Aide">
+  <h1 id="class-Aide" class="class">
+    class Aide
+  </h1>
+
+  <section class="description">
+    
+<p>AIDE  PICROSS                       #</p>
+
+<p>Auteur : LAMNIY Youssef Version : 1</p>
+
+<p><a href="Grille.html">Grille</a>, une grille de <a
+href="Picross.html">Picross</a></p>
+<ul><li>
+<p><strong>Variable</strong>  :</p>
+
+<pre>- +grille+ -&gt; objet Grille où les aides interviendront</pre>
+</li><li>
+<p><strong>Heritage</strong>  : Aucun lien</p>
+</li></ul>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-GrillePicross" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">GrillePicross</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p><a href="Grille.html">Grille</a> de <a href="Picross.html">Picross</a></p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-Hauteur" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">Hauteur</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p><a href="Aide.html#attribute-i-Hauteur">#Hauteur</a> de la grille(y)</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-Largeur" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">Largeur</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p><a href="Aide.html#attribute-i-Largeur">#Largeur</a> de la grille(x)</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-LargeurTabL" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">LargeurTabL</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-LongueurTabC" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">LongueurTabC</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-TabAideDispo" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">TabAideDispo</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-TabColonnes" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">TabColonnes</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Matrice pour les colonnes</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-TabLignes" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">TabLignes</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Matrice pour les lignes</p>
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-generer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">generer</span><span
+            class="method-args">(uneGrille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="generer-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Aide</span>.<span class="ruby-identifier">generer</span>(<span class="ruby-identifier">uneGrille</span>)
+        <span class="ruby-identifier">new</span>(<span class="ruby-identifier">uneGrille</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-scanner" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">scanner</span><span
+            class="method-args">(uneGrille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="scanner-source">
+            <pre><span class="ruby-comment"># File Aide/aide.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Aide</span>.<span class="ruby-identifier">scanner</span>(<span class="ruby-identifier">uneGrille</span>)
+  <span class="ruby-identifier">new</span>(<span class="ruby-identifier">uneGrille</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-aideDeNiveau1" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">aideDeNiveau1</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Définition des aides possible à partir de la matrice <a
+href="Aide.html#attribute-i-TabLignes">#TabLignes</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="aideDeNiveau1-source">
+            <pre><span class="ruby-comment"># File Aide/aide.rb, line 71</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">aideDeNiveau1</span>
+  <span class="ruby-comment"># TABLE LIGNE</span>
+  <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@TabLigne</span>.<span class="ruby-identifier">hauteur</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">num_ligne</span> = <span class="ruby-identifier">x</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+    <span class="ruby-identifier">nombres</span> = <span class="ruby-ivar">@TabLigne</span>.<span class="ruby-identifier">nombresDeLaLigne</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-identifier">somme</span> = <span class="ruby-identifier">nombres</span>.<span class="ruby-identifier">inject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">val</span>, <span class="ruby-identifier">sum</span><span class="ruby-operator">|</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">val</span> }
+    <span class="ruby-identifier">val_max</span> = <span class="ruby-ivar">@TabLigne</span>.<span class="ruby-identifier">nombresDeLaLigne</span>(<span class="ruby-identifier">x</span>).<span class="ruby-identifier">max</span>
+    <span class="ruby-identifier">val_max</span> = <span class="ruby-value">0</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">val_max</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span> <span class="ruby-comment"># cas où la ligne est vide</span>
+    <span class="ruby-keyword">if</span>(<span class="ruby-identifier">somme</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@Largeur</span>)
+      <span class="ruby-identifier">@@TabAideDispo1</span>.<span class="ruby-identifier">push</span>(<span class="ruby-string">&quot;Regardez à la ligne &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">num_ligne</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;,\nVous pouvez colorier toutes les cases !!&quot;</span>)
+    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">somme</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@Largeur</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>)
+      <span class="ruby-identifier">@@TabAideDispo1</span>.<span class="ruby-identifier">push</span>(<span class="ruby-string">&quot;Regardez à la ligne &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">num_ligne</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\Facile non ?&quot;</span>)
+    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">val_max</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@Largeur</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>)
+      <span class="ruby-identifier">@@TabAideDispo1</span>.<span class="ruby-identifier">push</span>(<span class="ruby-string">&quot;Regardez à la ligne &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">num_ligne</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;,\nLa case du milieu est forcement coloriée !!&quot;</span>)
+    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">nombres</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@Largeur</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>)
+      <span class="ruby-identifier">@@TabAideDispo1</span>.<span class="ruby-identifier">push</span>(<span class="ruby-string">&quot;Regardez à la ligne&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">num_ligne</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;,\nVous pouvez colorier la premiere case !!&quot;</span>)
+    <span class="ruby-keyword">end</span>
+  }
+
+
+  <span class="ruby-comment"># TABLE COLONNE</span>
+  <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@TabColonne</span>.<span class="ruby-identifier">hauteur</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">num_colonne</span> = <span class="ruby-identifier">x</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+    <span class="ruby-identifier">nombres</span> = <span class="ruby-ivar">@TabColonne</span>.<span class="ruby-identifier">nombresDeLaColonne</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-identifier">somme</span> = <span class="ruby-identifier">nombres</span>.<span class="ruby-identifier">inject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">val</span>, <span class="ruby-identifier">sum</span><span class="ruby-operator">|</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">val</span> }
+    <span class="ruby-identifier">val_max</span> = <span class="ruby-ivar">@TabColonne</span>.<span class="ruby-identifier">nombresDeLaColonne</span>(<span class="ruby-identifier">x</span>).<span class="ruby-identifier">max</span>
+    <span class="ruby-identifier">val_max</span> = <span class="ruby-value">0</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">val_max</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span> <span class="ruby-comment"># cas où la colonne est vide</span>
+    <span class="ruby-keyword">if</span>(<span class="ruby-identifier">somme</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@Hauteur</span>)
+      <span class="ruby-identifier">@@TabAideDispo1</span>.<span class="ruby-identifier">push</span>(<span class="ruby-string">&quot;Regardez à la colonne &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">num_colonne</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;,\nVous pouvez colorier toutes les cases !!&quot;</span>)
+    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">somme</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@Hauteur</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>)
+      <span class="ruby-identifier">@@TabAideDispo1</span>.<span class="ruby-identifier">push</span>(<span class="ruby-string">&quot;Regardez à la colonne &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">num_colonne</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\Facile non ?&quot;</span>)
+    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">val_max</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@Hauteur</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>)
+      <span class="ruby-identifier">@@TabAideDispo1</span>.<span class="ruby-identifier">push</span>(<span class="ruby-string">&quot;Regardez à la colonne &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">num_colonne</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;,\nLa case du milieu est forcement coloriée !!&quot;</span>)
+    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">nombres</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@Hauteur</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>)
+      <span class="ruby-identifier">@@TabAideDispo1</span>.<span class="ruby-identifier">push</span>(<span class="ruby-string">&quot;Regardez à la ligne&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">num_colonne</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;,\nVous pouvez colorier la premiere case !!&quot;</span>)
+    <span class="ruby-keyword">end</span>
+  }
+
+  <span class="ruby-comment">#@@TabAideDispo1.push(&quot;Il n'y a aucune aide dispo&quot;) if @@TabAideDispo1.size == 0</span>
+  <span class="ruby-constant">Logs</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">@@TabAideDispo1</span>)
+  <span class="ruby-comment">#return @@TabAideDispo1</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-astuceBlocPleinHorizontal" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">astuceBlocPleinHorizontal</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode testant si une ligne contient un unique bloc de taille égale à la
+largeur de la matrice</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>rangLigne=uneAide.astuceBlocPleinHorizontal</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>renvoie la premiere ligne où l’astuce est possible, -1 aucune ligne n’est
+compatible</p>
+          
+          
+
+          
+          <div class="method-source-code" id="astuceBlocPleinHorizontal-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 289</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">astuceBlocPleinHorizontal</span>
+        <span class="ruby-comment">#tableau contenant les indices horizontaux</span>
+        <span class="ruby-identifier">horiz</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">horizontal</span>
+        <span class="ruby-comment">#matrice de la grille</span>
+        <span class="ruby-identifier">mat</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>
+        <span class="ruby-comment">#compteur de ligne</span>
+        <span class="ruby-identifier">ligne</span>=<span class="ruby-value">-1</span>
+        
+        <span class="ruby-keyword">while</span>(<span class="ruby-keyword">true</span>)
+                <span class="ruby-identifier">ligne</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">ligne</span><span class="ruby-operator">&gt;=</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>][<span class="ruby-value">0</span>]<span class="ruby-operator">==</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-identifier">xyz</span>=(<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)<span class="ruby-operator">-</span><span class="ruby-value">1</span>
+                        <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">xyz</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span>(<span class="ruby-identifier">mat</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">estValide?</span>))
+                                        <span class="ruby-keyword">return</span> <span class="ruby-identifier">ligne</span>
+                                <span class="ruby-keyword">end</span>
+                        }
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-astuceBlocPleinVertical" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">astuceBlocPleinVertical</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode testant si une colonne contient un unique bloc de taille égale à la
+largeur de la matrice</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>rangColonne=uneAide.astuceBlocPleinVertical</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>renvoie la premiere colonne où l’astuce est possible, -1 aucune colonne
+n’est compatible</p>
+          
+          
+
+          
+          <div class="method-source-code" id="astuceBlocPleinVertical-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 253</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">astuceBlocPleinVertical</span>
+        <span class="ruby-comment">#tableau contenant les indices verticaux</span>
+        <span class="ruby-identifier">verti</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">vertical</span>
+        <span class="ruby-comment">#matrice de la grille</span>
+        <span class="ruby-identifier">mat</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>
+        <span class="ruby-comment">#compteur de colonne</span>
+        <span class="ruby-identifier">colonne</span>=<span class="ruby-value">-1</span>
+        
+        <span class="ruby-keyword">while</span>(<span class="ruby-keyword">true</span>)
+                <span class="ruby-identifier">colonne</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">colonne</span><span class="ruby-operator">&gt;=</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">0</span>]<span class="ruby-operator">==</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-comment">#test si le bloc n'a pas déjà été placé</span>
+                        <span class="ruby-identifier">mat</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">i</span>.<span class="ruby-identifier">estValide?</span>)
+                                        <span class="ruby-keyword">return</span> <span class="ruby-identifier">colonne</span>
+                                <span class="ruby-keyword">end</span>
+                        }
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-astuceBordHorizontal" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">astuceBordHorizontal</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode renvoyant la ligne où est applicable l’astuce X, c’est-à-dire les
+cas où la premiere case de la lign est noir et correct, et où la taille du
+premier bloc est supérieur à 1</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>rangLigne=uneAide.astuceBordHorizontal</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>renvoie la premiere ligne où l’astuce est possible, -1 aucune ligne n’est
+compatible</p>
+          
+          
+
+          
+          <div class="method-source-code" id="astuceBordHorizontal-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 101</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">astuceBordHorizontal</span>
+        <span class="ruby-comment">#tableau contenant les indices verticaux</span>
+        <span class="ruby-identifier">horiz</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">horizontal</span>
+        <span class="ruby-comment">#matrice de la grille</span>
+        <span class="ruby-identifier">mat</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>
+        <span class="ruby-comment">#compteur de ligne</span>
+        <span class="ruby-identifier">ligne</span>=<span class="ruby-value">-1</span>
+        
+        <span class="ruby-keyword">while</span>(<span class="ruby-keyword">true</span>)
+                <span class="ruby-identifier">ligne</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-comment">#si ligne est toujours dans le tableau</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">ligne</span><span class="ruby-operator">&gt;=</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-comment">#si la ligne contient des blocs de cases noires et que le premier bloc est de taille supérieur à 1</span>
+                <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>][<span class="ruby-value">0</span>]<span class="ruby-operator">&gt;</span><span class="ruby-value">1</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>][<span class="ruby-value">-1</span>]<span class="ruby-operator">&gt;</span><span class="ruby-value">1</span>))
+                        <span class="ruby-comment">#si la première case est déjà noire et correct</span>
+                        <span class="ruby-keyword">if</span>(<span class="ruby-identifier">mat</span>[<span class="ruby-value">0</span>][<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)<span class="ruby-comment"># &amp;&amp; mat[0][ligne].etatFinal==0</span>
+                                <span class="ruby-identifier">cpt</span>=<span class="ruby-value">1</span>
+                                <span class="ruby-identifier">i</span>=<span class="ruby-value">1</span>
+                                <span class="ruby-keyword">while</span>(<span class="ruby-identifier">i</span><span class="ruby-operator">&lt;</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">mat</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+                                        <span class="ruby-identifier">i</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                        <span class="ruby-identifier">cpt</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">cpt</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>][<span class="ruby-value">0</span>])
+                                        <span class="ruby-keyword">return</span> <span class="ruby-identifier">ligne</span>
+                                <span class="ruby-keyword">else</span>
+                                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                                <span class="ruby-keyword">end</span>
+                        <span class="ruby-comment">#cas ou il s'agirait de la dernière case de la ligne</span>
+                        <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">mat</span>[<span class="ruby-value">-1</span>][<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span> )<span class="ruby-comment">#&amp;&amp; mat[-1][ligne].etatFinal==0</span>
+                                <span class="ruby-identifier">cpt</span>=<span class="ruby-value">1</span>
+                                <span class="ruby-identifier">i</span>=<span class="ruby-value">-2</span>
+                                <span class="ruby-keyword">while</span>(<span class="ruby-identifier">i</span><span class="ruby-operator">&gt;=</span>(<span class="ruby-operator">-</span> <span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">mat</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+                                        <span class="ruby-identifier">i</span><span class="ruby-operator">-=</span><span class="ruby-value">1</span>
+                                        <span class="ruby-identifier">cpt</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">cpt</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>][<span class="ruby-value">-1</span>])
+                                        <span class="ruby-keyword">return</span> <span class="ruby-identifier">ligne</span>
+                                <span class="ruby-keyword">else</span>
+                                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                                <span class="ruby-keyword">end</span>
+                        <span class="ruby-keyword">end</span> 
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-astuceBordVertical" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">astuceBordVertical</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode renvoyant la colonne où est applicable l’astuce X, c’est-à-dire les
+cas où la premiere case de la colonne est noir et correct, et où la taille
+du premier bloc est supérieur à 1</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>rangColonne=uneAide.astuceBordVertical</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>renvoie la premiere colonne où l’astuce est possible, -1 aucune colonne
+n’est compatible</p>
+          
+          
+
+          
+          <div class="method-source-code" id="astuceBordVertical-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 39</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">astuceBordVertical</span>
+        <span class="ruby-comment">#tableau contenant les indices verticaux</span>
+        <span class="ruby-identifier">verti</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">vertical</span>
+        <span class="ruby-comment">#matrice de la grille</span>
+        <span class="ruby-identifier">mat</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>
+        <span class="ruby-comment">#compteur de colonne</span>
+        <span class="ruby-identifier">colonne</span>=<span class="ruby-value">-1</span>
+        
+        <span class="ruby-keyword">while</span>(<span class="ruby-keyword">true</span>)
+                <span class="ruby-identifier">colonne</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-comment">#si colonne est toujours dans le tableau</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">colonne</span><span class="ruby-operator">&gt;=</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-comment">#si la colonne contient des blocs de cases noires et que le premier bloc est de taille supérieur à 1</span>
+                <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">0</span>]<span class="ruby-operator">&gt;</span><span class="ruby-value">1</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">-1</span>]<span class="ruby-operator">&gt;</span><span class="ruby-value">1</span>))
+                        <span class="ruby-comment">#si la première case est déjà noire et correct</span>
+                        <span class="ruby-keyword">if</span>(<span class="ruby-identifier">mat</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">0</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span> )<span class="ruby-comment">#&amp;&amp; mat[colonne][0].etatFinal==0</span>
+                                <span class="ruby-comment">#test si le bloc n'est pas déjà correctement placé</span>
+                                <span class="ruby-comment">#la valeur sont à 1 car le test de l'indice 0 à déjà été fait au dessus</span>
+                                <span class="ruby-identifier">cpt</span>=<span class="ruby-value">1</span>
+                                <span class="ruby-identifier">i</span>=<span class="ruby-value">1</span>
+                                <span class="ruby-keyword">while</span>(<span class="ruby-identifier">i</span><span class="ruby-operator">&lt;</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">mat</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-identifier">i</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+                                        <span class="ruby-identifier">i</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                        <span class="ruby-identifier">cpt</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">cpt</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">0</span>])
+                                        <span class="ruby-keyword">return</span> <span class="ruby-identifier">colonne</span>
+                                <span class="ruby-keyword">else</span>
+                                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                                <span class="ruby-keyword">end</span>
+                        <span class="ruby-comment">#meme principe dans le cas ou il s'agirant du dernier bloc de la colonne</span>
+                        <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">mat</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">-1</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span> )<span class="ruby-comment">#&amp;&amp; mat[colonne][-1].etatFinal==0</span>
+                                <span class="ruby-comment">#test si le bloc n'est pas déjà correctement placé</span>
+                                <span class="ruby-comment">#la valeur sont à 1 car le test de l'indice -1 à déjà été fait au dessus</span>
+                                <span class="ruby-identifier">cpt</span>=<span class="ruby-value">1</span>
+                                <span class="ruby-identifier">i</span>=<span class="ruby-value">-2</span>
+                                <span class="ruby-keyword">while</span>(<span class="ruby-identifier">i</span><span class="ruby-operator">&gt;</span><span class="ruby-value">-1</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">mat</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-identifier">i</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+                                        <span class="ruby-identifier">i</span><span class="ruby-operator">-=</span><span class="ruby-value">1</span>
+                                        <span class="ruby-identifier">cpt</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">cpt</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">-1</span>])
+                                        <span class="ruby-keyword">return</span> <span class="ruby-identifier">colonne</span>
+                                <span class="ruby-keyword">else</span>
+                                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                                <span class="ruby-keyword">end</span>
+                        <span class="ruby-keyword">end</span> 
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-astuceColonnePleine" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">astuceColonnePleine</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode testant si la possibilité de disposition des blocs est unique</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>rangColonne=uneAide.astuceColonnePleine</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>renvoie la premiere colonne où l’astuce est possible, -1 aucune colonne
+n’est compatible</p>
+          
+          
+
+          
+          <div class="method-source-code" id="astuceColonnePleine-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 159</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">astuceColonnePleine</span>
+        <span class="ruby-comment">#nombre de blanc entre les blocs</span>
+        <span class="ruby-identifier">nbVide</span>=<span class="ruby-value">-1</span>
+        <span class="ruby-comment">#nombre de case noire totale </span>
+        <span class="ruby-identifier">nbNoire</span>=<span class="ruby-value">0</span>
+        <span class="ruby-comment">#tableau contenant les indices verticaux</span>
+        <span class="ruby-identifier">verti</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">vertical</span>
+        <span class="ruby-comment">#matrice de la grille</span>
+        <span class="ruby-identifier">mat</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>
+        <span class="ruby-comment">#compteur de colonne</span>
+        <span class="ruby-identifier">colonne</span>=<span class="ruby-value">-1</span>
+        
+        <span class="ruby-keyword">while</span>(<span class="ruby-keyword">true</span>)
+                <span class="ruby-identifier">colonne</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-identifier">nbVide</span>=<span class="ruby-value">-1</span>
+                <span class="ruby-identifier">nbNoire</span>=<span class="ruby-value">0</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">colonne</span><span class="ruby-operator">&gt;=</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span>)
+                        <span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                <span class="ruby-identifier">nbNoire</span><span class="ruby-operator">+=</span><span class="ruby-identifier">i</span>
+                                <span class="ruby-identifier">nbVide</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                        }
+                        <span class="ruby-keyword">if</span>(<span class="ruby-identifier">nbNoire</span><span class="ruby-operator">+</span><span class="ruby-identifier">nbVide</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                                <span class="ruby-identifier">mat</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                        <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">i</span>.<span class="ruby-identifier">estValide?</span>)
+                                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">colonne</span>
+                                        <span class="ruby-keyword">end</span>
+                                }
+                                <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                        <span class="ruby-keyword">end</span>
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-astuceGrosBlocHorizontal" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">astuceGrosBlocHorizontal</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode testant si un bloc est de taille supérieur à la moitié de la grille</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>rangLigne=uneAide.astuceGrosBlocHorizontal</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>renvoie la premiere ligne où l’astuce est possible, -1 aucune ligne n’est
+compatible</p>
+          
+          
+
+          
+          <div class="method-source-code" id="astuceGrosBlocHorizontal-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 379</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">astuceGrosBlocHorizontal</span>
+        <span class="ruby-comment">#tableau contenant les indices verticaux</span>
+        <span class="ruby-identifier">horiz</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">horizontal</span>
+        <span class="ruby-comment">#matrice de la grille</span>
+        <span class="ruby-identifier">mat</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>
+        <span class="ruby-comment">#compteur de ligne</span>
+        <span class="ruby-identifier">ligne</span>=<span class="ruby-value">-1</span>
+        
+        <span class="ruby-keyword">while</span>(<span class="ruby-keyword">true</span>)
+                <span class="ruby-identifier">ligne</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-identifier">tailleBloc</span>=<span class="ruby-value">0</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">ligne</span><span class="ruby-operator">&gt;=</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>)      
+                        <span class="ruby-keyword">if</span>(<span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>][<span class="ruby-value">0</span>]<span class="ruby-operator">&gt;</span>(<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)<span class="ruby-operator">/</span><span class="ruby-value">2</span>)
+                                <span class="ruby-comment">#test si les cases n'ont pas encore été noircie</span>
+                                <span class="ruby-identifier">nbCaseNoire</span>=<span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>][<span class="ruby-value">0</span>]<span class="ruby-operator">-</span>(<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span><span class="ruby-operator">-</span><span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>][<span class="ruby-value">0</span>])   
+                                <span class="ruby-identifier">deb</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>][<span class="ruby-value">0</span>]
+                                <span class="ruby-identifier">cpt</span>=<span class="ruby-value">0</span> 
+                                <span class="ruby-keyword">if</span>((<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)<span class="ruby-operator">%</span><span class="ruby-value">2</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+                                        <span class="ruby-identifier">deb</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">deb</span><span class="ruby-operator">+</span><span class="ruby-identifier">nbCaseNoire</span> <span class="ruby-value">-1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">mat</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+                                                        <span class="ruby-identifier">cpt</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                                <span class="ruby-keyword">end</span>
+                                        }
+                                <span class="ruby-keyword">else</span>
+                                        <span class="ruby-identifier">deb</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">deb</span><span class="ruby-operator">+</span><span class="ruby-identifier">nbCaseNoire</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">mat</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+                                                        <span class="ruby-identifier">cpt</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                                <span class="ruby-keyword">end</span>
+                                        }
+                                        
+                                <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">if</span> <span class="ruby-identifier">cpt</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">nbCaseNoire</span> 
+                                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span> 
+                                <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">ligne</span>
+                        <span class="ruby-keyword">end</span> 
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-astuceGrosBlocVertical" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">astuceGrosBlocVertical</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode testant si un bloc est de taille supérieur à la moitié de la grille</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>rangColonne=uneAide.astuceGrosBlocVertical</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>renvoie la premiere colonne où l’astuce est possible, -1 aucune colonne
+n’est compatible</p>
+          
+          
+
+          
+          <div class="method-source-code" id="astuceGrosBlocVertical-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 325</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">astuceGrosBlocVertical</span>
+        <span class="ruby-comment">#tableau contenant les indices verticaux</span>
+        <span class="ruby-identifier">verti</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">vertical</span>
+        <span class="ruby-comment">#matrice de la grille</span>
+        <span class="ruby-identifier">mat</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>
+        <span class="ruby-comment">#compteur de colonne</span>
+        <span class="ruby-identifier">colonne</span>=<span class="ruby-value">-1</span>
+        
+        <span class="ruby-keyword">while</span>(<span class="ruby-keyword">true</span>)
+                <span class="ruby-identifier">colonne</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-identifier">tailleBloc</span>=<span class="ruby-value">0</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">colonne</span><span class="ruby-operator">&gt;=</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>)
+                        <span class="ruby-keyword">if</span>(<span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">0</span>]<span class="ruby-operator">&gt;</span>(<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)<span class="ruby-operator">/</span><span class="ruby-value">2</span>)
+                                <span class="ruby-comment">#test si les cases n'ont pas encore été noircie</span>
+                                <span class="ruby-identifier">nbCaseNoire</span>=<span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">0</span>]<span class="ruby-operator">-</span>(<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span><span class="ruby-operator">-</span><span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">0</span>])   
+                                <span class="ruby-identifier">deb</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-value">0</span>]
+                                <span class="ruby-identifier">cpt</span>=<span class="ruby-value">0</span> 
+                                <span class="ruby-keyword">if</span>((<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)<span class="ruby-operator">%</span><span class="ruby-value">2</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+                                        <span class="ruby-identifier">deb</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">deb</span><span class="ruby-operator">+</span><span class="ruby-identifier">nbCaseNoire</span> <span class="ruby-value">-1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">mat</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-identifier">i</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+                                                        <span class="ruby-identifier">cpt</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                                <span class="ruby-keyword">end</span>
+                                        }
+                                <span class="ruby-keyword">else</span>
+                                        <span class="ruby-identifier">deb</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">deb</span><span class="ruby-operator">+</span><span class="ruby-identifier">nbCaseNoire</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">mat</span>[<span class="ruby-identifier">colonne</span>][<span class="ruby-identifier">i</span>].<span class="ruby-identifier">etatCourant</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+                                                        <span class="ruby-identifier">cpt</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                                <span class="ruby-keyword">end</span>
+                                        }
+                                        
+                                <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">if</span> <span class="ruby-identifier">cpt</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">nbCaseNoire</span> 
+                                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span> 
+                                <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">colonne</span>
+                        <span class="ruby-keyword">end</span> 
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-astuceLignePleine" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">astuceLignePleine</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode testant si la possibilité de disposition des blocs est unique</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>rangLigne=uneAide.astuceLignePleine</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>renvoie la premiere ligne où l’astuce est possible, -1 aucune ligne n’est
+compatible</p>
+          
+          
+
+          
+          <div class="method-source-code" id="astuceLignePleine-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 206</span>
+        <span class="ruby-keyword">def</span> <span class="ruby-identifier">astuceLignePleine</span>
+        <span class="ruby-comment">#nombre de blanc entre les blocs</span>
+        <span class="ruby-identifier">nbVide</span>=<span class="ruby-value">-1</span>
+        <span class="ruby-comment">#nombre de case noire totale </span>
+        <span class="ruby-identifier">nbNoire</span>=<span class="ruby-value">0</span>
+        <span class="ruby-comment">#tableau contenant les indices horizontaux</span>
+        <span class="ruby-identifier">horiz</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">horizontal</span>
+        <span class="ruby-comment">#matrice de la grille</span>
+        <span class="ruby-identifier">mat</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>
+        <span class="ruby-comment">#compteur de ligne</span>
+        <span class="ruby-identifier">ligne</span>=<span class="ruby-value">-1</span>
+        
+        <span class="ruby-keyword">while</span>(<span class="ruby-keyword">true</span>)
+                <span class="ruby-identifier">ligne</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-identifier">nbVide</span>=<span class="ruby-value">-1</span>
+                <span class="ruby-identifier">nbNoire</span>=<span class="ruby-value">0</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">ligne</span><span class="ruby-operator">&gt;=</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span>)
+                        <span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                <span class="ruby-identifier">nbNoire</span><span class="ruby-operator">+=</span><span class="ruby-identifier">i</span>
+                                <span class="ruby-identifier">nbVide</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                        }
+                        <span class="ruby-keyword">if</span>(<span class="ruby-identifier">nbNoire</span><span class="ruby-operator">+</span><span class="ruby-identifier">nbVide</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                                <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>((<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)<span class="ruby-operator">-</span><span class="ruby-value">1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+                                        <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">mat</span>[<span class="ruby-identifier">j</span>][<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">estValide?</span>)
+                                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">ligne</span>
+                                        <span class="ruby-keyword">end</span>
+                                }
+                                <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                        <span class="ruby-keyword">end</span>
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-astuceSuiteBlocHorizontaux" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">astuceSuiteBlocHorizontaux</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode testant si un bloc est de taille supérieur à la moitié de la grille</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>rangLigne=uneAide.astuceSuiteBlocHorizontaux</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>renvoie la premiere ligne où l’astuce est possible, -1 aucune ligne n’est
+compatible</p>
+          
+          
+
+          
+          <div class="method-source-code" id="astuceSuiteBlocHorizontaux-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 479</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">astuceSuiteBlocHorizontaux</span>
+        <span class="ruby-comment">#nombre de blanc entre les blocs</span>
+        <span class="ruby-identifier">nbVide</span>=<span class="ruby-value">-1</span>
+        <span class="ruby-comment">#nombre de case noire totale </span>
+        <span class="ruby-identifier">nbNoire</span>=<span class="ruby-value">0</span>
+        <span class="ruby-comment">#tableau contenant les indices horizontaux</span>
+        <span class="ruby-identifier">horiz</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">horizontal</span>
+        <span class="ruby-comment">#matrice de la grille</span>
+        <span class="ruby-identifier">mat</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>
+        <span class="ruby-comment">#compteur de ligne</span>
+        <span class="ruby-identifier">ligne</span>=<span class="ruby-value">-1</span>
+        <span class="ruby-comment">#plus gros bloc de case </span>
+        <span class="ruby-identifier">blocMax</span>=<span class="ruby-value">0</span>
+        
+        <span class="ruby-keyword">while</span>(<span class="ruby-keyword">true</span>)
+                <span class="ruby-identifier">ligne</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-identifier">nbVide</span>=<span class="ruby-value">0</span>
+                <span class="ruby-identifier">nbNoire</span>=<span class="ruby-value">0</span>
+                <span class="ruby-identifier">blocMax</span>=<span class="ruby-value">0</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">ligne</span><span class="ruby-operator">&gt;=</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span>)
+                        <span class="ruby-identifier">horiz</span>[<span class="ruby-identifier">ligne</span>].<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                <span class="ruby-identifier">nbNoire</span><span class="ruby-operator">+=</span><span class="ruby-identifier">i</span>
+                                <span class="ruby-identifier">nbVide</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                <span class="ruby-identifier">blocMax</span>=<span class="ruby-identifier">i</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">blocMax</span>
+                        }
+                        <span class="ruby-keyword">if</span>(<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">nbNoire</span><span class="ruby-operator">+</span><span class="ruby-identifier">nbVide</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">blocMax</span> )
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">ligne</span>
+                        <span class="ruby-keyword">end</span>
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-astuceSuiteBlocVerticaux" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">astuceSuiteBlocVerticaux</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>méthode testant si un bloc est de taille supérieur à la moitié de la grille</p>
+<ul><li>
+<p><strong>Exemple</strong>:</p>
+</li></ul>
+
+<p>rangColonne=uneAide.astuceSuiteBlocVerticaux</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>renvoie la premiere colonne où l’astuce est possible, -1 aucune colonne
+n’est compatible</p>
+          
+          
+
+          
+          <div class="method-source-code" id="astuceSuiteBlocVerticaux-source">
+            <pre><span class="ruby-comment"># File Modele/aide_v1.rb, line 433</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">astuceSuiteBlocVerticaux</span>
+        <span class="ruby-comment">#nombre de blanc entre les blocs</span>
+        <span class="ruby-identifier">nbVide</span>=<span class="ruby-value">-1</span>
+        <span class="ruby-comment">#nombre de case noire totale </span>
+        <span class="ruby-identifier">nbNoire</span>=<span class="ruby-value">0</span>
+        <span class="ruby-comment">#tableau contenant les indices verticaux</span>
+        <span class="ruby-identifier">verti</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">vertical</span>
+        <span class="ruby-comment">#matrice de la grille</span>
+        <span class="ruby-identifier">mat</span>=<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>
+        <span class="ruby-comment">#compteur de colonne</span>
+        <span class="ruby-identifier">colonne</span>=<span class="ruby-value">-1</span>
+        <span class="ruby-comment">#plus gros bloc de case </span>
+        <span class="ruby-identifier">blocMax</span>=<span class="ruby-value">0</span>
+        
+        <span class="ruby-keyword">while</span>(<span class="ruby-keyword">true</span>)
+                <span class="ruby-identifier">colonne</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                <span class="ruby-identifier">nbVide</span>=<span class="ruby-value">0</span>
+                <span class="ruby-identifier">nbNoire</span>=<span class="ruby-value">0</span>
+                <span class="ruby-identifier">blocMax</span>=<span class="ruby-value">0</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-identifier">colonne</span><span class="ruby-operator">&gt;=</span><span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>)
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+                <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span>)
+                        <span class="ruby-identifier">verti</span>[<span class="ruby-identifier">colonne</span>].<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                                <span class="ruby-identifier">nbNoire</span><span class="ruby-operator">+=</span><span class="ruby-identifier">i</span>
+                                <span class="ruby-identifier">nbVide</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+                                <span class="ruby-identifier">blocMax</span>=<span class="ruby-identifier">i</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">blocMax</span>
+                        }
+                        <span class="ruby-keyword">if</span>(<span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">nbNoire</span><span class="ruby-operator">+</span><span class="ruby-identifier">nbVide</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">blocMax</span> )
+                                <span class="ruby-keyword">return</span> <span class="ruby-identifier">colonne</span>
+                        <span class="ruby-keyword">end</span>
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-choisirAuHasard" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">choisirAuHasard</span><span
+            class="method-args">(niveau)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>def phrasePrecise(technique, ligne, index)</p>
+
+<pre class="ruby"><span class="ruby-keyword">return</span> <span class="ruby-node">&quot;Vous pouvez appliquer la technique #{technique}\nsur la #{ligne ? &quot;ligne&quot; : &quot;colonne&quot;} #{index}.&quot;</span>
+</pre>
+
+<p>end</p>
+          
+          
+
+          
+          <div class="method-source-code" id="choisirAuHasard-source">
+            <pre><span class="ruby-comment"># File Aide/aide.rb, line 55</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">choisirAuHasard</span>(<span class="ruby-identifier">niveau</span>)
+              
+              <span class="ruby-identifier">aideTrouvee</span> = <span class="ruby-node">&quot;Pas(ou plus) d'aide de niveau(#{niveau}) disponible.&quot;</span>
+              
+              <span class="ruby-keyword">if</span> <span class="ruby-identifier">niveau</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+                      <span class="ruby-identifier">aideTrouvee</span> = <span class="ruby-identifier">@@TabAideDispo1</span>.<span class="ruby-identifier">shuffle!</span>.<span class="ruby-identifier">pop</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">@@TabAideDispo1</span>.<span class="ruby-identifier">empty?</span>
+              <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">niveau</span> <span class="ruby-operator">==</span> <span class="ruby-value">2</span>
+                      <span class="ruby-identifier">aideTrouvee</span> = <span class="ruby-identifier">@@TabAideDispo2</span>.<span class="ruby-identifier">shuffle!</span>.<span class="ruby-identifier">pop</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">@@TabAideDispo2</span>.<span class="ruby-identifier">empty?</span>
+              <span class="ruby-keyword">else</span> 
+                      <span class="ruby-identifier">aideTrouvee</span> = <span class="ruby-node">&quot;Ce niveau(#{niveau}) n'existe pas encore.&quot;</span>
+              <span class="ruby-keyword">end</span>
+              
+              <span class="ruby-keyword">return</span> <span class="ruby-identifier">aideTrouvee</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

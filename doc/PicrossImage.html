@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class PicrossImage - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-lire">::lire</a>
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-afficher">#afficher</a>
+    
+    <li ><a href="#method-i-afficherMatrice">#afficherMatrice</a>
+    
+    <li ><a href="#method-i-contraster-21">#contraster!</a>
+    
+    <li ><a href="#method-i-enregistrer">#enregistrer</a>
+    
+    <li ><a href="#method-i-greyScale-21">#greyScale!</a>
+    
+    <li ><a href="#method-i-greyScale-3F">#greyScale?</a>
+    
+    <li ><a href="#method-i-imageToPicross">#imageToPicross</a>
+    
+    <li ><a href="#method-i-monochrome-21">#monochrome!</a>
+    
+    <li ><a href="#method-i-pixeliser-21">#pixeliser!</a>
+    
+    <li ><a href="#method-i-toPicross">#toPicross</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-PicrossImage">
+  <h1 id="class-PicrossImage" class="class">
+    class PicrossImage
+  </h1>
+
+  <section class="description">
+    
+<p><a href="PicrossImage.html">PicrossImage</a></p>
+
+<p>Classe qui tranforme une image en picross (en matrice noir/blanc). La
+fonction principale est toPicross qui fait tout le travail –&gt; d’une
+image elle renvoi une matrice A utiliser plutot pour générer des images de
+taille 15*15 ou plus car en dessou le résultat n’est pas très correct.</p>
+
+<p>Procédure de l’algorithme :</p>
+
+<pre>1° Monochromiser l'image
+2° Reduire l'image à 5*5 ou 10*10 ...
+3° Remonochromiser l'image</pre>
+<ul><li>
+<p><strong>Variable</strong>  :</p>
+
+<pre>- +image+   -&gt; l'image sur laquelle on fait des traitements
+- +matrice+ -&gt; la matrice contenant soit un Etat blanc, soit un Etat noir générée à partir de l'image
+       c'est cette matrice qu'on va remplire et qui sera le resultat final suite aux traitements effectués sur l'image
+       elle n'est initialisée qu'à l'appel de la méthode imageToPicross</pre>
+</li><li>
+<p><strong>Heritage</strong>  : Aucun lien</p>
+</li></ul>
+
+<p><a href="PicrossImage.html">PicrossImage</a></p>
+
+<p>Classe qui tranforme une image en picross (en matrice noir/blanc). La
+fonction principale est toPicross qui fait tout le travail –&gt; d’une
+image elle renvoi une matrice A utiliser plutot pour générer des images de
+taille 15*15 ou plus car en dessou le résultat n’est pas très correct.</p>
+
+<p>Procédure de l’algorithme :</p>
+
+<pre>1° Monochromiser l'image
+2° Reduire l'image à 5*5 ou 10*10 ...
+3° Remonochromiser l'image</pre>
+<ul><li>
+<p><strong>Variable</strong>  :</p>
+
+<pre>- +image+   -&gt; l'image sur laquelle on fait des traitements
+- +matrice+ -&gt; la matrice contenant soit un Etat blanc, soit un Etat noir générée à partir de l'image
+       c'est cette matrice qu'on va remplire et qui sera le resultat final suite aux traitements effectués sur l'image
+       elle n'est initialisée qu'à l'appel de la méthode imageToPicross</pre>
+</li><li>
+<p><strong>Heritage</strong>  : Aucun lien</p>
+</li></ul>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-image" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">image</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Génération des accesseurs en lecture</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-matrice" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">matrice</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-lire" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">lire</span><span
+            class="method-args">(picFile)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>méthode de CLASSE qui lit un fichier image à partir duquel elle crée une
+instance d’imagePicross</p>
+<ul><li>
+<p>*Paramètres* :</p>
+<ul><li>
+<p><code>picFile</code> -&gt; nom du fichier image qu'on souhaite convertir en
+matrice</p>
+</li></ul>
+</li><li>
+<p><strong>Retourne</strong> :</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="lire-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 59</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">PicrossImage</span>.<span class="ruby-identifier">lire</span>(<span class="ruby-identifier">picFile</span>)
+      <span class="ruby-identifier">new</span>(<span class="ruby-identifier">picFile</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(picFile)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>méthode permettant de créer un objet image à partir du nom du fichier image
+passé en paramètre</p>
+<ul><li>
+<p>*Paramètres* :</p>
+<ul><li>
+<p><code>picFile</code> -&gt; nom du fichier image qu'on souhaite convertir en
+matrice</p>
+</li></ul>
+</li><li>
+<p><strong>Retourne</strong> :</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 74</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">picFile</span>)
+<span class="ruby-ivar">@image</span> = <span class="ruby-constant">Magick</span><span class="ruby-operator">::</span><span class="ruby-constant">ImageList</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">picFile</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-afficher" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">afficher</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>pour l’affichage une image</p>
+          
+          
+
+          
+          <div class="method-source-code" id="afficher-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 124</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">afficher</span>
+      <span class="ruby-ivar">@image</span>.<span class="ruby-identifier">display</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-afficherMatrice" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">afficherMatrice</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>affiche la matrice</p>
+<ul><li>
+<p>*Paramètres* :</p>
+</li><li>
+<p><strong>Retourne</strong> : la matrice du picross sous format texte</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="afficherMatrice-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 213</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">afficherMatrice</span>
+      <span class="ruby-identifier">texte</span> = <span class="ruby-string">&quot;&quot;</span>
+      <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrice</span>.<span class="ruby-identifier">size</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">y</span><span class="ruby-operator">|</span>
+    <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-ivar">@matrice</span>.<span class="ruby-identifier">size</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">texte</span> <span class="ruby-operator">+=</span> <span class="ruby-ivar">@matrice</span>[<span class="ruby-identifier">x</span>][<span class="ruby-identifier">y</span>].<span class="ruby-identifier">to_s</span>
+    }
+      <span class="ruby-identifier">texte</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;\n&quot;</span>
+      }
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">texte</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-contraster-21" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">contraster!</span><span
+            class="method-args">(n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Contraste l’image. Plus n est grand, plus le contraste est fort.</p>
+<ul><li>
+<p>*Paramètres* :</p>
+<ul><li>
+<p><code>n</code> -&gt; niveau du contraste</p>
+</li></ul>
+</li><li>
+<p><strong>Retourne</strong> :</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li><li>
+<p><strong>Exemple</strong> :  n à 50 donne un assez fort contraste.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="contraster-21-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 154</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">contraster!</span>(<span class="ruby-identifier">n</span>)
+      <span class="ruby-identifier">n</span>.<span class="ruby-identifier">times</span>{
+    <span class="ruby-ivar">@image</span> = <span class="ruby-ivar">@image</span>.<span class="ruby-identifier">contrast</span>(<span class="ruby-keyword">true</span>)
+      }
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-enregistrer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">enregistrer</span><span
+            class="method-args">(nameFile)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>pour enregistrer une image dans un fichier dont le nom est passé en
+paramètre</p>
+<ul><li>
+<p>*Paramètres* :</p>
+<ul><li>
+<p><code>nameFile</code> -&gt; nom du nouveau fichier image</p>
+</li></ul>
+</li><li>
+<p><strong>Retourne</strong> :</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="enregistrer-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 119</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">enregistrer</span>(<span class="ruby-identifier">nameFile</span>)
+      <span class="ruby-ivar">@image</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">nameFile</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-greyScale-21" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">greyScale!</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>méthode qui transforme une image en gamme de gris (photo noir et blanc
+classique)</p>
+<ul><li>
+<p>*Paramètres* :</p>
+</li><li>
+<p><strong>Retourne</strong> : une image en gamme de gris</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="greyScale-21-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 85</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">greyScale!</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@image</span> = <span class="ruby-ivar">@image</span>.<span class="ruby-identifier">quantize</span>(<span class="ruby-value">256</span>, <span class="ruby-constant">Magick</span><span class="ruby-operator">::</span><span class="ruby-constant">GRAYColorspace</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-greyScale-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">greyScale?</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>pour verifier si une image est en gamme de gris</p>
+<ul><li>
+<p>*Paramètres* :</p>
+</li><li>
+<p><strong>Retourne</strong> :true or false</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="greyScale-3F-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 96</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">greyScale?</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@image</span>.<span class="ruby-identifier">grey?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-imageToPicross" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">imageToPicross</span><span
+            class="method-args">(taille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Convertit l’image noir et blanc en matrice noir et blanc (on prendra comme
+composante le rouge) le blanc dans l’image correspond à 1 le noir dans
+l’image correspond à 0</p>
+<ul><li>
+<p>*Paramètres* :</p>
+<ul><li>
+<p><code>taille</code> -&gt; taille souhaitée pour la matrice</p>
+</li></ul>
+</li><li>
+<p><strong>Retourne</strong> : la matrice de 0 et de 1 correspondant à l’image</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="imageToPicross-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 171</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">imageToPicross</span>(<span class="ruby-identifier">taille</span>)
+      <span class="ruby-ivar">@matrice</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">taille</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">taille</span>) }
+
+    <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">taille</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">y</span><span class="ruby-operator">|</span>
+          <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">taille</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+                <span class="ruby-ivar">@matrice</span>[<span class="ruby-identifier">x</span>][<span class="ruby-identifier">y</span>] = (<span class="ruby-ivar">@image</span>.<span class="ruby-identifier">pixel_color</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>).<span class="ruby-identifier">red</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-constant">Etat</span>.<span class="ruby-constant">Noir</span><span class="ruby-operator">:</span> <span class="ruby-constant">Etat</span>.<span class="ruby-constant">Blanc</span>)
+          }
+                }
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">matrice</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-monochrome-21" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">monochrome!</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>transforme une image en pixels qui sont soit noir soit blanc</p>
+<ul><li>
+<p>*Paramètres* :</p>
+</li><li>
+<p><strong>Retourne</strong> : une image en pixels noir et blanc</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="monochrome-21-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 107</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">monochrome!</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@image</span> = <span class="ruby-ivar">@image</span>.<span class="ruby-identifier">quantize</span>(<span class="ruby-value">2</span>, <span class="ruby-constant">Magick</span><span class="ruby-operator">::</span><span class="ruby-constant">GRAYColorspace</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-pixeliser-21" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">pixeliser!</span><span
+            class="method-args">(taille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>pixelise l’image (méthode destructive)</p>
+<ul><li>
+<p>*Paramètres* :</p>
+<ul><li>
+<p><code>taille</code> -&gt; nombre de pixels souhaité</p>
+</li></ul>
+</li><li>
+<p><strong>Retourne</strong> :</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li><li>
+<p><strong>Exemple</strong> : si taille = 5 on aura une image 5*5</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="pixeliser-21-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 139</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">pixeliser!</span>(<span class="ruby-identifier">taille</span>)
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@image</span>.<span class="ruby-identifier">resize_to_fit!</span>(<span class="ruby-identifier">taille</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-toPicross" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">toPicross</span><span
+            class="method-args">(taille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>tranforme l’image en picross dont la taille est passée en argument
+algorithme : monochrome, pixeliser, monochrome : cet algo donne de plutôt
+bons résultats si on ne monochrome pas avant et après le résultat est bien
+moins bon</p>
+<ul><li>
+<p>*Paramètres* :</p>
+<ul><li>
+<p><code>taille</code> -&gt; taille souhaitée pour la matrice</p>
+</li></ul>
+</li><li>
+<p><strong>Retourne</strong> : la matrice du picross (valeurs sont soit <a
+href="Etat.html">Etat</a>.Blanc soit <a href="Etat.html">Etat</a>.Noir)</p>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="toPicross-source">
+            <pre><span class="ruby-comment"># File Images/picture.rb, line 195</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">toPicross</span>(<span class="ruby-identifier">taille</span>)
+      <span class="ruby-comment"># pour le picross il faut une rotation</span>
+      <span class="ruby-comment"># @image.rotate!(90)</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">monochrome!</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">pixeliser!</span>(<span class="ruby-identifier">taille</span>)
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">monochrome!</span>
+
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@matrice</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">imageToPicross</span>(<span class="ruby-identifier">taille</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class VueJouer - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Vue.html">Vue</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-creer">::creer</a>
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-MiseAJourMode">#MiseAJourMode</a>
+    
+    <li ><a href="#method-i-creerMenu">#creerMenu</a>
+    
+    <li ><a href="#method-i-creerSousMenu">#creerSousMenu</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-VueJouer">
+  <h1 id="class-VueJouer" class="class">
+    class VueJouer
+  </h1>
+
+  <section class="description">
+    
+<p><a href="Vue.html">Vue</a> chargée de présenter une interface</p>
+<ul><li>
+<p><strong>Variables</strong> :</p>
+
+<pre>- +flagAventure+ -&gt; flag pour les Aventures disponibles
+- +flagEdit+ -&gt; flag pour les grilles éditées disponibles
+- +btCreer+ -&gt; bouton pour lancer une nouvelle partie
+- +btCharger+ -&gt; bouton pour charger une partie
+- +btRetour+ -&gt; bouton pour retourner un menu principal
+- +comboChargerA+ -&gt; ComboBox listant les grilles Aventures sauvegardées
+- +comboChargerD+ -&gt; ComboBox listant les grilles Détentes sauvegardées
+- +comboChargerE+ -&gt; ComboBox listant les grilles Editées sauvegardées
+- +comboMode+ -&gt; ComboBox listant les 3 mode de jeu
+- +comboGrille+ -&gt; ComboBox listant les tailles de grille classique
+- +comboAventure+ -&gt; ComboBox listant les Aventures
+- +comboEdit+ -&gt; ComboBox listant les grilles Editées
+- +table+ -&gt; matrice des boutons et comboBox</pre>
+</li><li>
+<p><strong>Heritage</strong>  : <a href="Vue.html">Vue</a></p>
+</li></ul>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-btCharger" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">btCharger</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-btCreer" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">btCreer</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-btRetour" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">btRetour</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-comboAventure" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">comboAventure</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-comboChargerA" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">comboChargerA</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-comboChargerD" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">comboChargerD</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-comboChargerE" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">comboChargerE</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-comboEdit" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">comboEdit</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-comboGrille" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">comboGrille</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-comboMode" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">comboMode</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-flagAventure" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">flagAventure</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-flagEdit" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">flagEdit</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-creer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creer</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="creer-source">
+            <pre><span class="ruby-comment"># File Vues/VueJouer.rb, line 51</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">VueJouer</span>.<span class="ruby-identifier">creer</span>()
+    <span class="ruby-identifier">new</span>()
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a href="Vue.html">Vue</a> chargée de présenter une interface de choix de
+grille</p>
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="Vue.html#method-c-new">Vue.new</a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Vues/VueJouer.rb, line 56</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>()
+            <span class="ruby-keyword">super</span>(<span class="ruby-string">&quot;Jouer&quot;</span>)
+    <span class="ruby-ivar">@window</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">creerMenu</span>)
+    <span class="ruby-ivar">@window</span>.<span class="ruby-identifier">show_all</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-MiseAJourMode" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">MiseAJourMode</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <pre>Met à jour l'interface en fonction du mode sélectionné
+
+* *Paramètres*:
+
+* *Retourne* :</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="MiseAJourMode-source">
+            <pre><span class="ruby-comment"># File Vues/VueJouer.rb, line 151</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">MiseAJourMode</span>
+    <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">new</span>{
+        <span class="ruby-keyword">while</span> (<span class="ruby-identifier">sleep</span> <span class="ruby-value">0.2</span>) <span class="ruby-keyword">do</span>
+                    <span class="ruby-keyword">case</span> <span class="ruby-ivar">@comboMode</span>.<span class="ruby-identifier">active</span>
+                    <span class="ruby-keyword">when</span> <span class="ruby-value">0</span> <span class="ruby-keyword">then</span>
+                            <span class="ruby-ivar">@comboChargerA</span>.<span class="ruby-identifier">show</span>
+                            <span class="ruby-ivar">@comboChargerD</span>.<span class="ruby-identifier">hide</span>
+                            <span class="ruby-ivar">@comboChargerE</span>.<span class="ruby-identifier">hide</span>
+
+                            <span class="ruby-ivar">@comboGrille</span>.<span class="ruby-identifier">hide</span>
+                            <span class="ruby-ivar">@comboEdit</span>.<span class="ruby-identifier">hide</span>
+                            <span class="ruby-ivar">@comboAventure</span>.<span class="ruby-identifier">show</span>
+                            <span class="ruby-ivar">@btCreer</span>.<span class="ruby-identifier">sensitive</span>=<span class="ruby-keyword">true</span>
+                            <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">flagAventure</span> <span class="ruby-keyword">then</span> <span class="ruby-ivar">@btCreer</span>.<span class="ruby-identifier">sensitive</span>=<span class="ruby-keyword">false</span> <span class="ruby-keyword">end</span>
+                    <span class="ruby-keyword">when</span> <span class="ruby-value">1</span> <span class="ruby-keyword">then</span>
+                            <span class="ruby-ivar">@comboChargerA</span>.<span class="ruby-identifier">hide</span>
+                            <span class="ruby-ivar">@comboChargerD</span>.<span class="ruby-identifier">show</span>
+                            <span class="ruby-ivar">@comboChargerE</span>.<span class="ruby-identifier">hide</span>
+
+                            <span class="ruby-ivar">@comboAventure</span>.<span class="ruby-identifier">hide</span>
+                            <span class="ruby-ivar">@comboEdit</span>.<span class="ruby-identifier">hide</span>
+                            <span class="ruby-ivar">@comboGrille</span>.<span class="ruby-identifier">show</span>
+                            <span class="ruby-ivar">@btCreer</span>.<span class="ruby-identifier">sensitive</span>=<span class="ruby-keyword">true</span>
+                    <span class="ruby-keyword">when</span> <span class="ruby-value">2</span> <span class="ruby-keyword">then</span>
+                            <span class="ruby-ivar">@comboChargerA</span>.<span class="ruby-identifier">hide</span>
+                            <span class="ruby-ivar">@comboChargerD</span>.<span class="ruby-identifier">hide</span>
+                            <span class="ruby-ivar">@comboChargerE</span>.<span class="ruby-identifier">show</span>
+
+                            <span class="ruby-ivar">@comboAventure</span>.<span class="ruby-identifier">hide</span>
+                            <span class="ruby-ivar">@comboGrille</span>.<span class="ruby-identifier">hide</span>
+                            <span class="ruby-ivar">@comboEdit</span>.<span class="ruby-identifier">show</span>
+                            <span class="ruby-ivar">@btCreer</span>.<span class="ruby-identifier">sensitive</span>=<span class="ruby-keyword">true</span>
+                            <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">flagEdit</span> <span class="ruby-keyword">then</span> <span class="ruby-ivar">@btCreer</span>.<span class="ruby-identifier">sensitive</span>=<span class="ruby-keyword">false</span> <span class="ruby-keyword">end</span>
+                    <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+    }
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-creerMenu" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creerMenu</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <pre>Crée le menu pour l'interface
+
+* *Paramètres*:
+
+* *Retourne* :
+  - La vBox contenant les boutons de l'interface</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="creerMenu-source">
+            <pre><span class="ruby-comment"># File Vues/VueJouer.rb, line 70</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">creerMenu</span>
+        <span class="ruby-identifier">vBox</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">VBox</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword">false</span>,<span class="ruby-value">5</span>)
+        <span class="ruby-identifier">hBox</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">HBox</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword">true</span>,<span class="ruby-value">20</span>)
+        
+        <span class="ruby-identifier">labelVide</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>()
+        
+        <span class="ruby-ivar">@comboMode</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">ComboBox</span>.<span class="ruby-identifier">new</span>
+        [<span class="ruby-string">&quot;Aventure&quot;</span>,<span class="ruby-string">&quot;Detente&quot;</span>,<span class="ruby-string">&quot;Grille éditée&quot;</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+                <span class="ruby-ivar">@comboMode</span>.<span class="ruby-identifier">append_text</span>(<span class="ruby-identifier">c</span>)
+        <span class="ruby-keyword">end</span>
+        
+        <span class="ruby-identifier">hBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Mode de jeu : &quot;</span>))
+        <span class="ruby-identifier">hBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-ivar">@comboMode</span>)
+        
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Commencer une partie&quot;</span>))
+<span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-identifier">hBox</span>)
+<span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-identifier">creerSousMenu</span>)
+<span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-identifier">labelVide</span>)
+<span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-ivar">@btRetour</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Button</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Retour&quot;</span>))
+        
+        <span class="ruby-ivar">@btRetour</span>.<span class="ruby-identifier">set_image</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-string">&quot;./Icons/return.png&quot;</span>, <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword">__FILE__</span>))))
+
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">vBox</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-creerSousMenu" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creerSousMenu</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <pre>Crée le sous-menu pour l'interface
+
+* *Paramètres*:
+
+* *Retourne* :
+  - La table contenant les boutons de l'interface</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="creerSousMenu-source">
+            <pre><span class="ruby-comment"># File Vues/VueJouer.rb, line 103</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">creerSousMenu</span>()
+            <span class="ruby-ivar">@table</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Table</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">3</span>,<span class="ruby-value">2</span>,<span class="ruby-keyword">true</span>)
+
+            <span class="ruby-ivar">@comboChargerA</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">ComboBox</span>.<span class="ruby-identifier">new</span>
+            <span class="ruby-ivar">@comboChargerD</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">ComboBox</span>.<span class="ruby-identifier">new</span>
+            <span class="ruby-ivar">@comboChargerE</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">ComboBox</span>.<span class="ruby-identifier">new</span>
+
+            
+            <span class="ruby-ivar">@comboMode</span>.<span class="ruby-identifier">active</span> = <span class="ruby-value">0</span>
+            <span class="ruby-ivar">@comboGrille</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">ComboBox</span>.<span class="ruby-identifier">new</span>
+            [<span class="ruby-string">&quot;5x5&quot;</span>,<span class="ruby-string">&quot;10x10&quot;</span>,<span class="ruby-string">&quot;15x15&quot;</span>,<span class="ruby-string">&quot;20x20&quot;</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+                    <span class="ruby-ivar">@comboGrille</span>.<span class="ruby-identifier">append_text</span>(<span class="ruby-identifier">c</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-ivar">@comboGrille</span>.<span class="ruby-identifier">active</span> = <span class="ruby-value">0</span>
+            <span class="ruby-ivar">@comboAventure</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">ComboBox</span>.<span class="ruby-identifier">new</span>
+            <span class="ruby-ivar">@comboEdit</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">ComboBox</span>.<span class="ruby-identifier">new</span>
+
+            
+            <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Nouvelle partie :&quot;</span>), <span class="ruby-value">0</span>, <span class="ruby-value">1</span>, <span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+            <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-ivar">@comboGrille</span>, <span class="ruby-value">0</span>, <span class="ruby-value">1</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>)
+            <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-ivar">@comboAventure</span>, <span class="ruby-value">0</span>, <span class="ruby-value">1</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>)
+            <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-ivar">@comboEdit</span>, <span class="ruby-value">0</span>, <span class="ruby-value">1</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>)
+            <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-ivar">@btCreer</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Button</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Valider&quot;</span>), <span class="ruby-value">0</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>, <span class="ruby-value">3</span>)
+            <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Charger partie :&quot;</span>), <span class="ruby-value">1</span>, <span class="ruby-value">2</span>, <span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+            <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-ivar">@comboChargerA</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>)
+            <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-ivar">@comboChargerD</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>)
+            <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-ivar">@comboChargerE</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>)
+            <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-ivar">@btCharger</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Button</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Charger&quot;</span>), <span class="ruby-value">1</span>, <span class="ruby-value">2</span>, <span class="ruby-value">2</span>, <span class="ruby-value">3</span>)
+
+
+            <span class="ruby-comment">#image boutton</span>
+            <span class="ruby-ivar">@btCreer</span>.<span class="ruby-identifier">set_image</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-string">&quot;./Icons/ok.png&quot;</span>, <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword">__FILE__</span>))))
+            <span class="ruby-ivar">@btCreer</span>.<span class="ruby-identifier">set_alignment</span>(<span class="ruby-value">0.3</span>,<span class="ruby-value">0</span>)
+            <span class="ruby-ivar">@btCharger</span>.<span class="ruby-identifier">set_image</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-string">&quot;./Icons/load.png&quot;</span>, <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword">__FILE__</span>))))
+            <span class="ruby-ivar">@btCharger</span>.<span class="ruby-identifier">set_alignment</span>(<span class="ruby-value">0.3</span>,<span class="ruby-value">0</span>)
+            
+
+    <span class="ruby-keyword">return</span> <span class="ruby-ivar">@table</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

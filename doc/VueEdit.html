@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class VueEdit - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Vue.html">Vue</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-creer">::creer</a>
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-actualiserCase">#actualiserCase</a>
+    
+    <li ><a href="#method-i-creerPlateau">#creerPlateau</a>
+    
+    <li ><a href="#method-i-creerTableAide">#creerTableAide</a>
+    
+    <li ><a href="#method-i-getCaseVue">#getCaseVue</a>
+    
+    <li ><a href="#method-i-miseAJour">#miseAJour</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-VueEdit">
+  <h1 id="class-VueEdit" class="class">
+    class VueEdit
+  </h1>
+
+  <section class="description">
+    <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>Classe <a href="VueEdit.html">VueEdit</a> qui a pour tâche de présenter une
+interface contenant la grille editée avec le champ de nom de sauvegarde</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>Renvoie la grille editable</p>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-boutonAnnuler" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">boutonAnnuler</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-boutonSauvegarder" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">boutonSauvegarder</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-btRetour" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">btRetour</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-grille" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">grille</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-table" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">table</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-textNom" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">textNom</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-timer" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">timer</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-creer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creer</span><span
+            class="method-args">(uneGrille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="creer-source">
+            <pre><span class="ruby-comment"># File Vues/VueEdit.rb, line 43</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">VueEdit</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">uneGrille</span>)
+        <span class="ruby-identifier">new</span>(<span class="ruby-identifier">uneGrille</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(uneGrille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="Vue.html#method-c-new">Vue.new</a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Vues/VueEdit.rb, line 48</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">uneGrille</span>)
+
+        <span class="ruby-keyword">super</span>(<span class="ruby-string">&quot;Jeu&quot;</span>)
+        <span class="ruby-ivar">@grille</span> = <span class="ruby-identifier">uneGrille</span>
+
+
+        
+        <span class="ruby-comment"># HBox principale</span>
+        <span class="ruby-identifier">hbox</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">HBox</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword">false</span>, <span class="ruby-value">10</span>)
+
+        <span class="ruby-ivar">@window</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">hbox</span>)
+
+        <span class="ruby-identifier">hbox</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-identifier">creerPlateau</span>)
+        <span class="ruby-identifier">hbox</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-identifier">creerTableAide</span>)
+        <span class="ruby-identifier">hbox</span>.<span class="ruby-identifier">set_border_width</span>(<span class="ruby-value">5</span>)
+
+        <span class="ruby-identifier">miseAJour</span>
+
+        <span class="ruby-ivar">@window</span>.<span class="ruby-identifier">show_all</span>
+        
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-actualiserCase" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">actualiserCase</span><span
+            class="method-args">(x,y)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>Methode qui actualise la case située aux coordonnées (x,y)</p>
+<ul><li>
+<p>*Exemple *:</p>
+</li></ul>
+
+<pre class="ruby"><span class="ruby-identifier">actualiserCase</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>)
+</pre>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>Renvoie l’actualisation</p>
+          
+          
+
+          
+          <div class="method-source-code" id="actualiserCase-source">
+            <pre><span class="ruby-comment"># File Vues/VueEdit.rb, line 179</span>
+        <span class="ruby-keyword">def</span> <span class="ruby-identifier">actualiserCase</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>)
+
+        <span class="ruby-comment"># Doit devenir....</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>[<span class="ruby-identifier">x</span>][<span class="ruby-identifier">y</span>].<span class="ruby-identifier">etatCourant</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-keyword">and</span> <span class="ruby-keyword">not</span> <span class="ruby-identifier">getCaseVue</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>).<span class="ruby-identifier">etat</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-string">&quot;noir&quot;</span>)
+
+                <span class="ruby-identifier">getCaseVue</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>).<span class="ruby-identifier">changerEtat</span>(<span class="ruby-string">&quot;noir&quot;</span>)
+
+        <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>[<span class="ruby-identifier">x</span>][<span class="ruby-identifier">y</span>].<span class="ruby-identifier">etatCourant</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-keyword">and</span> <span class="ruby-keyword">not</span> <span class="ruby-identifier">getCaseVue</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>).<span class="ruby-identifier">etat</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-string">&quot;blanc&quot;</span>)
+
+                <span class="ruby-identifier">getCaseVue</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>).<span class="ruby-identifier">changerEtat</span>(<span class="ruby-string">&quot;blanc&quot;</span>)
+
+        <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">matrice</span>[<span class="ruby-identifier">x</span>][<span class="ruby-identifier">y</span>].<span class="ruby-identifier">etatCourant</span> <span class="ruby-operator">==</span> <span class="ruby-value">2</span> <span class="ruby-keyword">and</span> <span class="ruby-keyword">not</span> <span class="ruby-identifier">getCaseVue</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>).<span class="ruby-identifier">etat</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-string">&quot;croix&quot;</span>)
+
+                <span class="ruby-identifier">getCaseVue</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>).<span class="ruby-identifier">changerEtat</span>(<span class="ruby-string">&quot;croix&quot;</span>)
+
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-creerPlateau" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creerPlateau</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>Methode retournant le plateau de la grille editable</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>Renvoie la table contenant le plateau</p>
+          
+          
+
+          
+          <div class="method-source-code" id="creerPlateau-source">
+            <pre><span class="ruby-comment"># File Vues/VueEdit.rb, line 116</span>
+        <span class="ruby-keyword">def</span> <span class="ruby-identifier">creerPlateau</span>
+
+        <span class="ruby-identifier">tailleGrille</span> = <span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>
+        <span class="ruby-identifier">espacementCases</span> = <span class="ruby-value">2</span>
+
+        <span class="ruby-ivar">@table</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Table</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">tailleGrille</span><span class="ruby-operator">+</span><span class="ruby-value">2</span>, <span class="ruby-identifier">tailleGrille</span><span class="ruby-operator">+</span><span class="ruby-value">2</span>, <span class="ruby-keyword">false</span>) <span class="ruby-comment"># On rajoute 2 pour insérer les infos et les fleches</span>
+        <span class="ruby-ivar">@mat</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">tailleGrille</span>) {<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">tailleGrille</span>)}
+        <span class="ruby-ivar">@matFleche</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>) {<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">tailleGrille</span>)}
+
+        
+        <span class="ruby-comment"># Création de la grille</span>
+        <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">tailleGrille</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+                <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">tailleGrille</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">y</span><span class="ruby-operator">|</span>
+                        <span class="ruby-identifier">caseTemp</span> = <span class="ruby-constant">CaseVue</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;blanc&quot;</span>, <span class="ruby-identifier">tailleGrille</span>, <span class="ruby-ivar">@grille</span>, <span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>)
+                        <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-identifier">caseTemp</span>, <span class="ruby-identifier">y</span><span class="ruby-operator">+</span><span class="ruby-value">2</span>, <span class="ruby-identifier">y</span><span class="ruby-operator">+</span><span class="ruby-value">3</span>, <span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-value">2</span>, <span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-value">3</span>)
+                        <span class="ruby-ivar">@mat</span>[<span class="ruby-identifier">x</span>][<span class="ruby-identifier">y</span>] = <span class="ruby-identifier">caseTemp</span>
+                }
+        }
+        <span class="ruby-comment"># Définition de l'espacement des cases toutes les 5 cases</span>
+        <span class="ruby-value">6</span>.<span class="ruby-identifier">step</span>(<span class="ruby-identifier">tailleGrille</span>, <span class="ruby-value">5</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+                <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">set_row_spacing</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">espacementCases</span>)
+                <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">set_column_spacing</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">espacementCases</span>)
+        }
+
+        <span class="ruby-keyword">return</span> <span class="ruby-ivar">@table</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-creerTableAide" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creerTableAide</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>Methode retournant une verticale box qui contient le champ de saisie du nom
+de la grille et les boutons sauvegarder et annuler</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>Renvoie la vBox avec le champ du nom de la grille et les boutons
+sauvegarder et annuler</p>
+          
+          
+
+          
+          <div class="method-source-code" id="creerTableAide-source">
+            <pre><span class="ruby-comment"># File Vues/VueEdit.rb, line 79</span>
+        <span class="ruby-keyword">def</span> <span class="ruby-identifier">creerTableAide</span>
+        
+
+        <span class="ruby-identifier">vbox</span> = <span class="ruby-constant">VBox</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword">false</span>, <span class="ruby-value">3</span>)
+        
+        <span class="ruby-comment">#Grille</span>
+        <span class="ruby-identifier">vbox</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-identifier">hBoxMilieu</span> = <span class="ruby-constant">HBox</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword">false</span>, <span class="ruby-value">2</span>))
+        <span class="ruby-identifier">hBoxMilieu</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">vBoxBas</span> = <span class="ruby-constant">HBox</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword">false</span>))
+        <span class="ruby-identifier">vBoxBas</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">table</span> = <span class="ruby-constant">Table</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">4</span>,<span class="ruby-value">4</span>))
+        
+        <span class="ruby-identifier">vbox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-ivar">@textNom</span> = <span class="ruby-constant">Entry</span>.<span class="ruby-identifier">new</span>)
+        <span class="ruby-identifier">textNom</span>.<span class="ruby-identifier">set_text</span>(<span class="ruby-string">&quot;nom de la grille&quot;</span>)
+        <span class="ruby-identifier">textNom</span>.<span class="ruby-identifier">set_width_chars</span>(<span class="ruby-value">15</span>)
+        <span class="ruby-identifier">textNom</span>.<span class="ruby-identifier">set_max_length</span>(<span class="ruby-value">25</span>)
+        
+        <span class="ruby-identifier">vbox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">hBoxBas</span> = <span class="ruby-constant">HBox</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword">false</span>, <span class="ruby-value">2</span>))
+        <span class="ruby-identifier">hBoxBas</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-ivar">@boutonSauvegarder</span> = <span class="ruby-constant">Button</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">Stock</span><span class="ruby-operator">::</span><span class="ruby-constant">OK</span>))
+        <span class="ruby-identifier">hBoxBas</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-ivar">@boutonAnnuler</span> = <span class="ruby-constant">Button</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">Stock</span><span class="ruby-operator">::</span><span class="ruby-constant">CANCEL</span>))
+
+
+        <span class="ruby-comment">#table.attach(table, 1, 2, 1, 2)</span>
+
+
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">vbox</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getCaseVue" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getCaseVue</span><span
+            class="method-args">(unX, unY)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>Methode qui renvoi une case à des coordonnées passés en paramètres</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>Renvoie la case concernée</p>
+          
+          
+
+          
+          <div class="method-source-code" id="getCaseVue-source">
+            <pre><span class="ruby-comment"># File Vues/VueEdit.rb, line 206</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">getCaseVue</span>(<span class="ruby-identifier">unX</span>, <span class="ruby-identifier">unY</span>)
+
+        <span class="ruby-keyword">return</span> <span class="ruby-ivar">@mat</span>[<span class="ruby-identifier">unX</span>][<span class="ruby-identifier">unY</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-miseAJour" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">miseAJour</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p><strong>Description</strong>:</p>
+</li></ul>
+
+<p>Methode mettant à jour la grille</p>
+<ul><li>
+<p><strong>Retourne</strong>:</p>
+</li></ul>
+
+<p>Renvoie la mise à jour</p>
+          
+          
+
+          
+          <div class="method-source-code" id="miseAJour-source">
+            <pre><span class="ruby-comment"># File Vues/VueEdit.rb, line 152</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">miseAJour</span>
+
+        <span class="ruby-identifier">tailleGrille</span> = <span class="ruby-ivar">@grille</span>.<span class="ruby-identifier">largeur</span>
+
+        <span class="ruby-comment"># Mise à jour de toutes les cases du plateau</span>
+        <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">tailleGrille</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+                <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">tailleGrille</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">y</span><span class="ruby-operator">|</span>
+                        <span class="ruby-identifier">actualiserCase</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>)
+                }
+        }
+
+        <span class="ruby-ivar">@window</span>.<span class="ruby-identifier">show_all</span>
+        
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

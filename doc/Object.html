@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Object - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">BasicObject
+  
+</div>
+
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><a class="include" href="Gtk.html">Gtk</a>
+  
+  
+  
+    <li><span class="include">Magick</span>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-area_event">#area_event</a>
+    
+    <li ><a href="#method-i-onDestroy">#onDestroy</a>
+    
+    <li ><a href="#method-i-report_press">#report_press</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Object">
+  <h1 id="class-Object" class="class">
+    class Object
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="DATE">DATE
+        
+        <dd>
+        
+      
+        <dt id="Highscore">Highscore
+        
+        <dd><p>Auteur Youssef LAMNIY Date : Lundi 25 Janvier 2016 Description : Fenêtre du
+<a href="Object.html#Highscore">Highscore</a>.</p>
+        
+      
+        <dt id="Jeu">Jeu
+        
+        <dd>
+        
+      
+        <dt id="Jouer">Jouer
+        
+        <dd><p>Auteur Youssef LAMNIY Date : Lundi 25 Janvier 2016 Description : Fenêtre du
+Comment jouer.</p>
+        
+      
+        <dt id="MenuPrincipal">MenuPrincipal
+        
+        <dd><p>Auteur Youssef LAMNIY Date : Lundi 25 Janvier 2016 Description : Fenêtre du
+Menu principal.</p>
+        
+      
+        <dt id="NOM">NOM
+        
+        <dd>
+        
+      
+        <dt id="Reglages">Reglages
+        
+        <dd><p>Auteur Youssef LAMNIY Date : Lundi 25 Janvier 2016 Description : Fenêtre de
+reglages.</p>
+        
+      
+        <dt id="SCORE">SCORE
+        
+        <dd>
+        
+      
+        <dt id="TAILLE">TAILLE
+        
+        <dd><pre>encoding: utf-8</pre>
+
+<p>! /usr/bin/env ruby</p>
+
+<pre>Auteur HAJIR Mohammed Amine
+Version 0.1 : Date : 19 03 2016</pre>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-area_event" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">area_event</span><span
+            class="method-args">(area, e)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="area_event-source">
+            <pre><span class="ruby-comment"># File MenuPrincipal/main.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">area_event</span>(<span class="ruby-identifier">area</span>, <span class="ruby-identifier">e</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-constant">Gdk</span><span class="ruby-operator">::</span><span class="ruby-constant">EventButton</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">e</span>
+        <span class="ruby-identifier">colorsel_d</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">ColorSelectionDialog</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Choisir une couleur de fond pour votre PiCross&quot;</span>)
+        <span class="ruby-identifier">color</span> = <span class="ruby-identifier">area</span>.<span class="ruby-identifier">modifier_style</span>.<span class="ruby-identifier">bg</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">STATE_NORMAL</span>)
+        <span class="ruby-identifier">colorsel</span> = <span class="ruby-identifier">colorsel_d</span>.<span class="ruby-identifier">colorsel</span>
+        <span class="ruby-identifier">colorsel</span>.<span class="ruby-identifier">previous_color</span> = <span class="ruby-identifier">color</span>
+        <span class="ruby-identifier">colorsel</span>.<span class="ruby-identifier">current_color</span> = <span class="ruby-identifier">color</span>
+        
+        <span class="ruby-identifier">colorsel</span>.<span class="ruby-identifier">has_palette</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-identifier">colorsel</span>.<span class="ruby-identifier">has_opacity_control</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-identifier">colorsel</span>.<span class="ruby-identifier">signal_connect</span>(<span class="ruby-string">&quot;color_changed&quot;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">w</span><span class="ruby-operator">|</span>
+            <span class="ruby-identifier">ncolor</span> = <span class="ruby-identifier">w</span>.<span class="ruby-identifier">current_color</span>
+            <span class="ruby-identifier">area</span>.<span class="ruby-identifier">modify_bg</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">STATE_NORMAL</span>, <span class="ruby-identifier">ncolor</span>)
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">unless</span> <span class="ruby-identifier">colorsel_d</span>.<span class="ruby-identifier">run</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">ColorSelectionDialog</span><span class="ruby-operator">::</span><span class="ruby-constant">RESPONSE_OK</span>
+            <span class="ruby-identifier">area</span>.<span class="ruby-identifier">modify_bg</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">STATE_NORMAL</span>, <span class="ruby-identifier">color</span>)
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">colorsel_d</span>.<span class="ruby-identifier">destroy</span>
+        <span class="ruby-keyword">true</span>
+        <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">false</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-onDestroy" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">onDestroy</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="onDestroy-source">
+            <pre><span class="ruby-comment"># File MenuPrincipal/main.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">onDestroy</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Fin de l'application&quot;</span>
+        <span class="ruby-constant">Gtk</span>.<span class="ruby-identifier">main_quit</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-report_press" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report_press</span><span
+            class="method-args">(w)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="report_press-source">
+            <pre><span class="ruby-comment"># File MenuPrincipal/main.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">report_press</span>(<span class="ruby-identifier">w</span>); <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Lauching (button) w=#{w}&quot;</span>; <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

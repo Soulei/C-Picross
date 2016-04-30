@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Etat - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-Blanc">::Blanc</a>
+    
+    <li ><a href="#method-c-Drapeau">::Drapeau</a>
+    
+    <li ><a href="#method-c-Noir">::Noir</a>
+    
+    <li ><a href="#method-c-include-3F">::include?</a>
+    
+    <li ><a href="#method-c-suivant">::suivant</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Etat">
+  <h1 id="class-Etat" class="class">
+    class Etat
+  </h1>
+
+  <section class="description">
+    
+<p>ETAT</p>
+
+<p><a href="Etat.html">Etat</a> : On définit l’état d’une case dans cette
+classe trois états sont possibles pour une case : blanc, noir ou drapeau</p>
+<ul><li>
+<p><strong>Variable</strong>  :</p>
+
+<pre>- +blanc+   -&gt; état d'une case blanche représenté par l'entier 0
+- +noir+    -&gt; état d'une case noir représenté par l'entier 1
+- +drapeau+ -&gt; autre état représenté par l'entier 2</pre>
+</li><li>
+<p><strong>Heritage</strong>  : Aucun lien</p>
+</li></ul>
+
+<p>ETAT</p>
+
+<p><a href="Etat.html">Etat</a> : On définit l’état d’une case dans cette
+classe trois états sont possibles pour une case : blanc, noir ou drapeau</p>
+<ul><li>
+<p><strong>Variable</strong>  :</p>
+
+<pre>- +blanc+   -&gt; état d'une case blanche représenté par l'entier 0
+- +noir+    -&gt; état d'une case noir représenté par l'entier 1
+- +drapeau+ -&gt; autre état représenté par l'entier 2</pre>
+</li><li>
+<p><strong>Heritage</strong>  : Aucun lien</p>
+</li></ul>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-Blanc" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">Blanc</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Accesseur vers l’état blanc</p>
+          
+          
+
+          
+          <div class="method-source-code" id="Blanc-source">
+            <pre><span class="ruby-comment"># File Images/outils.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Etat</span>.<span class="ruby-constant">Blanc</span>() 
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">@@blanc</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-Drapeau" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">Drapeau</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Accesseur vers l’état drapeau</p>
+          
+          
+
+          
+          <div class="method-source-code" id="Drapeau-source">
+            <pre><span class="ruby-comment"># File Images/outils.rb, line 83</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Etat</span>.<span class="ruby-constant">Drapeau</span>() 
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">@@drapeau</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-Noir" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">Noir</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Accesseur vers l’état noir</p>
+          
+          
+
+          
+          <div class="method-source-code" id="Noir-source">
+            <pre><span class="ruby-comment"># File Images/outils.rb, line 78</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Etat</span>.<span class="ruby-constant">Noir</span>() 
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">@@noir</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-include-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">include?</span><span
+            class="method-args">(etatCase)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>méthode qui vérifie si l’état d’une case correspond bien au trois états
+possibles : blanc, noir ou drapeau</p>
+<ul><li>
+<p>*Paramètres* :</p>
+<ul><li>
+<p><code>etatCase</code> -&gt; l’etat dont on souhaite tester la validité</p>
+</li></ul>
+</li><li>
+<p><strong>Retourne</strong> :</p>
+<ul><li>
+<p>true si la valeur reçue est un état valide</p>
+</li></ul>
+</li><li>
+<p><strong>Raises</strong> : aucune exception</p>
+</li><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="include-3F-source">
+            <pre><span class="ruby-comment"># File Images/outils.rb, line 100</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Etat</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">etatCase</span>)
+      <span class="ruby-keyword">return</span> [<span class="ruby-identifier">@@blanc</span>, <span class="ruby-identifier">@@noir</span>, <span class="ruby-identifier">@@drapeau</span>].<span class="ruby-identifier">include?</span> <span class="ruby-identifier">etatCase</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-suivant" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">suivant</span><span
+            class="method-args">(etat)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>méthode qui permet de renvoyer l’état suivant de celui passé en paramètre</p>
+<ul><li>
+<p>*Paramètres* :</p>
+<ul><li>
+<p><code>etat</code> -&gt; l’état à partir duquel le suivant est renvoyé</p>
+</li></ul>
+</li><li>
+<p><strong>Retourne</strong> :</p>
+<ul><li>
+<p>Renvois l’état suivant à celui reçu</p>
+</li></ul>
+</li><li>
+<p><strong>Raises</strong> : Lève une exception si l’état n’est pas valide</p>
+</li><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="suivant-source">
+            <pre><span class="ruby-comment"># File Images/outils.rb, line 116</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Etat</span>.<span class="ruby-identifier">suivant</span>(<span class="ruby-identifier">etat</span>)
+      <span class="ruby-comment"># Assertion</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;Etat non valide&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-keyword">not</span> (<span class="ruby-constant">Etat</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">etat</span>) <span class="ruby-keyword">and</span> <span class="ruby-identifier">etat</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>)
+      <span class="ruby-comment"># Retour</span>
+      <span class="ruby-keyword">if</span>    <span class="ruby-identifier">etat</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">@@blanc</span>    <span class="ruby-keyword">then</span> <span class="ruby-keyword">return</span> <span class="ruby-identifier">@@noir</span>
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">etat</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">@@noir</span>     <span class="ruby-keyword">then</span> <span class="ruby-keyword">return</span> <span class="ruby-identifier">@@drapeau</span>
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">etat</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">@@drapeau</span>  <span class="ruby-keyword">then</span> <span class="ruby-keyword">return</span> <span class="ruby-identifier">@@blanc</span>
+      <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

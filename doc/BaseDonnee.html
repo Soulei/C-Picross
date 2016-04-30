@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class BaseDonnee - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-ajout_aventure">#ajout_aventure</a>
+    
+    <li ><a href="#method-i-ajout_aventurePicross">#ajout_aventurePicross</a>
+    
+    <li ><a href="#method-i-charge_grillePersonnalisee">#charge_grillePersonnalisee</a>
+    
+    <li ><a href="#method-i-charger_partie">#charger_partie</a>
+    
+    <li ><a href="#method-i-charger_picrossAventure">#charger_picrossAventure</a>
+    
+    <li ><a href="#method-i-extract_row_data">#extract_row_data</a>
+    
+    <li ><a href="#method-i-extract_score">#extract_score</a>
+    
+    <li ><a href="#method-i-get_nombrePicross">#get_nombrePicross</a>
+    
+    <li ><a href="#method-i-nomsAventures">#nomsAventures</a>
+    
+    <li ><a href="#method-i-nomsGrilleEdit">#nomsGrilleEdit</a>
+    
+    <li ><a href="#method-i-nomsParties_Sauvegarde">#nomsParties_Sauvegarde</a>
+    
+    <li ><a href="#method-i-process_grille">#process_grille</a>
+    
+    <li ><a href="#method-i-process_pile_coupsCharger">#process_pile_coupsCharger</a>
+    
+    <li ><a href="#method-i-process_pile_coupsSave">#process_pile_coupsSave</a>
+    
+    <li ><a href="#method-i-pseudo_present">#pseudo_present</a>
+    
+    <li ><a href="#method-i-save_grillePersonnalisee">#save_grillePersonnalisee</a>
+    
+    <li ><a href="#method-i-save_partie">#save_partie</a>
+    
+    <li ><a href="#method-i-save_pseudo">#save_pseudo</a>
+    
+    <li ><a href="#method-i-save_score">#save_score</a>
+    
+    <li ><a href="#method-i-scorePremier_present-3F">#scorePremier_present?</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-BaseDonnee">
+  <h1 id="class-BaseDonnee" class="class">
+    class BaseDonnee
+  </h1>
+
+  <section class="description">
+    
+<p>Classe permettant de sauvegarder et de charger les informations liées aux
+joueurs, scores et les données d’une partie</p>
+
+<pre>* *Variables* :
+   - +PREMIER_SCORE+ -&gt; Constante permettant d'indiquer le type de score
+   - +SECOND_SCORE+ -&gt;Constante permettant d'indiquer le type de score
+* *Heritage*  : Aucun lien</pre>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="MODE_AVENTURE">MODE_AVENTURE
+        
+        <dd>
+        
+      
+        <dt id="MODE_DETENTE">MODE_DETENTE
+        
+        <dd>
+        
+      
+        <dt id="MODE_GRILLE_EDIT">MODE_GRILLE_EDIT
+        
+        <dd>
+        
+      
+        <dt id="PREMIER_SCORE">PREMIER_SCORE
+        
+        <dd>
+        
+      
+        <dt id="SECOND_SCORE">SECOND_SCORE
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-MODE_GRILLE_EDIT" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">MODE_GRILLE_EDIT</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-ajout_aventure" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ajout_aventure</span><span
+            class="method-args">(nom_aventure, nombre_picross)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet d’ajouter une aventure à la base de donnée</p>
+
+<pre>* *Paramètres*:
+  - +nom_aventure+ -&gt; nom de l'aventure en question
+  - +nombre_picross+ -&gt; nombre de picross propre à l'aventure en question
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="ajout_aventure-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 401</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ajout_aventure</span>(<span class="ruby-identifier">nom_aventure</span>, <span class="ruby-identifier">nombre_picross</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">open</span> <span class="ruby-string">&quot;database.db&quot;</span>
+    <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO Aventure (nom_aventure, nombre_picross) VALUES(?, ?)&quot;</span>,<span class="ruby-identifier">nom_aventure</span>, <span class="ruby-identifier">nombre_picross</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-ajout_aventurePicross" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ajout_aventurePicross</span><span
+            class="method-args">(nom_aventure, matrice, scenario, taille_matrice, rang_grille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet d’ajouter un picross obtenu à partir d’une image à une aventure
+donnée</p>
+
+<pre>* *Paramètres*:
+  - +nom_aventure+ -&gt; nom de l'aventure en question
+  - +matrice+ -&gt; matrice résultant de la pixelisation d'une image
+  - +taille_matrice+ -&gt; taille de la matrice
+  - +rang_grille+ -&gt; rang de la matrice dans le cas d'un mode aventure et 0 sinon
+  - +taille_grille+ -&gt; taille de la matrice
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="ajout_aventurePicross-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 420</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ajout_aventurePicross</span>(<span class="ruby-identifier">nom_aventure</span>, <span class="ruby-identifier">matrice</span>, <span class="ruby-identifier">scenario</span>, <span class="ruby-identifier">taille_matrice</span>, <span class="ruby-identifier">rang_grille</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">open</span> <span class="ruby-string">&quot;database.db&quot;</span>
+    <span class="ruby-identifier">res_id_aventure</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT id_aventure from Aventure WHERE nom_aventure = ?&quot;</span>, <span class="ruby-identifier">nom_aventure</span>)
+    <span class="ruby-identifier">id_a</span> = <span class="ruby-identifier">res_id_aventure</span>[<span class="ruby-value">0</span>][<span class="ruby-value">0</span>]
+    <span class="ruby-identifier">matrice</span> = <span class="ruby-identifier">matrice</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">','</span>)
+    <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO Grille (matrice_grille,scenario,taille_grille,rang_grille,id_aventure) VALUES(?, ?, ?, ?, ?)&quot;</span>,<span class="ruby-identifier">matrice</span>,<span class="ruby-identifier">scenario</span>,<span class="ruby-identifier">taille_matrice</span>, <span class="ruby-identifier">rang_grille</span>, <span class="ruby-identifier">id_a</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-charge_grillePersonnalisee" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">charge_grillePersonnalisee</span><span
+            class="method-args">(nom_grille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de charger une grille personnaliée par l’utilisateur ou générée à
+aprtie d’une image</p>
+
+<pre>* *Paramètres*:
+  - +nom_grille+ -&gt; nom de la grille à charger
+* *Retourne* :
+  -une matrice représentant le picross
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="charge_grillePersonnalisee-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 337</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">charge_grillePersonnalisee</span>(<span class="ruby-identifier">nom_grille</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">open</span> <span class="ruby-string">&quot;database.db&quot;</span>
+    <span class="ruby-identifier">res_taille</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT taille_grille FROM Grille where nom_grille = ?&quot;</span>, <span class="ruby-identifier">nom_grille</span>)
+    <span class="ruby-identifier">taille_g</span> = <span class="ruby-identifier">res_taille</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">first</span>
+    <span class="ruby-identifier">res</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT matrice_grille FROM Grille where nom_grille = ?&quot;</span>, <span class="ruby-identifier">nom_grille</span>)
+    <span class="ruby-identifier">res_row</span> = <span class="ruby-identifier">res</span>[<span class="ruby-value">0</span>]
+    <span class="ruby-identifier">matrice</span> = <span class="ruby-identifier">res_row</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;,&quot;</span>).<span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:to_i</span>).<span class="ruby-identifier">each_slice</span>(<span class="ruby-identifier">taille_g</span>).<span class="ruby-identifier">to_a</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">matrice</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-charger_partie" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">charger_partie</span><span
+            class="method-args">(pseudo, nom_partie)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de charger une partie</p>
+
+<pre>* *Paramètres*:
+  - +pseudo+ -&gt; pseudo du joueur
+  - +nom_partie+ -&gt; nom de la partie à charger
+  - +mode+ -&gt; mode du jeu de la partie à charger
+* *Retourne* :
+  -un tableau contenant  dans le mode detente:
+=&gt; -le mode, la matrice, la pile de coups, le temps, le nombres d'aides utilisés et le mode
+=&gt; -la matrice, la pile de coups, le temps, le nombres d'aides utilisés, le rang de la grille dans l'aventure et le mode
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="charger_partie-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 278</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">charger_partie</span>(<span class="ruby-identifier">pseudo</span>, <span class="ruby-identifier">nom_partie</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">open</span> <span class="ruby-string">&quot;database.db&quot;</span>
+    <span class="ruby-identifier">res_id_joueur</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT id_joueur from Joueur WHERE pseudo = ?&quot;</span>, <span class="ruby-identifier">pseudo</span>)
+    <span class="ruby-identifier">id_j</span> = <span class="ruby-identifier">res_id_joueur</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">first</span>
+    <span class="ruby-identifier">res_partie</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT * FROM Partie where id_joueur = ? and nom_partie = ?&quot;</span>, <span class="ruby-identifier">id_j</span>, <span class="ruby-identifier">nom_partie</span>)
+    <span class="ruby-identifier">id_pile</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">res_partie</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">fetch</span>(<span class="ruby-value">4</span>))
+    <span class="ruby-identifier">mode</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">res_partie</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">fetch</span>(<span class="ruby-value">9</span>))
+    <span class="ruby-keyword">if</span>(<span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_GRILLE_EDIT</span>)
+      <span class="ruby-identifier">id_grille</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">res_partie</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">fetch</span>(<span class="ruby-value">7</span>))
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">res_pile</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT * FROM PileCoups where id_pileCoups = ?&quot;</span>, <span class="ruby-identifier">id_pile</span>)
+    <span class="ruby-identifier">res_pileCoup</span> = <span class="ruby-identifier">process_pile_coupsCharger</span>(<span class="ruby-identifier">res_pile</span>[<span class="ruby-value">0</span>])
+    <span class="ruby-identifier">res_final</span> = <span class="ruby-identifier">extract_row_data</span>(<span class="ruby-identifier">res_partie</span>.<span class="ruby-identifier">flatten</span>(<span class="ruby-value">1</span>))
+    <span class="ruby-keyword">if</span>(<span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_AVENTURE</span>)
+      <span class="ruby-comment">#recuperer le nom de l'aventure</span>
+      <span class="ruby-identifier">nom_aventure</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT nom_aventure FROM Aventure JOIN Grille using(id_aventure) WHERE id_grille = ?&quot;</span>, <span class="ruby-identifier">id_grille</span>)
+      <span class="ruby-identifier">res_rang</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">res_partie</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">fetch</span>(<span class="ruby-value">10</span>))
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">res_final</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">1</span>, <span class="ruby-identifier">res_pileCoup</span>).<span class="ruby-identifier">insert</span>(<span class="ruby-value">4</span>, <span class="ruby-identifier">res_rang</span>).<span class="ruby-identifier">insert</span>(<span class="ruby-value">5</span>, <span class="ruby-identifier">mode</span>).<span class="ruby-identifier">insert</span>(<span class="ruby-value">6</span>, <span class="ruby-identifier">nom_aventure</span>.<span class="ruby-identifier">flatten</span>)
+    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_GRILLE_EDIT</span>)
+      <span class="ruby-identifier">nom_grille</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT nom_grille FROM Partie JOIN Grille using(id_grille) WHERE id_grille = ?&quot;</span>, <span class="ruby-identifier">id_grille</span>)
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">res_final</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">1</span>, <span class="ruby-identifier">res_pileCoup</span>).<span class="ruby-identifier">insert</span>(<span class="ruby-value">5</span>, <span class="ruby-identifier">mode</span>).<span class="ruby-identifier">insert</span>(<span class="ruby-value">6</span>, <span class="ruby-identifier">nom_grille</span>.<span class="ruby-identifier">flatten</span>)
+    <span class="ruby-keyword">elsif</span> (<span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_DETENTE</span>)
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">res_final</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">1</span>, <span class="ruby-identifier">res_pileCoup</span>).<span class="ruby-identifier">insert</span>(<span class="ruby-value">5</span>, <span class="ruby-identifier">mode</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-charger_picrossAventure" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">charger_picrossAventure</span><span
+            class="method-args">(nom_aventure, rang_grille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de charger le picross lié à une aventure</p>
+
+<pre>* *Paramètres*:
+  - +nom_aventure+ -&gt; nom de l'aventure en question
+  - +rang_grille+ -&gt; rang du picross dans l'aventure
+* *Retourne* :
+  - un tableau contenant la matrice du picross et le scenario correspondant à cette matrice</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="charger_picrossAventure-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 439</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">charger_picrossAventure</span>(<span class="ruby-identifier">nom_aventure</span>, <span class="ruby-identifier">rang_grille</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">open</span> <span class="ruby-string">&quot;database.db&quot;</span>
+    <span class="ruby-identifier">res_id_aventure</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT id_aventure from Aventure WHERE nom_aventure = ?&quot;</span>, <span class="ruby-identifier">nom_aventure</span>)
+    <span class="ruby-identifier">id_a</span> = <span class="ruby-identifier">res_id_aventure</span>[<span class="ruby-value">0</span>][<span class="ruby-value">0</span>]
+    <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT matrice_grille, taille_grille, scenario FROM Grille WHERE id_aventure = ? AND rang_grille = ?&quot;</span>, <span class="ruby-identifier">id_a</span>, <span class="ruby-identifier">rang_grille</span>)
+    <span class="ruby-identifier">res_mat</span> = <span class="ruby-identifier">res_execute</span>[<span class="ruby-value">0</span>][<span class="ruby-value">0</span>]
+    <span class="ruby-identifier">taille</span> = <span class="ruby-identifier">res_execute</span>[<span class="ruby-value">0</span>][<span class="ruby-value">1</span>]
+    <span class="ruby-identifier">scenar</span> = <span class="ruby-identifier">res_execute</span>[<span class="ruby-value">0</span>][<span class="ruby-value">2</span>]
+    <span class="ruby-identifier">matrice</span> = <span class="ruby-identifier">res_mat</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;,&quot;</span>).<span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:to_i</span>).<span class="ruby-identifier">each_slice</span>(<span class="ruby-identifier">taille</span>).<span class="ruby-identifier">to_a</span>
+    <span class="ruby-identifier">res</span> = [<span class="ruby-identifier">matrice</span>, <span class="ruby-identifier">scenar</span>]
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-extract_row_data" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">extract_row_data</span><span
+            class="method-args">(row_data)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet d’extraire et de réorganiser les données obtenues à partie de la
+base de donnée</p>
+
+<pre>* *Paramètres*:
+  - +row_data+ -&gt; tableau contenant les données recueillies à partir de la base de donnée
+* *Retourne* :
+  -un tableau contenant la pile de coups, la matrice, le temps et le nombres d'aides utilisés
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="extract_row_data-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 258</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">extract_row_data</span>(<span class="ruby-identifier">row_data</span>)
+  <span class="ruby-identifier">matrice</span> = <span class="ruby-identifier">row_data</span>[<span class="ruby-value">2</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;,&quot;</span>).<span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:to_i</span>).<span class="ruby-identifier">each_slice</span>(<span class="ruby-constant">Integer</span>(<span class="ruby-identifier">row_data</span>[<span class="ruby-value">3</span>])).<span class="ruby-identifier">to_a</span>
+  <span class="ruby-identifier">temps</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">row_data</span>[<span class="ruby-value">5</span>])
+  <span class="ruby-identifier">nb_r</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">row_data</span>[<span class="ruby-value">6</span>])
+  <span class="ruby-keyword">return</span> [<span class="ruby-identifier">matrice</span>,<span class="ruby-identifier">temps</span>,<span class="ruby-identifier">nb_r</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-extract_score" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">extract_score</span><span
+            class="method-args">(mode, taille, type_score)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet l’extraction du tableau des scores de la base de donnée</p>
+
+<pre>* *Paramètres*:
+  - +mode+ -&gt; le type du mode (Detente, Aventure ou Editeur)
+  - +taille+ -&gt; taille de la grille deans le cas du mode de detente
+  - +type_score+ -&gt; le type de score
+=&gt; du premier score -  0
+=&gt; ou
+=&gt; le second score - 1
+* *Retourne* :
+=&gt; un tableau contenant les joueurs et leurs scores respectifs
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="extract_score-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">extract_score</span>(<span class="ruby-identifier">mode</span>, <span class="ruby-identifier">taille</span>, <span class="ruby-identifier">type_score</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;database.db&quot;</span>)
+    <span class="ruby-keyword">if</span>(<span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_DETENTE</span>)
+      <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT pseudo, premier_score from Joueur JOIN Score using(id_joueur) WHERE taille = ?&quot;</span>, <span class="ruby-identifier">taille</span>)
+    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_AVENTURE</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_GRILLE_EDIT</span>)
+        <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT pseudo, premier_score from Joueur JOIN Score using(id_joueur) WHERE mode = ? and nom = ? and type_score = ?&quot;</span>, <span class="ruby-identifier">mode</span>, <span class="ruby-identifier">nom</span>, <span class="ruby-identifier">type_score</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">res_execute</span>.<span class="ruby-identifier">flatten</span>()
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_nombrePicross" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_nombrePicross</span><span
+            class="method-args">(nom_aventure)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Renvoi le nombre de picorss pour une aventure donnée</p>
+
+<pre>* *Paramètres*:
+  - +nom_aventure+ -&gt; nom de l'aventure en question
+* *Retourne* :
+  - le nombre de picross d'une aventure</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="get_nombrePicross-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 461</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_nombrePicross</span>(<span class="ruby-identifier">nom_aventure</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">open</span> <span class="ruby-string">&quot;database.db&quot;</span>
+    <span class="ruby-identifier">res_nb</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT nombre_picross from Aventure WHERE nom_aventure = ?&quot;</span>, <span class="ruby-identifier">nom_aventure</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">res_nb</span>[<span class="ruby-value">0</span>]
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-nomsAventures" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">nomsAventures</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de retourner le tabelau contenant la liste des aventures</p>
+
+<pre>* *Paramètres*:
+* *Retourne* :
+  - un tableau contenant laes noms des différentes aventures</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="nomsAventures-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 475</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">nomsAventures</span>()
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">open</span> <span class="ruby-string">&quot;database.db&quot;</span>
+      <span class="ruby-identifier">res</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT nom_aventure from Aventure&quot;</span>)
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>[<span class="ruby-value">0</span>]
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-nomsGrilleEdit" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">nomsGrilleEdit</span><span
+            class="method-args">(pseudo)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de charger les noms des grilles du mode <a
+href="Grille.html">Grille</a> Edit</p>
+
+<pre>* *Paramètres*:
+=&gt; -pseudo : pseudo du joueur
+* *Retourne* :
+  -un tableau contenant les noms du mode Grille Edit
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="nomsGrilleEdit-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 358</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">nomsGrilleEdit</span>(<span class="ruby-identifier">pseudo</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">open</span> <span class="ruby-string">&quot;database.db&quot;</span>
+    <span class="ruby-identifier">res</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT nom_grille FROM Grille JOIN Joueur using(id_joueur) WHERE pseudo IS NOT ?&quot;</span>, <span class="ruby-identifier">pseudo</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">res</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+      <span class="ruby-identifier">res</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">puts</span> <span class="ruby-identifier">x</span>}
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>[<span class="ruby-value">0</span>]
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-nomsParties_Sauvegarde" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">nomsParties_Sauvegarde</span><span
+            class="method-args">(pseudo)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de charger les noms des grilles sauvegarder par un utilsateur donné</p>
+
+<pre>* *Paramètres*:
+  - +pseudo+ -&gt; pseudonyme d'un joueur
+* *Retourne* :
+  -un tableau contenant les noms des grilles sauvegarder par un utilsateur donné
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="nomsParties_Sauvegarde-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 378</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">nomsParties_Sauvegarde</span>(<span class="ruby-identifier">pseudo</span>)
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">open</span> <span class="ruby-string">&quot;database.db&quot;</span>
+      <span class="ruby-identifier">res_id_joueur</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT id_joueur from Joueur WHERE pseudo = ?&quot;</span>, <span class="ruby-identifier">pseudo</span>)
+      <span class="ruby-identifier">id_j</span> = <span class="ruby-identifier">res_id_joueur</span>[<span class="ruby-value">0</span>]
+      <span class="ruby-identifier">res</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT nom_partie, modeJeu FROM Partie WHERE id_joueur = ?&quot;</span>, <span class="ruby-identifier">id_j</span>)
+      <span class="ruby-keyword">if</span>(<span class="ruby-identifier">res</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>)
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-process_grille" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">process_grille</span><span
+            class="method-args">(grille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de sauvegarder une partie</p>
+
+<pre>* *Paramètres*:
+  - +pseudo+ -&gt; pseudo du joueur
+* *Retourne* :
+  -vrai si l'opération d'insertion dans la base de donnée s'est correctement efféctuée
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="process_grille-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 196</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">process_grille</span>(<span class="ruby-identifier">grille</span>)
+  <span class="ruby-identifier">tmp</span> = <span class="ruby-identifier">grille</span>.<span class="ruby-identifier">matrice</span>
+  <span class="ruby-identifier">res</span> = <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot;,&quot;</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-process_pile_coupsCharger" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">process_pile_coupsCharger</span><span
+            class="method-args">(pile_coups)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de extraire la pile de coups</p>
+
+<pre>* *Paramètres*:
+  - +pseudo+ -&gt; pseudo du joueur
+* *Retourne* :
+  -vrai si l'opération d'insertion dans la base de donnée s'est correctement efféctuée
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="process_pile_coupsCharger-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 160</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">process_pile_coupsCharger</span>(<span class="ruby-identifier">pile_coups</span>)
+
+  <span class="ruby-identifier">oldEtat</span> = <span class="ruby-identifier">pile_coups</span>[<span class="ruby-value">2</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;,&quot;</span>).<span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:to_i</span>).<span class="ruby-identifier">to_a</span>
+  <span class="ruby-identifier">newEtat</span> = <span class="ruby-identifier">pile_coups</span>[<span class="ruby-value">3</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;,&quot;</span>).<span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:to_i</span>).<span class="ruby-identifier">to_a</span>
+  <span class="ruby-identifier">coordonnee</span> = <span class="ruby-identifier">pile_coups</span>[<span class="ruby-value">4</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;,&quot;</span>).<span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:to_i</span>).<span class="ruby-identifier">each_slice</span>(<span class="ruby-value">2</span>).<span class="ruby-identifier">to_a</span>
+  <span class="ruby-keyword">return</span> [<span class="ruby-identifier">coordonnee</span>.<span class="ruby-identifier">length</span>, <span class="ruby-identifier">coordonnee</span>, <span class="ruby-identifier">oldEtat</span>, <span class="ruby-identifier">newEtat</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-process_pile_coupsSave" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">process_pile_coupsSave</span><span
+            class="method-args">(pile_coups)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="process_pile_coupsSave-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 168</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">process_pile_coupsSave</span>(<span class="ruby-identifier">pile_coups</span>)
+
+  <span class="ruby-identifier">coup</span> = <span class="ruby-identifier">pile_coups</span>.<span class="ruby-identifier">depiler</span>()
+  <span class="ruby-identifier">case_p</span> = <span class="ruby-identifier">coup</span>.<span class="ruby-identifier">case</span>.<span class="ruby-identifier">etatFinal</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;,&quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">coup</span>.<span class="ruby-identifier">case</span>.<span class="ruby-identifier">etatCourant</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-identifier">oldEtat</span> = <span class="ruby-identifier">coup</span>.<span class="ruby-identifier">oldEtat</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-identifier">newEtat</span> = <span class="ruby-identifier">coup</span>.<span class="ruby-identifier">newEtat</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-identifier">coordonnee</span> = <span class="ruby-identifier">coup</span>.<span class="ruby-identifier">case</span>.<span class="ruby-identifier">abscisse</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;,&quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">coup</span>.<span class="ruby-identifier">case</span>.<span class="ruby-identifier">ordonne</span>.<span class="ruby-identifier">to_s</span>
+
+  <span class="ruby-keyword">while</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">pile_coups</span>.<span class="ruby-identifier">estVide?</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">coup</span> = <span class="ruby-identifier">pile_coups</span>.<span class="ruby-identifier">depiler</span>()
+    <span class="ruby-identifier">case_p</span> = <span class="ruby-identifier">coup</span>.<span class="ruby-identifier">case</span>.<span class="ruby-identifier">etatFinal</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;,&quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">coup</span>.<span class="ruby-identifier">case</span>.<span class="ruby-identifier">etatCourant</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;,&quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">case_p</span>
+    <span class="ruby-identifier">oldEtat</span> = <span class="ruby-identifier">coup</span>.<span class="ruby-identifier">oldEtat</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;,&quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">oldEtat</span>
+    <span class="ruby-identifier">newEtat</span> = <span class="ruby-identifier">coup</span>.<span class="ruby-identifier">newEtat</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;,&quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">newEtat</span>
+    <span class="ruby-identifier">coordonnee</span> = <span class="ruby-identifier">coup</span>.<span class="ruby-identifier">case</span>.<span class="ruby-identifier">abscisse</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;,&quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">coup</span>.<span class="ruby-identifier">case</span>.<span class="ruby-identifier">ordonne</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;,&quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">coordonnee</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">res</span> = [<span class="ruby-identifier">case_p</span>, <span class="ruby-identifier">oldEtat</span>, <span class="ruby-identifier">newEtat</span>, <span class="ruby-identifier">coordonnee</span>]
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-pseudo_present" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">pseudo_present</span><span
+            class="method-args">(pseudo)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de vérifier si un pseudo rentrer par un utilsateur n’est pas déjà
+pris</p>
+
+<pre>* *Paramètres*:
+  - +pseudo+ -&gt; pseudo rentrer par un utilsateur
+* *Retourne* :
+  -le nombre de ligne contenant le pseudo passé en paramètre</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="pseudo_present-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">pseudo_present</span>(<span class="ruby-identifier">pseudo</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;database.db&quot;</span>)
+    <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT count(*) from Joueur WHERE pseudo = ?&quot;</span>, <span class="ruby-identifier">pseudo</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">res_execute</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">first</span>
+
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-save_grillePersonnalisee" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">save_grillePersonnalisee</span><span
+            class="method-args">(pseudo, matrice, taille_matrice, nom_matrice)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de sauvegarder une grille personnaliée par l’utilisateur : générée à
+partir d’une image</p>
+
+<pre>* *Paramètres*:
+  - +matrice+ -&gt; objet de type GrilleImage contenant la matrice à sauvegarder
+  - +taille_matrice+ -&gt; taille de la matrice
+  - +nom_matrice+ -&gt; nom de la matrice
+  - +rang_grille+ -&gt; rang de la matrice dans le cas d'un mode aventure et 0 sinon
+  - +taille_grille+ -&gt; taille de la matrice
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="save_grillePersonnalisee-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 317</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">save_grillePersonnalisee</span>(<span class="ruby-identifier">pseudo</span>, <span class="ruby-identifier">matrice</span>, <span class="ruby-identifier">taille_matrice</span>, <span class="ruby-identifier">nom_matrice</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;database.db&quot;</span>)
+    <span class="ruby-identifier">res_id_joueur</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT id_joueur from Joueur WHERE pseudo = ?&quot;</span>, <span class="ruby-identifier">pseudo</span>)
+    <span class="ruby-identifier">id_j</span> = <span class="ruby-identifier">res_id_joueur</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">first</span>
+    <span class="ruby-identifier">matrice</span> = <span class="ruby-identifier">matrice</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot;,&quot;</span>)
+    <span class="ruby-comment">#Grille appartenant au mode Grille Utilisateur</span>
+    <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO Grille (nom_grille,matrice_grille,taille_grille,id_joueur) VALUES(?, ?, ?, ?)&quot;</span>,<span class="ruby-identifier">nom_matrice</span>,<span class="ruby-identifier">matrice</span>,<span class="ruby-identifier">taille_matrice</span>, <span class="ruby-identifier">id_j</span>)
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-save_partie" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">save_partie</span><span
+            class="method-args">(pseudo, nom_partie , temps_joueur, pile_coups, grille, nb_revelation, nom_grille, mode, rang, nom_aventure)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de sauvegarder une partie</p>
+
+<pre>* *Paramètres*:
+  - +pseudo+ -&gt; pseudo du joueur
+  - +nom_partie+ -&gt; nom de la partie à sauvegarder
+  - +temps_joueur+ -&gt; temps en secondes du joueur à sauvegarder
+  - +pile_coups+ -&gt; pile contenant les coups joués
+  - +grille+ -&gt; grille du jeu à sauvegarder
+  - +nb_revelation+ -&gt; nombre d'aides utilisés par le joueur pendant cette partie
+  - +nom_grille+ -&gt; nom de la grille à sauvegarder
+  - +mode+ -&gt; mode du jeu
+  - +nom_aventure+ -&gt; nom du mode aventure
+* *Retourne* :
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="save_partie-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 218</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">save_partie</span>(<span class="ruby-identifier">pseudo</span>, <span class="ruby-identifier">nom_partie</span> , <span class="ruby-identifier">temps_joueur</span>, <span class="ruby-identifier">pile_coups</span>, <span class="ruby-identifier">grille</span>, <span class="ruby-identifier">nb_revelation</span>, <span class="ruby-identifier">nom_grille</span>, <span class="ruby-identifier">mode</span>, <span class="ruby-identifier">rang</span>, <span class="ruby-identifier">nom_aventure</span>)
+  <span class="ruby-identifier">res_pile</span> = <span class="ruby-identifier">process_pile_coupsSave</span>(<span class="ruby-identifier">pile_coups</span>)
+  <span class="ruby-identifier">res_matrice</span> = <span class="ruby-identifier">process_grille</span>(<span class="ruby-identifier">grille</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;database.db&quot;</span>)
+    <span class="ruby-identifier">res_id_joueur</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT id_joueur from Joueur WHERE pseudo = ?&quot;</span>, <span class="ruby-identifier">pseudo</span>)
+    <span class="ruby-identifier">id_j</span> = <span class="ruby-identifier">res_id_joueur</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">first</span>
+    <span class="ruby-comment">#Verifier si la partie a enregistree est la même partie et du même joueur</span>
+    <span class="ruby-identifier">res_nbPartie</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT count(*) FROM Partie WHERE id_joueur = ? and nom_partie = ?&quot;</span>, <span class="ruby-identifier">id_j</span>, <span class="ruby-identifier">nom_partie</span>)
+    <span class="ruby-keyword">if</span>(<span class="ruby-identifier">res_nbPartie</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">1</span>)
+      <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;DELETE FROM Partie WHERE id_joueur = ? and nom_partie = ?&quot;</span>, <span class="ruby-identifier">id_j</span>, <span class="ruby-identifier">nom_partie</span>)
+      <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;DELETE FROM PileCoups WHERE nom_partie = ?&quot;</span>, <span class="ruby-identifier">nom_partie</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO PileCoups (case_coup, oldEtat, newEtat, coordonnee, nom_partie) VALUES(?, ?, ?, ?, ?)&quot;</span>,<span class="ruby-identifier">res_pile</span>[<span class="ruby-value">0</span>], <span class="ruby-identifier">res_pile</span>[<span class="ruby-value">1</span>], <span class="ruby-identifier">res_pile</span>[<span class="ruby-value">2</span>], <span class="ruby-identifier">res_pile</span>[<span class="ruby-value">3</span>], <span class="ruby-identifier">nom_partie</span>)
+    <span class="ruby-identifier">res_id_pileCoups</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT id_pileCoups from PileCoups WHERE nom_partie = ?&quot;</span>, <span class="ruby-identifier">nom_partie</span>)
+    <span class="ruby-identifier">id_p</span> = <span class="ruby-identifier">res_id_pileCoups</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">first</span>
+
+    <span class="ruby-keyword">if</span>(<span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_GRILLE_EDIT</span>)
+      <span class="ruby-identifier">res_id_grille</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT id_grille from Grille WHERE nom_grille = ?&quot;</span>, <span class="ruby-identifier">nom_grille</span>)
+      <span class="ruby-identifier">id_g</span> = <span class="ruby-identifier">res_id_grille</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">first</span>
+      <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO Partie (nom_partie,matrice_tmp,taille_matrice, id_pileCoups,temps_joueur,nb_revelation,id_grille,id_joueur, modeJeu) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)&quot;</span>,<span class="ruby-identifier">nom_partie</span>,<span class="ruby-identifier">res_matrice</span>, <span class="ruby-identifier">grille</span>.<span class="ruby-identifier">largeur</span>, <span class="ruby-identifier">id_p</span>, <span class="ruby-identifier">temps_joueur</span>, <span class="ruby-identifier">nb_revelation</span>, <span class="ruby-identifier">id_g</span>, <span class="ruby-identifier">id_j</span>, <span class="ruby-identifier">mode</span>)
+    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_AVENTURE</span>)
+      <span class="ruby-identifier">res_id_grille</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT id_grille from Aventure JOIN Grille using(id_aventure) WHERE nom_aventure = ? and rang_grille = ?&quot;</span>, <span class="ruby-identifier">nom_aventure</span>, <span class="ruby-identifier">rang</span>)
+      <span class="ruby-identifier">id_g</span> = <span class="ruby-identifier">res_id_grille</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">first</span>
+      <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO Partie (nom_partie,matrice_tmp,taille_matrice, id_pileCoups,temps_joueur,nb_revelation,id_grille, id_joueur, modeJeu, rang) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)&quot;</span>,<span class="ruby-identifier">nom_partie</span>,<span class="ruby-identifier">res_matrice</span>, <span class="ruby-identifier">grille</span>.<span class="ruby-identifier">largeur</span>, <span class="ruby-identifier">id_p</span>, <span class="ruby-identifier">temps_joueur</span>, <span class="ruby-identifier">nb_revelation</span>, <span class="ruby-identifier">id_g</span>, <span class="ruby-identifier">id_j</span>, <span class="ruby-identifier">mode</span>, <span class="ruby-identifier">rang</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO Partie (nom_partie,matrice_tmp, taille_matrice, id_pileCoups,temps_joueur,nb_revelation,id_joueur, modeJeu) VALUES(?, ?, ?, ?, ?, ?, ?, ?)&quot;</span>,<span class="ruby-identifier">nom_partie</span>,<span class="ruby-identifier">res_matrice</span>, <span class="ruby-identifier">grille</span>.<span class="ruby-identifier">largeur</span>, <span class="ruby-identifier">id_p</span>, <span class="ruby-identifier">temps_joueur</span>, <span class="ruby-identifier">nb_revelation</span>, <span class="ruby-identifier">id_j</span>, <span class="ruby-identifier">mode</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-save_pseudo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">save_pseudo</span><span
+            class="method-args">(pseudo)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de sauvegarder le pseudo d’un joueur</p>
+
+<pre>* *Paramètres*:
+  - +pseudo+ -&gt; pseudo du joueur
+* *Retourne* :
+  -vrai si l'opération d'insertion dans la base de donnée s'est correctement efféctuée
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="save_pseudo-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 144</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">save_pseudo</span>(<span class="ruby-identifier">pseudo</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">new</span> <span class="ruby-string">&quot;database.db&quot;</span>
+    <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO Joueur (pseudo) VALUES (?)&quot;</span>,<span class="ruby-identifier">pseudo</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-save_score" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">save_score</span><span
+            class="method-args">(score_final, pseudo, type_score,mode, taille, nom)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de sauvegarder le score d’un joueur pour une partie donnée</p>
+
+<pre>* *Paramètres*:
+  - +score_final+ -&gt; score final du joueur
+  - +pseudo+ -&gt; pseudo du joueur
+  - +type_score+ -&gt; définit si le score à sauvegarder s'agit
+=&gt; du premier score -  0
+=&gt; ou
+=&gt; le meilleur score - 1
+  - +mode+ -&gt; le type de mode
+  - +taille+ -&gt; taille de la grille deans le cas du mode de detente
+  - +nom+ -&gt; il s'agit soit du nom de l'aventure dans le cas du mode Aventure, soit le nom de la grille dans le cas du mode Editeur
+* *Retourne* :
+  -vrai si l'opération d'insertion dans la base de donnée s'est correctement efféctuée
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="save_score-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 98</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">save_score</span>(<span class="ruby-identifier">score_final</span>, <span class="ruby-identifier">pseudo</span>, <span class="ruby-identifier">type_score</span>,<span class="ruby-identifier">mode</span>, <span class="ruby-identifier">taille</span>, <span class="ruby-identifier">nom</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;database.db&quot;</span>)
+    <span class="ruby-identifier">res_id_joueur</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT id_joueur from Joueur WHERE pseudo = ?&quot;</span>, <span class="ruby-identifier">pseudo</span>)
+    <span class="ruby-identifier">id_j</span> = <span class="ruby-identifier">res_id_joueur</span>[<span class="ruby-value">0</span>]
+    <span class="ruby-keyword">if</span>(<span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_DETENTE</span>)
+      <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO Score (mode,taille,premier_score,id_joueur) VALUES(?, ?, ?, ?)&quot;</span>,<span class="ruby-identifier">mode</span>, <span class="ruby-identifier">taille</span>, <span class="ruby-identifier">score_final</span>,<span class="ruby-identifier">id_j</span>)
+    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_AVENTURE</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-constant">MODE_GRILLE_EDIT</span>)
+      <span class="ruby-keyword">if</span>(<span class="ruby-identifier">type_score</span> <span class="ruby-operator">==</span> <span class="ruby-constant">PREMIER_SCORE</span>)
+        <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO Score (mode, nomAventure,premier_score,id_joueur) VALUES(?, ?, ?, ?)&quot;</span>,<span class="ruby-identifier">mode</span>, <span class="ruby-identifier">nom</span>, <span class="ruby-identifier">score_final</span>,<span class="ruby-identifier">id_j</span>)
+      <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">type_score</span> <span class="ruby-operator">==</span> <span class="ruby-constant">SECOND_SCORE</span>)
+        <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;INSERT INTO Score (mode, nomGrille,second_score,id_joueur) VALUES(?, ?, ?, ?)&quot;</span>,<span class="ruby-identifier">mode</span>, <span class="ruby-identifier">nom</span>, <span class="ruby-identifier">score_final</span>, <span class="ruby-identifier">id_j</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-scorePremier_present-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">scorePremier_present?</span><span
+            class="method-args">(pseudo, mode, nom)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Permet de savoir si un joueur a precedemment terminé une aventure ou une
+grille personnalisé</p>
+
+<pre>* *Paramètres*:
+  - +pseudo+ -&gt; pseudo du joueur
+  - +mode+ -&gt; le type du mode (Detente, Aventure ou Editeur)
+  - +nom+ -&gt; il s'agit soit du nom de l'aventure dans le cas du mode Aventure, soit le nom de la grille dans le cas du mode Editeur
+* *Retourne* :
+  -vrai si l'opération d'insertion dans la base de donnée s'est correctement efféctuée
+* *Raises* :
+  - +name_exception+ -&gt;</pre>
+<ul><li>
+<p><strong>Exemple</strong> :</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="scorePremier_present-3F-source">
+            <pre><span class="ruby-comment"># File Modele/BaseDonnee.rb, line 127</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">scorePremier_present?</span>(<span class="ruby-identifier">pseudo</span>, <span class="ruby-identifier">mode</span>, <span class="ruby-identifier">nom</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">db</span> = <span class="ruby-constant">SQLite3</span><span class="ruby-operator">::</span><span class="ruby-constant">Database</span>.<span class="ruby-identifier">new</span> <span class="ruby-string">&quot;database.db&quot;</span>
+    <span class="ruby-identifier">res_execute</span> = <span class="ruby-identifier">db</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-string">&quot;SELECT count(*) FROM Score JOIN Joueur using(id_joueur) WHERE pseudo = ? and mode = ? and nom = ?&quot;</span>, <span class="ruby-identifier">pseudo</span>, <span class="ruby-identifier">mode</span>, <span class="ruby-identifier">nom</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">res_execute</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

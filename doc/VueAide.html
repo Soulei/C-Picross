@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class VueAide - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Vue.html">Vue</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-creer">::creer</a>
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-VueAide">
+  <h1 id="class-VueAide" class="class">
+    class VueAide
+  </h1>
+
+  <section class="description">
+    
+<p>Classe abstraite définissant les attributs et comportements généraux de nos
+vues concrètes</p>
+<ul><li>
+<p><strong>Variables</strong> :</p>
+
+<pre>- +btRetour+ -&gt; Bouton permetant de retourner au menu principal</pre>
+</li><li>
+<p><strong>Heritage</strong>  : <a href="Vue.html">Vue</a></p>
+</li></ul>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-btRetour" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">btRetour</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-creer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creer</span><span
+            class="method-args">(unJeu,unJoueur)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="creer-source">
+            <pre><span class="ruby-comment"># File Vues/VueAide.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">VueAide</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">unJeu</span>,<span class="ruby-identifier">unJoueur</span>)
+            <span class="ruby-identifier">new</span>(<span class="ruby-identifier">unJeu</span>,<span class="ruby-identifier">unJoueur</span>)
+    <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(unJeu,unJoueur)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="Vue.html#method-c-new">Vue.new</a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Vues/VueAide.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">unJeu</span>,<span class="ruby-identifier">unJoueur</span>)
+
+        <span class="ruby-keyword">super</span>(<span class="ruby-string">&quot;Règles&quot;</span>)
+        
+        <span class="ruby-ivar">@window</span>.<span class="ruby-identifier">set_default_size</span>(<span class="ruby-value">800</span>,<span class="ruby-value">500</span>)
+        <span class="ruby-ivar">@window</span>.<span class="ruby-identifier">set_resizable</span>(<span class="ruby-keyword">true</span>)
+        <span class="ruby-ivar">@window</span>.<span class="ruby-identifier">set_modal</span>(<span class="ruby-keyword">true</span>)
+        
+<span class="ruby-identifier">box</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">ScrolledWindow</span>.<span class="ruby-identifier">new</span>()
+        <span class="ruby-identifier">vBox</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">VBox</span>.<span class="ruby-identifier">new</span>()
+        
+        
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>().<span class="ruby-identifier">set_markup</span>(<span class="ruby-string">'&lt;span size=&quot;xx-large&quot;&gt;&lt;b&gt;Picross&lt;/b&gt;&lt;/span&gt;'</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Le but d'un picross est de noircir les cases de la grille afin de faire apparaître une image, un dessin. Les nombres à gauche et au-dessus de la \ngrille sont là pour vous aider à déduire les cases à noircir.&quot;</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>().<span class="ruby-identifier">set_markup</span>(<span class="ruby-string">'&lt;span size=&quot;x-large&quot;&gt;Théorème n°1&lt;/span&gt;'</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-string">&quot;./Images/GIF/th1.gif&quot;</span>, <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword">__FILE__</span>))))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Sur une grille de picross quelconque, lorsque l’indice indiqué est égale à la largeur de la grille, alors toutes les cases doivent être noircies \ncar celles-ci appartiennent à un seul bloc.&quot;</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>().<span class="ruby-identifier">set_markup</span>(<span class="ruby-string">'&lt;span size=&quot;x-large&quot;&gt;Théorème n°2&lt;/span&gt;'</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-string">&quot;./Images/GIF/th2.gif&quot;</span>, <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword">__FILE__</span>))))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Lorsque l’indice donné est plus grand que la moitié des cases, on noircit les cases depuis le début ensuite depuis la fin des cases \net on retient les cases confondues. Avec l’indice 7 pour une grille de 10 x 10, on noircit les 4 case du centre.&quot;</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>().<span class="ruby-identifier">set_markup</span>(<span class="ruby-string">'&lt;span size=&quot;x-large&quot;&gt;Théorème n°3&lt;/span&gt;'</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-string">&quot;./Images/GIF/th3.gif&quot;</span>, <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword">__FILE__</span>))))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Lorsqu’une case est noircie en bordure de votre Picross, en fonction de sa position (première case ou dernière case), vous pouvez déduire que \ncette case est la première du premier bloc ou la dernière du dernier bloc.&quot;</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>().<span class="ruby-identifier">set_markup</span>(<span class="ruby-string">'&lt;span size=&quot;x-large&quot;&gt;Théorème n°4&lt;/span&gt;'</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-string">&quot;./Images/GIF/th4.gif&quot;</span>, <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword">__FILE__</span>))))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Considérons que chaque bloc est séparé d’une case blanche, si la somme des indices des blocs + nombre de bloc - 1 = largeur de la grille, \nalors il existe qu’une seule manière de remplir votre ligne/colonne. Vous n’avez qu’à remplir votre ligne/colonne en ne mettant \nqu’un espace entre chaque bloc.&quot;</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-string">&quot;./Images/GIF/th5.gif&quot;</span>, <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword">__FILE__</span>))))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Label</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Si la valeur calculée est inférieur à la largeur de la grille, cela signifie qu’il y a plus d’une case blanche entre deux blocs&quot;</span>))
+        <span class="ruby-identifier">vBox</span>.<span class="ruby-identifier">add</span>(<span class="ruby-ivar">@btRetour</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Button</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Retour&quot;</span>))
+        
+        <span class="ruby-identifier">box</span>.<span class="ruby-identifier">add_with_viewport</span>(<span class="ruby-identifier">vBox</span>)
+        <span class="ruby-ivar">@window</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">box</span>)
+        <span class="ruby-ivar">@window</span>.<span class="ruby-identifier">show_all</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
