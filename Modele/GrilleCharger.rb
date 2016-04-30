@@ -33,8 +33,6 @@ class GrilleCharger < Grille
 		if(largeur%5==0 && largeur>=5)
 			@largeur=largeur
 			mat=matriceBD[0]
-			#test
-			puts mat
 			#creation de la matrice contenant les cases
 			@matrice=Array.new(largeur){ Array.new(largeur)}
 

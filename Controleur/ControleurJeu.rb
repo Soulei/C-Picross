@@ -173,7 +173,7 @@ class ControleurJeu < Controleur
 			case mode
 			when 1 then changerControleur(ControleurSauvegarde.creer(@jeu, @joueur, @vue.timer.elapsed , @vue.grille.pile , @vue.grille, @vue.nbSolution, "ma_grille", 1, rang, extra[0])) #Si c'est une Aventure
 			when 2 then changerControleur(ControleurSauvegarde.creer(@jeu, @joueur, @vue.timer.elapsed , @vue.grille.pile , @vue.grille, @vue.nbSolution, "ma_grille", 2, nil, nil)) #Si c'est une partie détente
-			when 3 then	changerControleur(ControleurSauvegarde.creer(@jeu, @joueur, @vue.timer.elapsed , @vue.grille.pile , @vue.grille, @vue.nbSolution, "ma_grille", 3, nil, nil)) #Si c'est une grille éditée
+			when 3 then	changerControleur(ControleurSauvegarde.creer(@jeu, @joueur, @vue.timer.elapsed , @vue.grille.pile , @vue.grille, @vue.nbSolution, extra, 3, nil, nil)) #Si c'est une grille éditée
 			end
 		}
 
