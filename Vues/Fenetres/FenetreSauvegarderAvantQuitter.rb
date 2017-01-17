@@ -1,4 +1,3 @@
-#Auteur : LAMNIY Youssef
 #
 #Définition de la classe permettant à l'utilisateur de pouvoir choisir
 #s'il souhaite ou non sauvegarder sa partie lorsqu'il s'apprête à quitter le jeu.
