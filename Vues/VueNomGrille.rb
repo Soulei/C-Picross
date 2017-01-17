@@ -1,6 +1,5 @@
 # encoding: utf-8
-##
-# Auteur YOUSSEF LAMNIY
+## 
 # Version 0.1
 
 ###### VUENOMGRILLE.RB #######
