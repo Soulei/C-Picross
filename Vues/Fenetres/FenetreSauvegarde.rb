@@ -1,4 +1,3 @@
-# Auteur : LAMNIY Youssef
 #
 # Definition de la classe FenetreSauvegarde, permettant la sauvegarde d'une partie en cours de jeu.
 #
