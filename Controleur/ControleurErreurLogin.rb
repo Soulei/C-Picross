@@ -1,5 +1,4 @@
 ##
-# Auteur YOUSSEF LAMNIY
 # Description : fichier contenant la classe ControleurErreurLogin du Picross
 
 ######   CONTROLEURERREURLOGIN.RB   ######
