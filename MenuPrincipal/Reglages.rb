@@ -2,7 +2,6 @@
 
 
 ###
-# Auteur Youssef LAMNIY
 # Date : Lundi 25 Janvier 2016
 # Description : Fenêtre de reglages.
 ###
