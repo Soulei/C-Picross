@@ -8,7 +8,6 @@ Projet L3 SPI : GROUPE C Picross
 - Wajdi GUEDOUAR
 - Yann GUENVER
 - Amine HAJIR
-- Youssef LAMNIY
 
 #Depot Git du programme
 - git clone https://github.com/Soulei/C-Picross.git
