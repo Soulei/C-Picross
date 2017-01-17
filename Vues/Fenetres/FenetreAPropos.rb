@@ -1,4 +1,3 @@
-#Auteur : LAMNIY Youssef
 #
 #Definition de la fenêtre "à propos de".
 
