@@ -1,7 +1,6 @@
 #################################
 # AIDE  PICROSS                       #
 #################################
-# Auteur : LAMNIY Youssef
 # Version : 1
 
 class Aide
