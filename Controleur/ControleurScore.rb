@@ -1,7 +1,6 @@
 # encoding: utf-8
 #! /usr/bin/env ruby
 #
-# Auteur YOUSSEF LAMNIY
 #
 
 ######### CONTROLEURSCORE.RB #########
