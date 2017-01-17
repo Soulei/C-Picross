@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # encoding=utf-8 
 
-# Auteur YANN GUENVER / YOUSSEF LAMNIY / HAJIR Mohammed Amine
+# Auteur YANN GUENVER / HAJIR Mohammed Amine
 # Version 0.1
 # Date : Mardi 26 Janvier 2016
 # Description : fichier contenant la classe ControleurNouveauJeu du jeu du Picross
