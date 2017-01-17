@@ -1,5 +1,4 @@
-# Auteur : LAMNIY Youssef
-#
+
 # Definition de la classe permettant de demander à l'utilisateur s'il confirme la création du profil.
 
 	
