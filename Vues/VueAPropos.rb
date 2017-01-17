@@ -38,7 +38,6 @@ class VueAPropos < Vue
 			"Wajdi GUEDOUAR\n",
 			"Yann GUENVER\n",
 			"Mohammed Amine HAJIR\n",
-			"Youssef LAMNIY\n",
 			"Choukri SOULEYMAN-IMAN\n",
 		]
 
