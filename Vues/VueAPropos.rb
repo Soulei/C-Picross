@@ -96,8 +96,6 @@ class VueAPropos < Vue
 
 	        Developpeur - Yann GUENVER
 
-	        Developpeur - Youssef LAMNIY
-
 	        Developpeur - Wajdi GUEDWAR
 
 	        Developpeur - Yannick ESSIA")
