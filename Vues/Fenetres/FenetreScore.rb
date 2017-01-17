@@ -1,4 +1,3 @@
-#Auteur : LAMNIY Youssef
 #
 #Definition de la classe FenetreScore qui permet l'affichage des scores pour une grille particulière.
 
