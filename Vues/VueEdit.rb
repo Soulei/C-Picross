@@ -1,5 +1,4 @@
 ##
-# Auteur Youssef LAMNIY
 # Version 0.1
 
 ###### VUEEDIT.RB #######
