@@ -13,7 +13,6 @@ class FenetreÀPropos
 			"\nLuc FONTAINE(Chef de Projet)", 
 			"Choukri SOULEYMAN-IMAN(Documentaliste)",
 			"Mohammed Amine HAJIR(Developpeur)",
-			"Youssef LAMNIY(Developpeur)",
 			"Wajdi GUEDOUAR(Developpeur)",
 			"Yann GUENVER(Developpeur)",
 			"Yannick ESSIA(Developpeur)",			
