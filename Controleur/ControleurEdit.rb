@@ -1,7 +1,6 @@
 # encoding: utf-8
 
 ##
-# Auteur Youssef LAMNIY
 # Version 0.1
 
 
