@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # encoding=utf-8 
 
-# Auteur YOUSSEF LAMNIY / HAJIR Mohammed Amine
+# Auteur HAJIR Mohammed Amine
 # Version 0.1
 # Description : fichier contenant la classe VueAPropos Picross
 
