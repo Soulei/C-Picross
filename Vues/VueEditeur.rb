@@ -1,5 +1,4 @@
 ##
-# Auteur YOUSSEF LAMNIY
 # Version 0.1
 #
 
