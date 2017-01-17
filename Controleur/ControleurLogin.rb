@@ -1,4 +1,4 @@
-# @auteur : Yann GUENVER - Youssef LAMNIY
+# @auteur : Yann GUENVER 
 # @version : 0.1
 ##
 # Description : Fichier contenant le controleur login.
