@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 ##
-# Auteur YANN GUENVER / YOUSSEF LAMNIY
+# Auteur YANN GUENVER 
 # Version 0.1
 # Date : Jeudi 10 Mars 2016
 # Description : fichier contenant la classe VueNouveauJeu du jeu du Picross
